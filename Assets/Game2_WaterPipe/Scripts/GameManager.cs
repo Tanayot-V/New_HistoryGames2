@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameManager : Singletons<GameManager>
 {
+    public Canvas canvas;
     public GridSystem gridSystem;
     public PipeManager pipeManager;
 
