@@ -15,7 +15,7 @@ public class PipeSlot : MonoBehaviour
 
     private float mouseDownTime;
     private bool isDragging;
-    private float holdThreshold = 0.125f;
+    private float holdThreshold = 0.5f;
 
     private void Start()
     {
