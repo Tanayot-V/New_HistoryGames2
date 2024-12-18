@@ -6,56 +6,55 @@ using UnityEngine;
 
 public class PipeSlotDragDrop : MonoBehaviour
 {
+    [SerializeField] private PipeType pipeType;
+    [SerializeField] private SpriteRenderer pipeSR;
     [SerializeField] private Vector3 offset;
-    public PipeSlot triggerObj;
+    [SerializeField] private PipeSlot triggerObj;
 
-    public List<Transform> hitListsEntity = new List<Transform>();
-    [SerializeField] private LayerMask enemyMask;
+    [SerializeField] private List<Transform> hitLists = new List<Transform>();
+    [SerializeField] private LayerMask dropMask;
     [SerializeField] private float targetRange;
 
     public void Update()
     {
         transform.position = GetMouseWorldPos() + offset;
-        FindTargetEnemy();
+        FindTargetDrop();
         if (triggerObj != null)
         {
             GameManager.Instance.pipeManager.SetColorDefaulfPipeSlotData();
-            triggerObj.ColorRed();
+            triggerObj.ColorGreen();
         }
+    }
+
+    public void InitSlot(PipeType _pipeType)
+    {
+        pipeType = _pipeType;
+        pipeSR.sprite = GameManager.Instance.GetPipeModelPicture(_pipeType);
     }
 
     public void OnMouseUpSlot()
     {
-        Debug.Log(name + ": OnMouseUp");
+        //Debug.Log(name + ": OnMouseUp");
+        GameManager.Instance.pipeManager.SetPipeTypeSlot(pipeType);
         Destroy(this.gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        /*
-        GameManager.Instance.pipeManager.SetColorDefaulfPipeSlotData();
-        triggerObj = other.GetComponent<PipeSlot>();
-        triggerObj.ColorRed();
-
-        if (other.CompareTag("Empty"))
-        {
-            Debug.Log($"{name}: Collided with Empty Tag");
-
-        }*/
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
     }
 
-    public void FindTargetEnemy()
+    public void FindTargetDrop()
     {
-        hitListsEntity.Clear();
+        hitLists.Clear();
         Collider2D[] hits = Physics2D.OverlapBoxAll(
              this.transform.position,
              targetRange * (Vector2)transform.localScale,
              0f,
-             enemyMask
+             dropMask
          );
 
         if (hits.Length > 0)
@@ -64,15 +63,16 @@ public class PipeSlotDragDrop : MonoBehaviour
             {
                 if (o.transform != null && o.transform.gameObject != null)
                 {
-                    hitListsEntity.Add(o.transform);
+                    hitLists.Add(o.transform);
                 }
             });
 
-            hitListsEntity.RemoveAll(item => item == null || item.gameObject == null);
+            hitLists.RemoveAll(item => item == null || item.gameObject == null);
 
-            if (hitListsEntity.Count > 0)
+            if (hitLists.Count > 0)
             {
-                triggerObj = hitListsEntity[hitListsEntity.Count-1].GetComponent<PipeSlot>();
+                triggerObj = hitLists[hitLists.Count-1].GetComponent<PipeSlot>();
+                GameManager.Instance.SetTargetDragDrop(triggerObj);
             }
         }
     }

@@ -4,26 +4,29 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UIElements;
 
-public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class DragAndDropUISlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
+    public PipeType pipeType;
     public GameObject prefab;
+    public SpriteRenderer pipeSR;
+
     public void OnBeginDrag(PointerEventData eventData)
     {
-        Debug.Log("OnBeginDrag: " + name);
+        //Debug.Log("OnBeginDrag: " + name);
         //สร้าง Object
-        prefab = GameManager.Instance.PipeManager().CreatePipeSlotDangDrop();
+        prefab = GameManager.Instance.CreatePipeSlotDragDrop(pipeType);
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        Debug.Log("OnDrag: " + name);
+        //Debug.Log("OnDrag: " + name);
         //Object ตามเมาส์
 
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        Debug.Log("OnEndDrag: " + name);
+        //Debug.Log("OnEndDrag: " + name);
         if (prefab != null) prefab.GetComponent<PipeSlotDragDrop>().OnMouseUpSlot();
     }
 }

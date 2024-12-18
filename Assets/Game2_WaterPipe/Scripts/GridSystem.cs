@@ -43,9 +43,9 @@ public class GridSystem : Singletons<GridSystem>
                 slot.transform.parent = gridParent.transform;
                 Vector3 startPosition = GetGridPosition(x, y);
                 gridPositions.Add(startPosition);
-                PipeData pipeData = new PipeData(new string(x + "," + y), position, Direction.Up, PipeType.None, slot);
+                PipeData pipeData = new PipeData(new string(x + "," + y), position, Direction.Up, PipeType.None, slot.GetComponent<PipeSlot>());
                 GameManager.Instance.PipeManager().AddPipeData(pipeData);
-                slot.GetComponent<PipeSlot>().pipeData = pipeData;
+                slot.GetComponent<PipeSlot>().InitSlot(pipeData);
                 slot.name = pipeData.pipeID;
             }
         }

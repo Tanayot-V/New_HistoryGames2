@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 342c286b5db254366a66d3689c1f52ea, type: 3}
+  m_Name: PipeDatabase
+  m_EditorClassIdentifier: 
+  pipeModels:
+  - pipeType: 1
+    picture: {fileID: 21300000, guid: e613751e60e2d4b6c8a1222a728c8846, type: 3}
+  - pipeType: 2
+    picture: {fileID: 21300000, guid: 1b7b2446625d44e90b5ddfd12e6b2d65, type: 3}
+  - pipeType: 3
+    picture: {fileID: 21300000, guid: de6840a1adb9e44c8a9b5d7af06b6f5b, type: 3}
+  - pipeType: 4
+    picture: {fileID: 21300000, guid: 3692ed51d3b6c4746912198e3b513ee5, type: 3}
+  - pipeType: 5
+    picture: {fileID: 21300000, guid: a0f602249cabe407da0f032bb49c27df, type: 3}

@@ -8,6 +8,7 @@ public class PipeSlot : MonoBehaviour
     public PipeData pipeData = new PipeData();
     private float targetRotationZ = 0f;
     [SerializeField] SpriteRenderer bgSR;
+    [SerializeField] SpriteRenderer pipeSR;
     private Color defalutColor;
     private bool isRotating;
     private bool isDragAndDroping;
@@ -18,8 +19,21 @@ public class PipeSlot : MonoBehaviour
         defalutColor = bgSR.color;
         isDragAndDroping = GameManager.Instance.pipeManager.IsDragAndDroping();
     }
-    private void Update()
+
+    private void Update() {}
+
+    public void InitSlot(PipeData _pipeData)
     {
+        pipeData = _pipeData;
+        pipeData.pipeType = (PipeType)Random.Range(0, 5);
+        ChangePipeType(pipeData.pipeType);
+    }
+
+    public void ChangePipeType(PipeType _pipeType)
+    {
+        pipeData.pipeType = _pipeType;
+        if (pipeData.pipeType == PipeType.None) pipeSR.sprite = null;
+        else pipeSR.sprite = GameManager.Instance.GetPipeModelPicture(_pipeType);
     }
 
     public void OnMouseDown()
@@ -27,7 +41,7 @@ public class PipeSlot : MonoBehaviour
         if (isDragAndDroping) return;
         if (isRotating) return;
         targetRotationZ += 90f;
-        pipeData.direction = (Direction)(((int)pipeData.direction + 1) % 4);
+        pipeData.direction = (Direction)(((int)pipeData.direction + 1) % 5);
 
         transform.DORotate(new Vector3(0, 0, targetRotationZ), 0.5f, RotateMode.FastBeyond360)
             .SetEase(Ease.OutQuad)
@@ -63,9 +77,9 @@ public class PipeSlot : MonoBehaviour
         bgSR.color = Color.grey;
     }
 
-    public void ColorRed()
+    public void ColorGreen()
     {
-        bgSR.color = Color.red;
+        bgSR.color = Color.green;
     }
 
     public void ColorDefalut()
