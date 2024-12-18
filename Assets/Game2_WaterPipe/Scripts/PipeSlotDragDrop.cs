@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class PipeSlotDragDrop : MonoBehaviour
 {
-    [SerializeField] private PipeType pipeType;
+    [SerializeField] private PipeData pipeData;
     [SerializeField] private SpriteRenderer pipeSR;
     [SerializeField] private Vector3 offset;
     [SerializeField] private PipeSlot triggerObj;
@@ -24,18 +24,24 @@ public class PipeSlotDragDrop : MonoBehaviour
             GameManager.Instance.pipeManager.SetColorDefaulfPipeSlotData();
             triggerObj.ColorGreen();
         }
+        if (Input.GetMouseButtonUp(0))
+        {
+            OnMouseUpSlot();
+        }
     }
 
-    public void InitSlot(PipeType _pipeType)
+    public void InitSlot(PipeData _pipeData)
     {
-        pipeType = _pipeType;
-        pipeSR.sprite = GameManager.Instance.GetPipeModelPicture(_pipeType);
+        pipeData = _pipeData;
+        pipeSR.sprite = GameManager.Instance.GetPipeModelPicture(_pipeData.pipeType);
+        this.transform.rotation = Quaternion.Euler(0,0,GameManager.Instance.GetRotateFromDirection(_pipeData.direction));
     }
 
     public void OnMouseUpSlot()
     {
-        //Debug.Log(name + ": OnMouseUp");
-        GameManager.Instance.pipeManager.SetPipeTypeSlot(pipeType);
+        Debug.Log(name + ": OnMouseUp");
+        GameManager.Instance.SetupPipeTypeSlot(pipeData, true);
+        GameManager.Instance.pipeManager.SetColorDefaulfPipeSlotData();
         Destroy(this.gameObject);
     }
 
@@ -72,11 +78,10 @@ public class PipeSlotDragDrop : MonoBehaviour
             if (hitLists.Count > 0)
             {
                 triggerObj = hitLists[hitLists.Count-1].GetComponent<PipeSlot>();
-                GameManager.Instance.SetTargetDragDrop(triggerObj);
+                GameManager.Instance.SetTargetDragDropUI(triggerObj);
             }
         }
     }
-
 
 #if UNITY_EDITOR
     private void OnDrawGizmosSelected()

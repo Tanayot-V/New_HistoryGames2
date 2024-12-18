@@ -16,8 +16,8 @@ public class PipeData
 {
     public string pipeID;
     public Vector2 pos;
-    public Direction direction;
     public PipeType pipeType;
+    public Direction direction;
     public PipeSlot pipeSlot; //pipeSlot
 
     public PipeData(){}
@@ -29,6 +29,12 @@ public class PipeData
         this.direction = _direction;
         this.pipeType = _pipeType;
         this.pipeSlot = _pipeSlot; //pipeSlot
+    }
+
+    public PipeData(PipeType _pipeType, Direction _direction)
+    {
+        this.pipeType = _pipeType;
+        this.direction = _direction;
     }
 }
 
@@ -62,8 +68,15 @@ public class PipeManager : MonoBehaviour
     [Header("DangAndDrop")]
     [SerializeField] private GameObject pipeSlotDragDrop;
     [SerializeField] private GameObject pipeSlotDragDrop_Parent;
-    public GameObject currentDragDrop;
     public PipeSlot targetDragDrop;
+
+    [Header("DangAndDrop Form UI")]
+    public GameObject currentDragDrop;
+
+    [Header("DangAndDrop Form GameWorld")]
+    [SerializeField] private GameObject currentDragDropG;
+    [SerializeField] private PipeSlot dragSlot;
+    [SerializeField] private PipeSlot dropSlot;
 
     public void RandomPipeMap()
     {
@@ -84,32 +97,6 @@ public class PipeManager : MonoBehaviour
         pipeDatas.Clear();
     }
 
-    public GameObject CreatePipeSlotDragDrop(PipeType _pipeType)
-    {
-        if (currentDragDrop != null) return null;
-        GameObject slot = Instantiate(pipeSlotDragDrop, pipeSlotDragDrop.GetComponent<PipeSlotDragDrop>().GetMouseWorldPos(), Quaternion.identity, transform);
-        slot.transform.SetParent(pipeSlotDragDrop_Parent.transform);
-        slot.GetComponent<PipeSlotDragDrop>().InitSlot(_pipeType);
-        currentDragDrop = slot;
-        return slot;
-    }
-
-    public bool IsDragAndDroping()
-    {
-        if (currentDragDrop == null) return false;
-        else return true;
-    }
-
-    public void SetTargetDragDrop(PipeSlot _target)
-    {
-        targetDragDrop = _target;
-    }
-
-    public void SetPipeTypeSlot(PipeType _pipeType)
-    {
-        targetDragDrop.ChangePipeType(_pipeType);
-    }
-
     public void SetColorDefaulfPipeSlotData()
     {
         pipeDatas.ForEach(o=> {
@@ -121,4 +108,76 @@ public class PipeManager : MonoBehaviour
     {
         return pipeDatabase.GetPipeModel(_pipeType);
     }
+
+    #region DragDropUI
+    public GameObject CreatePipeSlotDragDrop(PipeData _pipeData)
+    {
+        if (currentDragDrop != null) return null;
+        GameObject slot = Instantiate(pipeSlotDragDrop, pipeSlotDragDrop.GetComponent<PipeSlotDragDrop>().GetMouseWorldPos(), Quaternion.identity, transform);
+        slot.transform.SetParent(pipeSlotDragDrop_Parent.transform);
+        slot.GetComponent<PipeSlotDragDrop>().InitSlot(new PipeData(_pipeData.pipeType, _pipeData.direction));
+        return slot;
+    }
+
+    public GameObject CreatePipeSlotDragDropUI(PipeData _pipeData)
+    {
+        currentDragDrop = CreatePipeSlotDragDrop(_pipeData);
+        return currentDragDrop;
+    }
+
+    public bool IsDragAndDropingUI()
+    {
+        if (currentDragDrop == null) return false;
+        else return true;
+    }
+
+    public void SetTargetDragDropUI(PipeSlot _target)
+    {
+        targetDragDrop = _target;
+    }
+
+    public void SetPipeTypeSlotUI(PipeData _pipeData)
+    {
+        if (targetDragDrop != null) targetDragDrop.SetupPipe(_pipeData);
+    }
+
+    private Dictionary<Direction, float> directionToRotation = new Dictionary<Direction, float>()
+    {
+        { Direction.None, 0f },
+        { Direction.Up, 0f },
+        { Direction.Right, 90f },
+        { Direction.Down, -180f },
+        { Direction.Left, -90f }
+    };
+    public float GetRotateFromDirection(Direction _direction)
+    {
+        return directionToRotation.ContainsKey(_direction) ? directionToRotation[_direction] : 0f;
+    }
+    #endregion
+
+    #region DragDrop On GameWorld
+    public GameObject CreatePipeSlotDragDropG(PipeData _pipeData)
+    {
+        currentDragDropG = CreatePipeSlotDragDrop(_pipeData);
+        return currentDragDropG;
+    }
+
+    public bool IsDragAndDropingG()
+    {
+        if (currentDragDropG == null) return false;
+        else return true;
+    }
+
+    public void SetDragDropG(PipeSlot _target,bool _isDang)
+    {
+        if (_isDang) dragSlot = _target;
+        else dropSlot = _target;
+    }
+
+    public void SetupPipeG(PipeData _pipeData)
+    {
+        if (targetDragDrop != null) targetDragDrop.SetupPipe(_pipeData);
+    }
+
+    #endregion
 }

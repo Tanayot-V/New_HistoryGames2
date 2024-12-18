@@ -25,24 +25,47 @@ public class GameManager : Singletons<GameManager>
         return DataCenterManager.GetData(ref pipeManager, "PipeManager");
     }
 
-    public GameObject CreatePipeSlotDragDrop(PipeType _pipeType)
-    {
-        return pipeManager.CreatePipeSlotDragDrop(_pipeType);
-    }
-
     public Sprite GetPipeModelPicture(PipeType _pipeType)
     {
+        if (_pipeType == PipeType.None) return null;
         return pipeManager.GetPipeModel(_pipeType).picture;
     }
 
-    public void SetTargetDragDrop(PipeSlot _target)
+    public void SetupPipeTypeSlot(PipeData _pipeData, bool _isUI)
     {
-        pipeManager.SetTargetDragDrop(_target);
+        if (_isUI) pipeManager.SetPipeTypeSlotUI(_pipeData);
+        else pipeManager.SetupPipeG(_pipeData);
     }
 
-    public void SetPipeTypeSlot(PipeType _pipeType)
+    #region DragDrop UI
+    public GameObject CreatePipeSlotDragDropUI(PipeData _pipeData)
     {
-        pipeManager.SetPipeTypeSlot(_pipeType);
+        return pipeManager.CreatePipeSlotDragDropUI(_pipeData);
     }
+
+    public void SetTargetDragDropUI(PipeSlot _target)
+    {
+        pipeManager.SetTargetDragDropUI(_target);
+    }
+
+    public float GetRotateFromDirection(Direction _direction)
+    {
+        return pipeManager.GetRotateFromDirection(_direction);
+    }
+    #endregion
+
+    #region DragDrop GameWorld
+
+    public GameObject CreatePipeSlotDragDropG(PipeData _pipeData)
+    {
+        return pipeManager.CreatePipeSlotDragDropG(_pipeData);
+    }
+
+    public void SetCurrentDragDropG(PipeSlot _target, bool _isDrag)
+    {
+        pipeManager.SetDragDropG(_target, _isDrag);
+    }
+
+    #endregion
     #endregion
 }

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
-using UnityEngine; 
+using UnityEngine;
 
 public class PipeSlot : MonoBehaviour
 {
@@ -11,13 +11,17 @@ public class PipeSlot : MonoBehaviour
     [SerializeField] SpriteRenderer pipeSR;
     private Color defalutColor;
     private bool isRotating;
-    private bool isDragAndDroping;
+    private bool isDragAndDropingUI;
+
+    private float mouseDownTime;
+    private bool isDragging;
+    private float holdThreshold = 0.125f;
 
     private void Start()
     {
         bgSR = this.GetComponent<SpriteRenderer>();
         defalutColor = bgSR.color;
-        isDragAndDroping = GameManager.Instance.pipeManager.IsDragAndDroping();
+        isDragAndDropingUI = GameManager.Instance.pipeManager.IsDragAndDropingUI();
     }
 
     private void Update() {}
@@ -26,20 +30,37 @@ public class PipeSlot : MonoBehaviour
     {
         pipeData = _pipeData;
         pipeData.pipeType = (PipeType)Random.Range(0, 5);
-        ChangePipeType(pipeData.pipeType);
+        SetupPipe(pipeData);
     }
 
-    public void ChangePipeType(PipeType _pipeType)
+    public void SetupPipe(PipeData _pipeData)
     {
-        pipeData.pipeType = _pipeType;
+        pipeData = _pipeData;
         if (pipeData.pipeType == PipeType.None) pipeSR.sprite = null;
-        else pipeSR.sprite = GameManager.Instance.GetPipeModelPicture(_pipeType);
+        else pipeSR.sprite = GameManager.Instance.GetPipeModelPicture(pipeData.pipeType);
+        pipeSR.transform.rotation = Quaternion.Euler(0, 0, GameManager.Instance.GetRotateFromDirection(pipeData.direction));
     }
 
-    public void OnMouseDown()
+    private void DragDrop()
     {
-        if (isDragAndDroping) return;
+        if (isDragAndDropingUI) return;
         if (isRotating) return;
+
+        GameManager.Instance.CreatePipeSlotDragDropG(pipeData);
+        GameManager.Instance.SetCurrentDragDropG(this, true);
+
+        pipeData.pipeType = PipeType.None;
+        pipeData.direction = Direction.Up;
+        SetupPipe(pipeData);
+    }
+
+    private void Rotat()
+    {
+        if (pipeData.pipeType == PipeType.None) return;
+        if (isDragAndDropingUI) return;
+        if (isDragging) return;
+        if (isRotating) return;
+
         targetRotationZ += 90f;
         pipeData.direction = (Direction)(((int)pipeData.direction + 1) % 5);
 
@@ -57,9 +78,30 @@ public class PipeSlot : MonoBehaviour
                 if (targetRotationZ >= 360) targetRotationZ = 0; // รีเซ็ตมุม
             });
 
-
         Debug.Log($"{name}: {pipeData.direction}");
+    }
 
+    void OnMouseDown()
+    {
+        mouseDownTime = Time.time;
+        isDragging = false;
+    }
+
+    void OnMouseDrag()
+    {
+        if (Time.time - mouseDownTime >= holdThreshold && !isDragging)
+        {
+            DragDrop();
+            isDragging = true;
+        }
+    }
+
+    void OnMouseUp()
+    {
+        if (!isDragging)
+        {
+            Rotat();
+        }
     }
 
     public void OnMouseOver()
