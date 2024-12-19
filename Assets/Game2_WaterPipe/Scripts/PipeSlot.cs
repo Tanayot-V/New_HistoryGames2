@@ -31,7 +31,6 @@ public class PipeSlot : MonoBehaviour
         pipeData = _pipeData;
         pipeData.pipeType = (PipeType)Random.Range(0, 5);
         SetupPipe(pipeData);
-        //if (pipeData.pipeType == PipeType.Obstacle) bgSR.color = Color.grey;
     }
 
     public void SetupPipe(PipeData _pipeData)

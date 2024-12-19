@@ -6,8 +6,8 @@ using static UnityEngine.GraphicsBuffer;
 public class GameManager : Singletons<GameManager>
 {
     public Canvas canvas;
-    public GridSystem gridSystem;
-    public PipeManager pipeManager;
+    [SerializeField] private GridSystem gridSystem;
+    [SerializeField] private PipeManager pipeManager;
     [SerializeField] private DragDropManager dragDropManager;
 
     public void Start()
@@ -36,6 +36,11 @@ public class GameManager : Singletons<GameManager>
     public void UpdatePipeSlotTOList(Vector2 _pos, PipeData _pipeData)
     {
         pipeManager.UpdatePipeSlotTOList(_pos, _pipeData);
+    }
+
+    public void SetColorDefaulfPipeSlotData()
+    {
+        pipeManager.SetColorDefaulfPipeSlotData();
     }
     #endregion
 

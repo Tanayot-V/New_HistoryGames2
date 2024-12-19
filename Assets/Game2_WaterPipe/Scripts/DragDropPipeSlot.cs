@@ -27,7 +27,7 @@ public class DragDropPipeSlot : MonoBehaviour
         FindTargetDrop();
         if (triggerObj != null)
         {
-            gameManager.pipeManager.SetColorDefaulfPipeSlotData();
+            gameManager.SetColorDefaulfPipeSlotData();
             triggerObj.ColorGreen();
         }
         if (Input.GetMouseButtonUp(0))
@@ -47,7 +47,7 @@ public class DragDropPipeSlot : MonoBehaviour
     public void OnMouseUpSlot()
     {
         Debug.Log(name + ": OnMouseUp");
-        gameManager.pipeManager.SetColorDefaulfPipeSlotData();
+        gameManager.SetColorDefaulfPipeSlotData();
         //Set dropslot DDUI
         gameManager.OnMouseUpDropUI(pipeData);
         //Set dropslot DDGW

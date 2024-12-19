@@ -107,36 +107,40 @@ public class DragDropManager : MonoBehaviour
     public void OnMouseUpDropGW(PipeSlot _dropSlot, PipeData _dropData)
     {
         SetDragDropGW(_dropSlot, false);
-        if (targetDragDrop == null) return;
         if (dragSlot == null) return;
-        if (dropSlot == null) return;
-        else
+        PipeData backUpDrag = new PipeData(
+                dragSlot.pipeData.pipeID,
+                dragSlot.pipeData.pos,
+                _dropData.pipeType,
+                _dropData.direction,
+                dragSlot.pipeData.pipeSlot);
+
+        //เด้งกลับที่เดิม
+        if (targetDragDrop == null || dropSlot == null)
+        {
+            dragSlot.SetupPipe(_dropData);
+            return;
+        }
+
+        if (targetDragDrop != null)
         {
             //Obstacle => เด้งกลับที่เดิม
             if (dropSlot.pipeData.pipeType == PipeType.Obstacle)
             {
-                dragSlot.SetupPipe(_dropData);
+                dragSlot.SetupPipe(backUpDrag);
                 return;
             }
 
             //ดรอปลงบนพื้นที่ว่าง => dragSlot ว่าง dropSlot ได้ข้อมูล
             if (dropSlot.pipeData.pipeType == PipeType.None)
             {
-                targetDragDrop.SetupPipe(_dropData);
+                targetDragDrop.SetupPipe(backUpDrag);
                 return;
             }
 
             //สลับ
             if (dropSlot.pipeData.pipeType != PipeType.None && dropSlot.pipeData.pipeType != PipeType.Obstacle)
             {
-                PipeData backUpDrag = new PipeData(
-                    targetDragDrop.pipeData.pipeID,
-                    targetDragDrop.pipeData.pos,
-                    _dropData.pipeType,
-                    _dropData.direction,
-                    targetDragDrop.pipeData.pipeSlot);
-                
-                //PipeData currentDragData = currentDragDropG.GetComponent<DragDropPipeSlot>().pipeData;
                 PipeData backUpDrop = new PipeData(
                     dropSlot.pipeData.pipeID,
                     dropSlot.pipeData.pos,

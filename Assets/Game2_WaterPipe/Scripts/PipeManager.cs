@@ -9,6 +9,7 @@ public class PipeModel
 {
     public PipeType pipeType;
     public Sprite picture;
+    public Sprite pictureWater;
 }
 
 [System.Serializable]
