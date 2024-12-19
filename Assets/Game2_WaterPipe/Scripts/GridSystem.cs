@@ -34,6 +34,7 @@ public class GridSystem : Singletons<GridSystem>
         gridParent = new GameObject("GridParent");
         gridParent.transform.SetParent(this.transform);
 
+        GameManager.Instance.PipeManager().ClearPipeData();
         for (int x = 0; x < width; x++)
         {
             for (int y = 0; y < height; y++)
@@ -43,7 +44,7 @@ public class GridSystem : Singletons<GridSystem>
                 slot.transform.parent = gridParent.transform;
                 Vector3 startPosition = GetGridPosition(x, y);
                 gridPositions.Add(startPosition);
-                PipeData pipeData = new PipeData(new string(x + "," + y), position, Direction.Up, PipeType.None, slot.GetComponent<PipeSlot>());
+                PipeData pipeData = new PipeData(new string(x + "," + y), position, PipeType.None, Direction.Up, slot.GetComponent<PipeSlot>());
                 GameManager.Instance.PipeManager().AddPipeData(pipeData);
                 slot.GetComponent<PipeSlot>().InitSlot(pipeData);
                 slot.name = pipeData.pipeID;

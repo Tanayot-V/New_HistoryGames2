@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class GameManager : Singletons<GameManager>
 {
     public Canvas canvas;
     public GridSystem gridSystem;
     public PipeManager pipeManager;
+    [SerializeField] private DragDropManager dragDropManager;
 
     public void Start()
     {
@@ -31,41 +33,61 @@ public class GameManager : Singletons<GameManager>
         return pipeManager.GetPipeModel(_pipeType).picture;
     }
 
-    public void SetupPipeTypeSlot(PipeData _pipeData, bool _isUI)
+    public void UpdatePipeSlotTOList(Vector2 _pos, PipeData _pipeData)
     {
-        if (_isUI) pipeManager.SetPipeTypeSlotUI(_pipeData);
-        else pipeManager.SetupPipeG(_pipeData);
+        pipeManager.UpdatePipeSlotTOList(_pos, _pipeData);
     }
+    #endregion
 
+    #region DragAndDrop
     #region DragDrop UI
     public GameObject CreatePipeSlotDragDropUI(PipeData _pipeData)
     {
-        return pipeManager.CreatePipeSlotDragDropUI(_pipeData);
+        return dragDropManager.CreatePipeSlotDragDropUI(_pipeData);
     }
 
     public void SetTargetDragDropUI(PipeSlot _target)
     {
-        pipeManager.SetTargetDragDropUI(_target);
+        dragDropManager.SetTargetDragDropUI(_target);
     }
 
     public float GetRotateFromDirection(Direction _direction)
     {
-        return pipeManager.GetRotateFromDirection(_direction);
+        return dragDropManager.GetRotateFromDirection(_direction);
+    }
+
+    public bool IsDragAndDropingUI()
+    {
+        return dragDropManager.IsDragAndDropingUI();
+    }
+
+    public void OnMouseUpDropUI(PipeData _dropData)
+    {
+        dragDropManager.OnMouseUpDropUI(_dropData);
     }
     #endregion
 
     #region DragDrop GameWorld
 
-    public GameObject CreatePipeSlotDragDropG(PipeData _pipeData)
+    public GameObject CreatePipeSlotDragDropGW(PipeData _pipeData)
     {
-        return pipeManager.CreatePipeSlotDragDropG(_pipeData);
+        return dragDropManager.CreatePipeSlotDragDropGW(_pipeData);
     }
 
-    public void SetCurrentDragDropG(PipeSlot _target, bool _isDrag)
+    public void SetCurrentDragDropGW(PipeSlot _target, bool _isDrag)
     {
-        pipeManager.SetDragDropG(_target, _isDrag);
+        dragDropManager.SetDragDropGW(_target, _isDrag);
     }
 
+    public bool IsDragAndDropingGW()
+    {
+        return dragDropManager.IsDragAndDropingGW();
+    }
+
+    public void OnMouseUpDropGW(PipeSlot _dropSlot, PipeData _dropData)
+    {
+        dragDropManager.OnMouseUpDropGW(_dropSlot, _dropData);
+    }
     #endregion
     #endregion
 }

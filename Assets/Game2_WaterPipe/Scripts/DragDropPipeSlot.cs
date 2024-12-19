@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using DG.Tweening.Core.Easing;
 using UnityEditor;
 using UnityEngine;
 
-public class PipeSlotDragDrop : MonoBehaviour
+public class DragDropPipeSlot : MonoBehaviour
 {
-    [SerializeField] private PipeData pipeData;
+    [SerializeField] private GameManager gameManager;
+    public PipeData pipeData;
     [SerializeField] private SpriteRenderer pipeSR;
     [SerializeField] private Vector3 offset;
     [SerializeField] private PipeSlot triggerObj;
@@ -15,13 +17,17 @@ public class PipeSlotDragDrop : MonoBehaviour
     [SerializeField] private LayerMask dropMask;
     [SerializeField] private float targetRange;
 
+    private void Start()
+    {
+        gameManager = GameManager.Instance;
+    }
     public void Update()
     {
         transform.position = GetMouseWorldPos() + offset;
         FindTargetDrop();
         if (triggerObj != null)
         {
-            GameManager.Instance.pipeManager.SetColorDefaulfPipeSlotData();
+            gameManager.pipeManager.SetColorDefaulfPipeSlotData();
             triggerObj.ColorGreen();
         }
         if (Input.GetMouseButtonUp(0))
@@ -32,16 +38,20 @@ public class PipeSlotDragDrop : MonoBehaviour
 
     public void InitSlot(PipeData _pipeData)
     {
+        if (gameManager == null) gameManager = GameManager.Instance;
         pipeData = _pipeData;
-        pipeSR.sprite = GameManager.Instance.GetPipeModelPicture(_pipeData.pipeType);
-        this.transform.rotation = Quaternion.Euler(0,0,GameManager.Instance.GetRotateFromDirection(_pipeData.direction));
+        pipeSR.sprite = gameManager.GetPipeModelPicture(_pipeData.pipeType);
+        this.transform.rotation = Quaternion.Euler(0,0, gameManager.GetRotateFromDirection(_pipeData.direction));
     }
 
     public void OnMouseUpSlot()
     {
         Debug.Log(name + ": OnMouseUp");
-        GameManager.Instance.SetupPipeTypeSlot(pipeData, true);
-        GameManager.Instance.pipeManager.SetColorDefaulfPipeSlotData();
+        gameManager.pipeManager.SetColorDefaulfPipeSlotData();
+        //Set dropslot DDUI
+        gameManager.OnMouseUpDropUI(pipeData);
+        //Set dropslot DDGW
+        gameManager.OnMouseUpDropGW(triggerObj, pipeData);
         Destroy(this.gameObject);
     }
 
@@ -78,7 +88,7 @@ public class PipeSlotDragDrop : MonoBehaviour
             if (hitLists.Count > 0)
             {
                 triggerObj = hitLists[hitLists.Count-1].GetComponent<PipeSlot>();
-                GameManager.Instance.SetTargetDragDropUI(triggerObj);
+                gameManager.SetTargetDragDropUI(triggerObj);
             }
         }
     }

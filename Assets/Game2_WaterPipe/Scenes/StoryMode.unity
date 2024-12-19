@@ -440,12 +440,12 @@ GameObject:
   - component: {fileID: 276865500}
   - component: {fileID: 276865501}
   m_Layer: 0
-  m_Name: DragAndDrop
+  m_Name: DragAndDropManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &276865500
 Transform:
   m_ObjectHideFlags: 0
@@ -470,17 +470,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 276865499}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 868f0a60a4b9b48e797579367e37517c, type: 3}
+  m_Script: {fileID: 11500000, guid: 67f15ef94673943499546389e11c6d50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pipeData:
-    pipeID: 
-    pos: {x: 0, y: 0}
-    pipeType: 0
-    direction: 0
-    pipeSlot: {fileID: 0}
-  prefab: {fileID: 0}
-  pipeSR: {fileID: 0}
+  pipeSlotDragDrop: {fileID: 6650631247926007744, guid: 58c26a83dd27341aba3d9f655eeaf3bf, type: 3}
+  pipeSlotDragDrop_Parent: {fileID: 2100709244}
+  targetDragDrop: {fileID: 0}
+  currentDragDropUI: {fileID: 0}
+  currentDragDropG: {fileID: 0}
+  dragSlot: {fileID: 0}
+  dropSlot: {fileID: 0}
 --- !u!1 &276999945
 GameObject:
   m_ObjectHideFlags: 0
@@ -722,7 +721,7 @@ MonoBehaviour:
   pipeData:
     pipeID: 
     pos: {x: 0, y: 0}
-    pipeType: 3
+    pipeType: 4
     direction: 1
     pipeSlot: {fileID: 0}
   prefab: {fileID: 6650631247926007744, guid: 58c26a83dd27341aba3d9f655eeaf3bf, type: 3}
@@ -977,7 +976,7 @@ MonoBehaviour:
   pipeData:
     pipeID: 
     pos: {x: 0, y: 0}
-    pipeType: 1
+    pipeType: 2
     direction: 1
     pipeSlot: {fileID: 0}
   prefab: {fileID: 6650631247926007744, guid: 58c26a83dd27341aba3d9f655eeaf3bf, type: 3}
@@ -1115,7 +1114,7 @@ MonoBehaviour:
   pipeData:
     pipeID: 
     pos: {x: 0, y: 0}
-    pipeType: 2
+    pipeType: 3
     direction: 1
     pipeSlot: {fileID: 0}
   prefab: {fileID: 6650631247926007744, guid: 58c26a83dd27341aba3d9f655eeaf3bf, type: 3}
@@ -1420,6 +1419,7 @@ MonoBehaviour:
   canvas: {fileID: 584849793}
   gridSystem: {fileID: 1322021598}
   pipeManager: {fileID: 748566186}
+  dragDropManager: {fileID: 276865501}
 --- !u!1 &617418670
 GameObject:
   m_ObjectHideFlags: 0
@@ -1616,13 +1616,81 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pipeDatabase: {fileID: 11400000, guid: fc525ab2465ab497bb44282fa1fe7f21, type: 2}
   pipeDatas: []
-  pipeSlotDragDrop: {fileID: 6650631247926007744, guid: 58c26a83dd27341aba3d9f655eeaf3bf, type: 3}
-  pipeSlotDragDrop_Parent: {fileID: 2100709244}
-  targetDragDrop: {fileID: 0}
-  currentDragDrop: {fileID: 0}
-  currentDragDropG: {fileID: 0}
-  dragSlot: {fileID: 0}
-  dropSlot: {fileID: 0}
+--- !u!1 &895149877
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 895149878}
+  - component: {fileID: 895149880}
+  - component: {fileID: 895149879}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &895149878
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895149877}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 895960099}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 176, y: 8.937}
+  m_SizeDelta: {x: 125.8182, y: 117.8741}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &895149879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895149877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &895149880
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895149877}
+  m_CullTransparentMesh: 1
 --- !u!1 &895960098
 GameObject:
   m_ObjectHideFlags: 0
@@ -1652,7 +1720,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 895149878}
   m_Father: {fileID: 489490098}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2153,7 +2222,7 @@ MonoBehaviour:
   pipeData:
     pipeID: 
     pos: {x: 0, y: 0}
-    pipeType: 4
+    pipeType: 5
     direction: 1
     pipeSlot: {fileID: 0}
   prefab: {fileID: 6650631247926007744, guid: 58c26a83dd27341aba3d9f655eeaf3bf, type: 3}
