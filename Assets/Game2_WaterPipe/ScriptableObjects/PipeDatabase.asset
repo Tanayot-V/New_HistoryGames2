@@ -15,13 +15,19 @@ MonoBehaviour:
   pipeModels:
   - pipeType: 0
     picture: {fileID: 0}
+    pictureWater: {fileID: 0}
   - pipeType: 1
     picture: {fileID: 21300000, guid: a1d696f05ff764ad99e72680da7ee676, type: 3}
+    pictureWater: {fileID: 0}
   - pipeType: 2
-    picture: {fileID: 21300000, guid: e613751e60e2d4b6c8a1222a728c8846, type: 3}
+    picture: {fileID: 21300000, guid: d9a2afc4cbe8948fab92b0e01451a3ab, type: 3}
+    pictureWater: {fileID: 21300000, guid: 826fb4622e2854408a452286ba32c6b2, type: 3}
   - pipeType: 3
-    picture: {fileID: 21300000, guid: 1b7b2446625d44e90b5ddfd12e6b2d65, type: 3}
+    picture: {fileID: 21300000, guid: 228ca6aeb088545da95f4694054aa6a4, type: 3}
+    pictureWater: {fileID: 21300000, guid: 46264f9f883714f90b962de71c9ba2ac, type: 3}
   - pipeType: 4
-    picture: {fileID: 21300000, guid: de6840a1adb9e44c8a9b5d7af06b6f5b, type: 3}
+    picture: {fileID: 21300000, guid: 8d58698a99ac648dba6976a718bbce19, type: 3}
+    pictureWater: {fileID: 21300000, guid: 07f0a0250c62941a9aeb4e18e6446518, type: 3}
   - pipeType: 5
-    picture: {fileID: 21300000, guid: a0f602249cabe407da0f032bb49c27df, type: 3}
+    picture: {fileID: 21300000, guid: ba4dfc96a836846e79ae196db5faa84b, type: 3}
+    pictureWater: {fileID: 21300000, guid: a838102ecfb17477d83c6d6a599fc2e9, type: 3}
