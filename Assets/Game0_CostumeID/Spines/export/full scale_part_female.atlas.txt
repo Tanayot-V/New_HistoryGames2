@@ -1,0 +1,209 @@
+
+full scale_part_female.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body_Femal/Guide1L
+  rotate: false
+  xy: 830, 1912
+  size: 51, 51
+  orig: 53, 53
+  offset: 1, 1
+  index: -1
+body_Femal/Guide1R
+  rotate: false
+  xy: 883, 1912
+  size: 51, 51
+  orig: 53, 53
+  offset: 1, 1
+  index: -1
+body_Femal/Guide2L
+  rotate: false
+  xy: 936, 1893
+  size: 70, 70
+  orig: 72, 72
+  offset: 1, 1
+  index: -1
+body_Femal/Guide2R
+  rotate: false
+  xy: 1008, 1893
+  size: 70, 70
+  orig: 72, 72
+  offset: 1, 1
+  index: -1
+body_Femal/Lining
+  rotate: true
+  xy: 283, 1429
+  size: 312, 341
+  orig: 312, 341
+  offset: 0, 0
+  index: -1
+body_Femal/arm_L
+  rotate: true
+  xy: 1618, 1797
+  size: 166, 303
+  orig: 166, 303
+  offset: 0, 0
+  index: -1
+body_Femal/arm_R
+  rotate: true
+  xy: 2, 1763
+  size: 166, 303
+  orig: 166, 303
+  offset: 0, 0
+  index: -1
+body_Femal/body
+  rotate: true
+  xy: 2, 798
+  size: 396, 787
+  orig: 396, 803
+  offset: 0, 8
+  index: -1
+body_Femal/glove_L
+  rotate: true
+  xy: 717, 1679
+  size: 212, 260
+  orig: 212, 260
+  offset: 0, 0
+  index: -1
+body_Femal/glove_R
+  rotate: true
+  xy: 1354, 1621
+  size: 212, 260
+  orig: 212, 260
+  offset: 0, 0
+  index: -1
+body_Femal/hand_L
+  rotate: true
+  xy: 307, 1747
+  size: 174, 203
+  orig: 174, 203
+  offset: 0, 0
+  index: -1
+body_Femal/hand_R
+  rotate: true
+  xy: 512, 1743
+  size: 174, 203
+  orig: 174, 203
+  offset: 0, 0
+  index: -1
+body_Femal/head/eye
+  rotate: false
+  xy: 533, 1921
+  size: 118, 42
+  orig: 118, 42
+  offset: 0, 0
+  index: -1
+body_Femal/head/eye_BG
+  rotate: false
+  xy: 381, 1923
+  size: 150, 40
+  orig: 150, 40
+  offset: 0, 0
+  index: -1
+body_Femal/head/eyebrow
+  rotate: false
+  xy: 66, 1936
+  size: 155, 27
+  orig: 155, 27
+  offset: 0, 0
+  index: -1
+body_Femal/head/eyelash
+  rotate: false
+  xy: 653, 1919
+  size: 175, 44
+  orig: 179, 44
+  offset: 4, 0
+  index: -1
+body_Femal/head/eyelid
+  rotate: false
+  xy: 223, 1931
+  size: 156, 32
+  orig: 156, 32
+  offset: 0, 0
+  index: -1
+body_Femal/head/face
+  rotate: true
+  xy: 2, 1536
+  size: 225, 279
+  orig: 225, 279
+  offset: 0, 0
+  index: -1
+body_Femal/head/hairA
+  rotate: false
+  xy: 1519, 851
+  size: 436, 542
+  orig: 436, 542
+  offset: 0, 0
+  index: -1
+body_Femal/head/mouth
+  rotate: false
+  xy: 18, 1947
+  size: 46, 16
+  orig: 46, 16
+  offset: 0, 0
+  index: -1
+body_Femal/head/nose
+  rotate: true
+  xy: 2, 1957
+  size: 6, 14
+  orig: 6, 14
+  offset: 0, 0
+  index: -1
+body_Femal/leg_L
+  rotate: true
+  xy: 626, 1395
+  size: 197, 1172
+  orig: 197, 1172
+  offset: 0, 0
+  index: -1
+body_Femal/leg_R
+  rotate: true
+  xy: 2, 1196
+  size: 197, 1172
+  orig: 197, 1172
+  offset: 0, 0
+  index: -1
+body_Femal/shoes/vintage/shoes_L
+  rotate: true
+  xy: 1349, 1835
+  size: 128, 267
+  orig: 128, 267
+  offset: 0, 0
+  index: -1
+body_Femal/shoes/vintage/shoes_R
+  rotate: true
+  xy: 1080, 1836
+  size: 127, 267
+  orig: 127, 267
+  offset: 0, 0
+  index: -1
+body_Femal/shoulder_L
+  rotate: true
+  xy: 979, 1632
+  size: 201, 373
+  orig: 201, 373
+  offset: 0, 0
+  index: -1
+body_Femal/shoulder_R
+  rotate: true
+  xy: 1616, 1594
+  size: 201, 373
+  orig: 201, 373
+  offset: 0, 0
+  index: -1
+body_Femal/skirt/vintage
+  rotate: true
+  xy: 791, 2
+  size: 847, 1125
+  orig: 847, 1125
+  offset: 0, 0
+  index: -1
+body_Femal/ซับใน
+  rotate: true
+  xy: 1176, 1081
+  size: 312, 341
+  orig: 312, 341
+  offset: 0, 0
+  index: -1
