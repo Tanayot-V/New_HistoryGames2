@@ -17,7 +17,7 @@ MonoBehaviour:
     picture: {fileID: 0}
     pictureWater: {fileID: 0}
   - pipeType: 1
-    picture: {fileID: 21300000, guid: a1d696f05ff764ad99e72680da7ee676, type: 3}
+    picture: {fileID: 21300000, guid: d901c88640b054b4f88fcbac17e24f29, type: 3}
     pictureWater: {fileID: 0}
   - pipeType: 2
     picture: {fileID: 21300000, guid: d9a2afc4cbe8948fab92b0e01451a3ab, type: 3}

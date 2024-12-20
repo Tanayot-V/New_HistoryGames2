@@ -13,7 +13,6 @@ public class GameManager : Singletons<GameManager>
     public void Start()
     {
         gridSystem.CreateGrid();
-        //pipeManager.RandomPipeMap();
     }
 
     public GridSystem GridSystem()

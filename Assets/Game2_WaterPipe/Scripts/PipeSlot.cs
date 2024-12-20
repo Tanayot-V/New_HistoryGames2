@@ -29,7 +29,8 @@ public class PipeSlot : MonoBehaviour
     public void InitSlot(PipeData _pipeData)
     {
         pipeData = _pipeData;
-        pipeData.pipeType = (PipeType)Random.Range(0, 5);
+        //pipeData.pipeType = (PipeType)Random.Range(0, 5);
+        pipeData.pipeType = PipeType.None;
         SetupPipe(pipeData);
     }
 
@@ -83,11 +84,14 @@ public class PipeSlot : MonoBehaviour
     {
         if (pipeData.pipeType == PipeType.None) return;
         if (pipeData.pipeType == PipeType.Obstacle) return;
-
+        Rotat();
+        /*
         mouseDownTime = Time.time;
         isDragging = false;
+        */
     }
 
+    /*
     void OnMouseDrag()
     {
         if (pipeData.pipeType == PipeType.None) return;
@@ -110,10 +114,11 @@ public class PipeSlot : MonoBehaviour
             Rotat();
         }
     }
-
+    */
     public void OnMouseOver()
     {
         if (pipeData.pipeType == PipeType.Obstacle) return;
+        if (pipeData.pipeType == PipeType.None) return;
         ColorGrey();
     }
 

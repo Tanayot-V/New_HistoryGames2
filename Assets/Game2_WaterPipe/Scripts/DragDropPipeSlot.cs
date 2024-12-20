@@ -51,7 +51,7 @@ public class DragDropPipeSlot : MonoBehaviour
         //Set dropslot DDUI
         gameManager.OnMouseUpDropUI(pipeData);
         //Set dropslot DDGW
-        gameManager.OnMouseUpDropGW(triggerObj, pipeData);
+        //gameManager.OnMouseUpDropGW(triggerObj, pipeData);
         Destroy(this.gameObject);
     }
 
