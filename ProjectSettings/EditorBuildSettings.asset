@@ -6,12 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 0
-    path: Assets/Game0_CostumeID/Scenes/CostumeID.unity
-    guid: 6dc95327910594fc3a429b7d6dcf15b8
-  - enabled: 1
     path: Assets/Game2_WaterPipe/Scenes/Lobby.unity
     guid: 9428554745f784f3381e87b6eb5b478d
   - enabled: 1

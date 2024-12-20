@@ -4,7 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Empty
+  - FxTemporaire
+  - UI
   layers:
   - Default
   - TransparentFX
@@ -12,11 +13,11 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Enemy
+  - Bullet
+  - Entity
+  - Monk
+  - Fortress
   - 
   - 
   - 
@@ -41,4 +42,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 1395208501
+    locked: 0
+  - name: Turrets
+    uniqueID: 2952971893
+    locked: 0
+  - name: General
+    uniqueID: 2516599105
+    locked: 0
+  - name: UI
+    uniqueID: 2803984745
     locked: 0

@@ -1,6 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
+#if UNITY_EDITOR
 [CustomEditor(typeof(GridSystem))]
 public class GridSystemEditor : Editor
 {
@@ -9,7 +10,7 @@ public class GridSystemEditor : Editor
         base.OnInspectorGUI();
 
         GridSystem gridManager = (GridSystem)target;
-
+#if !UNITY_WEBGL
         if (GUILayout.Button("Create Grid"))
         {
             gridManager.CreateGrid();
@@ -27,6 +28,7 @@ public class GridSystemEditor : Editor
                 }
             }
         }
+#endif
     }
-
 }
+#endif
