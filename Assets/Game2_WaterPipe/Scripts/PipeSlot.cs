@@ -62,11 +62,10 @@ public class PipeSlot : MonoBehaviour
         if (isDragging) return;
         if (isRotating) return;
 
-        targetRotationZ += 90f;
-        pipeData.direction = (Direction)(((int)pipeData.direction + 1) % 5);
-        if (pipeData.direction == Direction.None) pipeData.direction = Direction.Up;
+        targetRotationZ -= 90f;
+        pipeData.direction = (Direction)(((int)pipeData.direction + 1) % 4);
 
-        transform.DORotate(new Vector3(0, 0, targetRotationZ), 0.5f, RotateMode.FastBeyond360)
+        transform.DORotate(new Vector3(0, 0, targetRotationZ), 0.5f, RotateMode.Fast)
             .SetEase(Ease.OutQuad)
             .OnStart(() =>
             {

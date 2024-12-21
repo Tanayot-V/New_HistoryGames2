@@ -41,11 +41,10 @@ public class PipeData
 
 public enum Direction
 {
-    None = 0,
-    Up = 1,
-    Right = 2,
-    Down = 3,
-    Left = 4
+    Up = 0,
+    Right = 1,
+    Down = 2,
+    Left = 3
 }
 
 public enum PipeType
@@ -56,6 +55,9 @@ public enum PipeType
     Degree90 = 3,
     Tee = 4,
     Cross = 5,
+    Start = 6,
+    End = 7,
+    Map = 8
 }
 
 public class PipeManager : MonoBehaviour
@@ -107,7 +109,7 @@ public class PipeManager : MonoBehaviour
             {
                 o.pipeType = _pipeData.pipeType;
                 o.direction = _pipeData.direction;
-                Debug.Log($"UpdatePipe: {pipeDatasDIC[_pos].pos} | {pipeDatasDIC[_pos].pipeType} | {pipeDatasDIC[_pos].direction}");
+                //Debug.Log($"UpdatePipe: {pipeDatasDIC[_pos].pos} | {pipeDatasDIC[_pos].pipeType} | {pipeDatasDIC[_pos].direction}");
             }
         });
     }

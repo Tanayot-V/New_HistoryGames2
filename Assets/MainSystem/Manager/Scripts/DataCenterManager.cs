@@ -50,7 +50,11 @@ public class DataCenterManager : MonoBehaviour
 
     public static string GenerateID()
     {
-        int length = 10;
+        return GenerateID(10);
+    }
+    public static string GenerateID(int _length)
+    {
+        int length = _length;
         const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
         StringBuilder result = new StringBuilder(length);
 

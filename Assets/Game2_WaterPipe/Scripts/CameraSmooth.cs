@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace CityTycoon
 {
@@ -12,6 +13,7 @@ namespace CityTycoon
         public float minZoom = 5.0f;
         public float maxZoom = 50.0f;
         public Rect moveArea;
+        public SpriteRenderer moveAreaObj;
         public LayerMask dragLayerMask; // Add this
 
         private Vector3 dragOrigin;
@@ -26,6 +28,10 @@ namespace CityTycoon
         void Start()
         {
             cam = GetComponent<Camera>();
+            moveArea.x = moveAreaObj.bounds.min.x;
+            moveArea.y = moveAreaObj.bounds.min.y;
+            moveArea.width = moveAreaObj.bounds.max.x;
+            moveArea.height = moveAreaObj.bounds.max.y;
         }
 
         void Update()
@@ -40,7 +46,7 @@ namespace CityTycoon
             if (Input.GetMouseButtonDown(0))
             {
                 // ตรวจสอบว่าไม่ใช่การคลิกบน UI หรือเกมอ็อบเจ็กต์
-                if (!UiController.IsPointerOverUIObject())
+                if (!IsPointerOverGameObject())
                 {
                     dragOrigin = Input.mousePosition;
                     isDragging = true;
@@ -61,7 +67,7 @@ namespace CityTycoon
 
                 if (touch.phase == TouchPhase.Began)
                 {
-                    if (!UiController.IsPointerOverUIObject())
+                    if (!IsPointerOverGameObject())
                     {
                         dragOrigin = touch.position;
                         isDragging = true;
@@ -76,7 +82,12 @@ namespace CityTycoon
                 if (isDragging && touch.phase == TouchPhase.Moved)
                 {
                     Vector3 difference = Camera.main.ScreenToWorldPoint(touch.position) - Camera.main.ScreenToWorldPoint(dragOrigin);
-                    Camera.main.transform.position -= difference;
+                    Vector3 newPosition = cam.transform.position - difference;
+                    float halfHeight = cam.orthographicSize;
+                    float halfWidth = cam.aspect * halfHeight;
+                    newPosition.x = Mathf.Clamp(newPosition.x, moveArea.x + halfWidth, moveArea.width - halfWidth);
+                    newPosition.y = Mathf.Clamp(newPosition.y, moveArea.y + halfHeight, moveArea.height - halfHeight);
+                    cam.transform.position = newPosition;
                     dragOrigin = touch.position;
                 }
             }
@@ -85,15 +96,12 @@ namespace CityTycoon
             if (isDragging && Input.GetMouseButton(0))
             {
                 Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - Camera.main.ScreenToWorldPoint(dragOrigin);
-                //Camera.main.transform.position -= difference;
-
                 Vector3 newPosition = cam.transform.position - difference;
                 float halfHeight = cam.orthographicSize;
                 float halfWidth = cam.aspect * halfHeight;
-                newPosition.x = Mathf.Clamp(newPosition.x, moveArea.xMin + halfWidth, moveArea.xMax - halfWidth);
-                newPosition.y = Mathf.Clamp(newPosition.y, moveArea.yMin + halfHeight, moveArea.yMax - halfHeight);
+                newPosition.x = Mathf.Clamp(newPosition.x, moveArea.x + halfWidth, moveArea.width - halfWidth);
+                newPosition.y = Mathf.Clamp(newPosition.y, moveArea.y + halfHeight, moveArea.height - halfHeight);
                 cam.transform.position = newPosition;
-
                 dragOrigin = Input.mousePosition;
             }
         }
@@ -109,6 +117,12 @@ namespace CityTycoon
                 size -= scroll * zoomSpeed;
                 size = Mathf.Clamp(size, minZoom, maxZoom);
                 Camera.main.orthographicSize = size;
+                Vector3 newPosition = cam.transform.position;
+                float halfHeight = cam.orthographicSize;
+                float halfWidth = cam.aspect * halfHeight;
+                newPosition.x = Mathf.Clamp(newPosition.x, moveArea.x + halfWidth, moveArea.width - halfWidth);
+                newPosition.y = Mathf.Clamp(newPosition.y, moveArea.y + halfHeight, moveArea.height - halfHeight);
+                cam.transform.position = newPosition;
             }
 
             // ตรวจจับการสัมผัสสองจุด
@@ -132,6 +146,12 @@ namespace CityTycoon
 
                     // ปรับขนาดกล้อง
                     Camera.main.orthographicSize = Mathf.Clamp(initialZoom * pinchRatio, minZoom, maxZoom);
+                    Vector3 newPosition = cam.transform.position;
+                    float halfHeight = cam.orthographicSize;
+                    float halfWidth = cam.aspect * halfHeight;
+                    newPosition.x = Mathf.Clamp(newPosition.x, moveArea.x + halfWidth, moveArea.width - halfWidth);
+                    newPosition.y = Mathf.Clamp(newPosition.y, moveArea.y + halfHeight, moveArea.height - halfHeight);
+                    cam.transform.position = newPosition;
                 }
             }
             else
@@ -143,10 +163,17 @@ namespace CityTycoon
 
         bool IsPointerOverGameObject()
         {
-            RaycastHit2D[] hits = Physics2D.GetRayIntersectionAll(Camera.main.ScreenPointToRay(Input.mousePosition));
-            if (hits.Length > 0)
+            PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
+            eventDataCurrentPosition.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+            List<RaycastResult> results = new List<RaycastResult>();
+            EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
+
+            foreach (RaycastResult result in results)
             {
-                return true;
+                if (result.gameObject.tag != "GamePlay")
+                {
+                    return true;
+                }
             }
             return false;
         }

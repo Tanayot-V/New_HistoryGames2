@@ -6,6 +6,8 @@ TagManager:
   tags:
   - FxTemporaire
   - UI
+  - Empty
+  - GamePlay
   layers:
   - Default
   - TransparentFX

@@ -29,7 +29,6 @@ public class DragDropManager : MonoBehaviour
 
     private Dictionary<Direction, float> directionToRotation = new Dictionary<Direction, float>()
     {
-        { Direction.None, 0f },
         { Direction.Up, 0f },
         { Direction.Right, 90f },
         { Direction.Down, -180f },
