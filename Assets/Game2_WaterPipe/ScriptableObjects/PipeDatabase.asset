@@ -16,18 +16,24 @@ MonoBehaviour:
   - pipeType: 0
     picture: {fileID: 0}
     pictureWater: {fileID: 0}
+    pictureBroke: {fileID: 0}
   - pipeType: 1
     picture: {fileID: 21300000, guid: d901c88640b054b4f88fcbac17e24f29, type: 3}
     pictureWater: {fileID: 0}
+    pictureBroke: {fileID: 0}
   - pipeType: 2
-    picture: {fileID: 21300000, guid: d9a2afc4cbe8948fab92b0e01451a3ab, type: 3}
-    pictureWater: {fileID: 21300000, guid: 826fb4622e2854408a452286ba32c6b2, type: 3}
+    picture: {fileID: 21300000, guid: 5d918eef680f74a0a810a0f0a2e4168f, type: 3}
+    pictureWater: {fileID: 21300000, guid: d10460378fd6e40749103698ba4ce40f, type: 3}
+    pictureBroke: {fileID: 21300000, guid: f4f5c22326dbb4c989a31359d64ed0ed, type: 3}
   - pipeType: 3
-    picture: {fileID: 21300000, guid: 228ca6aeb088545da95f4694054aa6a4, type: 3}
-    pictureWater: {fileID: 21300000, guid: 46264f9f883714f90b962de71c9ba2ac, type: 3}
+    picture: {fileID: 21300000, guid: 88bfd29dab8454fea825d495dc04bfd1, type: 3}
+    pictureWater: {fileID: 21300000, guid: 55af8ba551a1343b687bbf74c6ab44c7, type: 3}
+    pictureBroke: {fileID: 21300000, guid: 117976d03c2324659bd2ca7b32ce61dd, type: 3}
   - pipeType: 4
-    picture: {fileID: 21300000, guid: 8d58698a99ac648dba6976a718bbce19, type: 3}
-    pictureWater: {fileID: 21300000, guid: 07f0a0250c62941a9aeb4e18e6446518, type: 3}
+    picture: {fileID: 21300000, guid: 8f5ff18433c6245959ba8f9a12bedc4e, type: 3}
+    pictureWater: {fileID: 21300000, guid: a69149710ba094ac1b7a0d5827301d3d, type: 3}
+    pictureBroke: {fileID: 21300000, guid: 7311dbaeaeee24a32a36f8bda6ab8420, type: 3}
   - pipeType: 5
-    picture: {fileID: 21300000, guid: ba4dfc96a836846e79ae196db5faa84b, type: 3}
-    pictureWater: {fileID: 21300000, guid: a838102ecfb17477d83c6d6a599fc2e9, type: 3}
+    picture: {fileID: 21300000, guid: 58ec0dfd9f6004a28b939b46c26de68c, type: 3}
+    pictureWater: {fileID: 21300000, guid: b9999cd267153423a9c3d2605d8942ac, type: 3}
+    pictureBroke: {fileID: 21300000, guid: 5d8fbb4e991b64dcd879e7405ab4f548, type: 3}
