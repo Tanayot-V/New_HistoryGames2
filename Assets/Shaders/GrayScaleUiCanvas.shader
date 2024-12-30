@@ -10,6 +10,12 @@ Shader "Unlit/GrayScaleUiCanvas"
         Blend SrcAlpha OneMinusSrcAlpha
         Pass
         {
+            Stencil {
+                Ref 1
+                Comp Equal
+                Pass Keep
+            }
+
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag

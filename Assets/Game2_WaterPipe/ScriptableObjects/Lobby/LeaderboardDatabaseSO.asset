@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e23ff403d747c4dff8c51eab1493456b, type: 3}
+  m_Name: LeaderboardDatabaseSO
+  m_EditorClassIdentifier: 
+  leaderboardState:
+    order: 100
+    userID: 00255447453
+    displayName: "\u0E2B\u0E21\u0E39\u0E40\u0E14\u0E49\u0E07"
+    picture: {fileID: 21300000, guid: 80db824d831de40738c323cbc9d87c09, type: 3}
+    score: 3000
+  leaderboardStatesList:
+  - order: 1
+    userID: 00255448960
+    displayName: "\u0E2B\u0E21\u0E39\u0E15\u0E38\u0E4B\u0E19"
+    picture: {fileID: 21300000, guid: 6e28c413115994d92bb2b3ac0cb7d72e, type: 3}
+    score: 20000
+  - order: 2
+    userID: 00255442345
+    displayName: "\u0E40\u0E2D\u0E27\u0E32"
+    picture: {fileID: 21300000, guid: 45fdb8ba9599140989d392e62356289c, type: 3}
+    score: 19000
+  - order: 3
+    userID: 00255443452
+    displayName: "\u0E19\u0E49\u0E2D\u0E07\u0E40\u0E2A\u0E37\u0E2D"
+    picture: {fileID: 21300000, guid: 6044fe9d5fcf9467e9787827b88ad01d, type: 3}
+    score: 18000
+  - order: 4
+    userID: 00255440987
+    displayName: PLAYER
+    picture: {fileID: 21300000, guid: 80db824d831de40738c323cbc9d87c09, type: 3}
+    score: 17000
+  - order: 5
+    userID: 00255441234
+    displayName: BATMAN
+    picture: {fileID: 21300000, guid: 6e28c413115994d92bb2b3ac0cb7d72e, type: 3}
+    score: 16000
+  - order: 6
+    userID: 00255447676
+    displayName: PLAYER2
+    picture: {fileID: 21300000, guid: 45fdb8ba9599140989d392e62356289c, type: 3}
+    score: 15000
+  - order: 7
+    userID: 00255440023
+    displayName: PLAYER3
+    picture: {fileID: 21300000, guid: 6044fe9d5fcf9467e9787827b88ad01d, type: 3}
+    score: 14000
+  - order: 8
+    userID: 00255444345
+    displayName: PLAYER4
+    picture: {fileID: 21300000, guid: 80db824d831de40738c323cbc9d87c09, type: 3}
+    score: 13000
+  - order: 9
+    userID: 00255443223
+    displayName: PLAYER5
+    picture: {fileID: 21300000, guid: 6e28c413115994d92bb2b3ac0cb7d72e, type: 3}
+    score: 12000
+  - order: 10
+    userID: 00255441643
+    displayName: PLAYER6
+    picture: {fileID: 21300000, guid: 45fdb8ba9599140989d392e62356289c, type: 3}
+    score: 11000
