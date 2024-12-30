@@ -10,7 +10,7 @@ public class PipeStart : MonoBehaviour, IPointerClickHandler
     // Start is called before the first frame update
     void Start()
     {
-        
+        pipeObject = GetComponent<PipeObject>();
     }
 
     // Update is called once per frame

@@ -14,26 +14,34 @@ public class GridCanvas : MonoBehaviour
     public int columns = 8;
     public float slotSize = 1f;
 
-     public TextAsset levelData;
+    public TextAsset levelData;
+
+    private string[,] dataString;
 
     public PipeSlotCanvas[,] slots;
 
     public GridElementDataBase gridDatabase;
 
+    public Transform decorateParent;
+
     void Start()
     {
-        //CreateGrid();
-        //CreateLevel();
-        // slots = new PipeSlotCanvas[columns, rows];
-        // for (int x = 0; x < columns; x++)
-        // {
-        //     for (int y = 0; y < rows; y++)
-        //     {
-        //         slots[x,y] = GameObject.Find("Slot_" + x + "-" + y).GetComponent<PipeSlotCanvas>();
-        //         if(slots[x,y] != null)
-        //             Debug.Log(slots[x,y].name);
-        //     }
-        // }
+        string[] lines = levelData.text.Split('\n');
+        string[] cell = lines[0].Split(',');
+        rows = lines.Length;
+        columns = cell.Length;
+        dataString = new string[columns,rows];
+        for (int y = 0; y < rows; y++)
+        {
+            string line = lines[rows - y - 1];
+            cell = line.Split(',');
+            for (int x = 0; x < columns; x++)
+            {
+                dataString[x,y] = cell[x];
+            }
+        }
+        CreateGrid();
+        CreateLevel();
     }
 
     public void CreateGrid()
@@ -105,9 +113,10 @@ public class GridCanvas : MonoBehaviour
             Debug.Log($"Load Data : {data.datas.Count}");
             for (int i = 0; i < data.datas.Count; i++)
             {
-                if(slots[data.datas[i].posX, data.datas[i].posY].isDefault) continue;
                 if(slots[data.datas[i].posX, data.datas[i].posY].item != null)
                 {
+                    string slotItemData = this.dataString[data.datas[i].posX, data.datas[i].posY];
+                    if(slotItemData.StartsWith("4") || slotItemData.StartsWith("1") || slotItemData.StartsWith("2")) continue;
                     Destroy(slots[data.datas[i].posX, data.datas[i].posY].item);
                 }
                 PipeModel pm = GameManager.Instance.pipeManager.GetPipeModel(data.datas[i].pipeType);
@@ -118,44 +127,68 @@ public class GridCanvas : MonoBehaviour
                 po.pipeData.direction = data.datas[i].direction;
                 po.transform.rotation = Quaternion.Euler(0, 0, GameManager.Instance.pipeManager.GetRotationZ(data.datas[i].direction));
             }
-
         }
     }
 
     public void CreateLevel()
     {
-        string[] lines = levelData.text.Split('\n');
-        for (int y = 0; y < lines.Length; y++)
+        for (int y = 0; y < rows; y++)
         {
-            string line = lines[lines.Length - y - 1];
-            string[] cell = line.Split(',');
-            for (int x = 0; x < cell.Length; x++)
+            for (int x = 0; x < columns; x++)
             {
                 string id = "";
-                if(cell[x].StartsWith("0")) continue;
-                else if(cell[x].StartsWith("40"))
+                if(dataString[x,y].StartsWith("0")) continue;
+                else if(dataString[x,y].StartsWith("40"))
                 {
                     id = "40000";
-                    if(cell[x] == "40005")
-                    {
-                        id = "40005";
-                    }
                 }
-                else if(cell[x].StartsWith("1") || cell[x].StartsWith("2"))
+                else if(dataString[x,y].StartsWith("1") || dataString[x,y].StartsWith("2"))
                 {
-                    id = cell[x].Substring(0, 3) + "00";
+                    id = dataString[x,y].Substring(0, 3) + "00";
                 }
-                else if(cell[x] == "30001" || cell[x] == "30002")
+                else if(dataString[x,y] == "30001" || dataString[x,y] == "30002")
                 {
-                    id = cell[x];
+                    id = dataString[x,y];
                 }
-                else if(cell[x] == "30013" || cell[x] == "30020") continue;
-                Debug.Log($"{x}-{y} : {id}");
+                else if(dataString[x,y] == "30013" || dataString[x,y] == "30020") continue;
+                Debug.Log($"{x}-{y} : {dataString[x,y]}");
                 GridObject gridObj = gridDatabase.GetGridObjectByID(id);
                 GameObject go = Instantiate(gridObj.prefab, slots[x, y].transform);
                 go.transform.localPosition = Vector3.zero;
                 slots[x, y].item = go;
+                CreateDecorate(x,y);
             }
+        }
+    }
+
+    public void CreateDecorate(int _x, int _y)
+    {
+        if(dataString[_x,_y] == "00") return;
+        string id = dataString[_x,_y].Substring(3, 2);
+        if(id == "01") return;
+        string id_x = "00";
+        string id_y = "00";
+        if(_x >= 1)
+        {
+            if(!dataString[_x-1,_y].StartsWith("0"))
+            {
+                id_x = dataString[_x-1,_y].Substring(3, 2);
+            }
+        }
+        if(_y >= 1)
+        {
+            if(!dataString[_x,_y-1].StartsWith("0"))
+            {
+                id_y= dataString[_x,_y-1].Substring(3, 2);
+            }
+        }
+        if((id != id_x && id != id_y) || id == "05" || id == "14")
+        {
+            GridObject gridObj = gridDatabase.GetDecorateObjectByID(id);
+            if(gridObj == null) return;
+            GameObject go = Instantiate(gridObj.prefab, slots[_x, _y].transform);
+            go.transform.localPosition = Vector3.zero;
+            go.transform.SetParent(decorateParent);
         }
     }
 }

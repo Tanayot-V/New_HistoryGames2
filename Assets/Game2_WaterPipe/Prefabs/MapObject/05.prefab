@@ -13,9 +13,8 @@ GameObject:
   - component: {fileID: 1774551157188587090}
   - component: {fileID: 3032253375736626410}
   - component: {fileID: 3080080936356239153}
-  - component: {fileID: 76784248727246874}
   m_Layer: 5
-  m_Name: 30001
+  m_Name: 05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61,14 +60,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.79607844}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a841384fe68348c40a154e0800042d7a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f6c2e7ebac354f640ae3c7408b0e40ce, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -111,16 +110,3 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
---- !u!114 &76784248727246874
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3861792130752447957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1284211f97070e4988c13d122c9aaed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pipeObject: {fileID: 0}
