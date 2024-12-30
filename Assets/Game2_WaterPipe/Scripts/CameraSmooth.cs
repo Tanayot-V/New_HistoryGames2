@@ -28,10 +28,7 @@ namespace CityTycoon
         void Start()
         {
             cam = GetComponent<Camera>();
-            moveArea.x = moveAreaObj.bounds.min.x;
-            moveArea.y = moveAreaObj.bounds.min.y;
-            moveArea.width = moveAreaObj.bounds.max.x;
-            moveArea.height = moveAreaObj.bounds.max.y;
+            CalculateArea();
         }
 
         void Update()
@@ -176,6 +173,20 @@ namespace CityTycoon
                 }
             }
             return false;
+        }
+
+        public void SetMoveArea(SpriteRenderer newArea)
+        {
+            moveAreaObj = newArea;
+            CalculateArea();
+        }
+
+        private void CalculateArea()
+        {
+            moveArea.x = moveAreaObj.bounds.min.x;
+            moveArea.y = moveAreaObj.bounds.min.y;
+            moveArea.width = moveAreaObj.bounds.max.x;
+            moveArea.height = moveAreaObj.bounds.max.y;
         }
     }
 }

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1774541973422319566}
   - component: {fileID: 2018516591943421899}
   m_Layer: 5
-  m_Name: PipeStart
+  m_Name: 11500
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -104,12 +104,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pipeData:
     pos: {x: 0, y: 0}
-    pipeType: 6
-    direction: 0
+    pipeType: 8
+    direction: 14
   isRotating: 0
   duration: 0.5
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
+  canpass2: 0
 --- !u!114 &2018516591943421899
 MonoBehaviour:
   m_ObjectHideFlags: 0

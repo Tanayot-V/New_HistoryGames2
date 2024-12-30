@@ -42,7 +42,18 @@ public enum Direction
     Up = 0,
     Right = 1,
     Down = 2,
-    Left = 3
+    Left = 3,
+    U_R = 4,
+    U_L = 5,
+    D_R = 6,
+    D_L = 7,
+    U_R_D = 8,
+    R_D_L = 9,
+    D_L_U = 10,
+    L_U_R = 11,
+    All = 12,
+    U_D = 13,
+    L_R = 14, 
 }
 
 public enum PipeType

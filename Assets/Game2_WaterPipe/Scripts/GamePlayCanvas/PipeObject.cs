@@ -20,7 +20,8 @@ public class PipeObject : MonoBehaviour
 
     void Start()
     {
-        if(pipeData != null) pipeData.pos = GetComponentInParent<PipeSlotCanvas>().pos;
+        PipeSlotCanvas slot = GetComponentInParent<PipeSlotCanvas>();
+        if(slot != null) pipeData.pos = slot.pos;
         if(waterFillImg0 != null) waterFillImg0.fillAmount = 0;
         if(waterFillImg1 != null) waterFillImg1.fillAmount = 0;
     }

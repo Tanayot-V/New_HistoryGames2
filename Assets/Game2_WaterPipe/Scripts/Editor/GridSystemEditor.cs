@@ -15,6 +15,11 @@ public class GridSystemEditor : Editor
             gridManager.CreateGrid();
         }
 
+        if (GUILayout.Button("Create Level"))
+        {
+            gridManager.CreateLevel();
+        }
+
         if (GUILayout.Button("Clear Grid"))
         {
             gridManager.ClearGrid();
