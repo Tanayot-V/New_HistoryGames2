@@ -2,17 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LobbyGameManager : MonoBehaviour
+public class LobbyGameManager : Singletons<LobbyGameManager>
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public DiaryManager diaryManager;
 
-    // Update is called once per frame
-    void Update()
+    public void Start()
     {
-        
+        diaryManager.InitDiary();
     }
 }

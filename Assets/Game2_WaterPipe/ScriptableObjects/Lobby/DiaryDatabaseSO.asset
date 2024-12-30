@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11bd5fa6107e748cc8070c5f96da826e, type: 3}
+  m_Name: DiaryDatabaseSO
+  m_EditorClassIdentifier: 
+  diaryModelSO:
+  - {fileID: 11400000, guid: 77951fd0505c345e0bff72d3ff940aff, type: 2}
+  - {fileID: 11400000, guid: c7182fc3dcdb74b31824d3fcdae65e73, type: 2}
+  - {fileID: 11400000, guid: 1b82483152a7e434f8f23958a9f1119b, type: 2}
+  - {fileID: 11400000, guid: acf858972498a459693c20d530913d51, type: 2}
+  - {fileID: 11400000, guid: 499fb9b9ce59a457b8be83a93eff6f22, type: 2}
+  - {fileID: 11400000, guid: f1ecd7a7465d04230862a28aedabc581, type: 2}
+  - {fileID: 11400000, guid: 9ffeb6b1f57d34b0290ec6f7c0e42da1, type: 2}
+  - {fileID: 11400000, guid: b8156164c14a94a6c849f678afe39957, type: 2}
+  - {fileID: 11400000, guid: 45e1b19f90419456d95e68248436f1f3, type: 2}
+  - {fileID: 11400000, guid: 86e83b1bf2d9d451e9b40249359c8fc3, type: 2}
