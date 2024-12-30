@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 
 public class PipeSlotCanvas : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerExitHandler
 {
+    public bool isDefault = false;
     public Vector2 pos;
     public GameObject item;
     private Image childImage;
@@ -17,6 +18,11 @@ public class PipeSlotCanvas : MonoBehaviour, IDropHandler, IPointerEnterHandler,
     {
         childImage = transform.GetChild(0).GetComponent<Image>();
         defaultColor = childImage.color;
+        if(transform.childCount > 1)
+        {
+            item = transform.GetChild(1).gameObject;
+            isDefault = true;
+        }
     }
 
     public void OnDrop(PointerEventData eventData)

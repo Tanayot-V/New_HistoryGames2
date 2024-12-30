@@ -16,18 +16,40 @@ MonoBehaviour:
   - pipeType: 0
     picture: {fileID: 0}
     pictureWater: {fileID: 0}
+    pictureWater1: {fileID: 0}
+    prefab: {fileID: 0}
   - pipeType: 1
-    picture: {fileID: 21300000, guid: d901c88640b054b4f88fcbac17e24f29, type: 3}
+    picture: {fileID: 21300000, guid: a8385f6827ab73f4ba903a8d4060844b, type: 3}
     pictureWater: {fileID: 0}
+    pictureWater1: {fileID: 0}
+    prefab: {fileID: 3861792130752447957, guid: ee932aa920cb15f44bff84813ab87e10, type: 3}
   - pipeType: 2
-    picture: {fileID: 21300000, guid: d9a2afc4cbe8948fab92b0e01451a3ab, type: 3}
-    pictureWater: {fileID: 21300000, guid: 826fb4622e2854408a452286ba32c6b2, type: 3}
+    picture: {fileID: 21300000, guid: f82c2d48479d5954fa19c1212f25408a, type: 3}
+    pictureWater: {fileID: 21300000, guid: c2b9b45787816334cba6d5c0782e01ea, type: 3}
+    pictureWater1: {fileID: 0}
+    prefab: {fileID: 8655483977313107075, guid: 674d26ed64f4fd74f903f931ff729dd3, type: 3}
   - pipeType: 3
-    picture: {fileID: 21300000, guid: 228ca6aeb088545da95f4694054aa6a4, type: 3}
-    pictureWater: {fileID: 21300000, guid: 46264f9f883714f90b962de71c9ba2ac, type: 3}
+    picture: {fileID: 21300000, guid: 7cf6c482d4e5caf4895f2ad9199e7463, type: 3}
+    pictureWater: {fileID: 21300000, guid: b3555c137256f4b459b50d051e11182b, type: 3}
+    pictureWater1: {fileID: 0}
+    prefab: {fileID: 2222765289126433992, guid: 6d7a505732fec4542a6c9571db1e2acf, type: 3}
   - pipeType: 4
-    picture: {fileID: 21300000, guid: 8d58698a99ac648dba6976a718bbce19, type: 3}
-    pictureWater: {fileID: 21300000, guid: 07f0a0250c62941a9aeb4e18e6446518, type: 3}
+    picture: {fileID: 21300000, guid: d15f2c8142197744785012b29b79da7d, type: 3}
+    pictureWater: {fileID: 21300000, guid: ff366990b30a8c44fbdb0173eb5f7ed0, type: 3}
+    pictureWater1: {fileID: 0}
+    prefab: {fileID: 3511690157973041910, guid: bc840fc022401a24c959bc1d0eca44c8, type: 3}
   - pipeType: 5
-    picture: {fileID: 21300000, guid: ba4dfc96a836846e79ae196db5faa84b, type: 3}
-    pictureWater: {fileID: 21300000, guid: a838102ecfb17477d83c6d6a599fc2e9, type: 3}
+    picture: {fileID: 21300000, guid: 977cdbced4455814f9de04a937c51cbb, type: 3}
+    pictureWater: {fileID: 21300000, guid: 90d0a67aa51ec974a9ba68738360329f, type: 3}
+    pictureWater1: {fileID: 0}
+    prefab: {fileID: 3980990991200340448, guid: 3b03456c36c5edb42b6d709c8b4251c0, type: 3}
+  - pipeType: 6
+    picture: {fileID: 21300000, guid: ccf1832af227b56449c9b3be4fc0a03f, type: 3}
+    pictureWater: {fileID: 21300000, guid: c8aad102b36524d4bb73d851eea18196, type: 3}
+    pictureWater1: {fileID: 21300000, guid: 42d0df59ded2519458edaedd6405249b, type: 3}
+    prefab: {fileID: 4660857821760680123, guid: ef24fac31707b9840837c09669dad0dc, type: 3}
+  - pipeType: 7
+    picture: {fileID: 21300000, guid: a376a09212aad8b4d94fc076bcd3fc19, type: 3}
+    pictureWater: {fileID: 21300000, guid: 1971ec5afcd403a458d9e71b3cc011c7, type: 3}
+    pictureWater1: {fileID: 21300000, guid: d1733027e07e8f246ac644e0ff41476a, type: 3}
+    prefab: {fileID: 1038189725363800363, guid: 9c6cc85e6d3fc914795b1688f2cbdef9, type: 3}

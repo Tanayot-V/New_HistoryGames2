@@ -6,9 +6,7 @@ using UnityEngine.UIElements;
 
 public class DragAndDropUISlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
-    public PipeData pipeData;
     public GameObject prefab;
-    public SpriteRenderer pipeSR;
     public Transform gameplayCanvas;
     private GameObject draggableItemObject;
     private DraggableItem draggableItem;

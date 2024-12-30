@@ -46,7 +46,7 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         {
             if(GameManager.Instance.onHammer)
             {
-                GameManager.Instance.GridCanvas().slots[(int)pipeObject.pipeData.pos.x, (int)pipeObject.pipeData.pos.y].item = null;
+                GameManager.Instance.gridCanvas.slots[(int)pipeObject.pipeData.pos.x, (int)pipeObject.pipeData.pos.y].item = null;
                 Destroy(gameObject);
                 GameManager.Instance.UseHammerComplete();
             }

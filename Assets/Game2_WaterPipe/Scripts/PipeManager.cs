@@ -10,26 +10,24 @@ public class PipeModel
     public PipeType pipeType;
     public Sprite picture;
     public Sprite pictureWater;
+    public Sprite pictureWater1;
+    public GameObject prefab;
 }
 
 [System.Serializable]
 public class PipeData
 {
-    public string pipeID;
     public Vector2 pos;
     public PipeType pipeType;
     public Direction direction;
-    public PipeSlot pipeSlot; //pipeSlot
 
     public PipeData(){}
 
-    public PipeData(string _pipeID,Vector2 _pos, PipeType _pipeType,Direction _direction, PipeSlot _pipeSlot)
+    public PipeData(Vector2 _pos, PipeType _pipeType,Direction _direction)
     {
-        this.pipeID = _pipeID;
         this.pos = _pos;
         this.pipeType = _pipeType;
         this.direction = _direction;
-        this.pipeSlot = _pipeSlot; //pipeSlot
     }
 
     public PipeData(PipeType _pipeType, Direction _direction)
@@ -55,9 +53,11 @@ public enum PipeType
     Degree90 = 3,
     Tee = 4,
     Cross = 5,
-    Start = 6,
-    End = 7,
-    Map = 8
+    StraightCross = 6,
+    Degree90Cross = 7,
+    Start = 8,
+    End = 9,
+    Map = 10
 }
 
 public class PipeManager : MonoBehaviour
@@ -67,14 +67,14 @@ public class PipeManager : MonoBehaviour
 
     [Header("PipeData")]
     [SerializeField] private List<PipeData> pipeDatas = new List<PipeData>();
-    [SerializeField] private Dictionary<Vector2,PipeData> pipeDatasDIC = new Dictionary<Vector2, PipeData>();
+    public Dictionary<Vector2,PipeData> pipeDatasDIC = new Dictionary<Vector2, PipeData>();
 
     public void RandomPipeMap()
     {
         pipeDatas.ForEach(o => {
             //Random PipeType
             o.pipeType = (PipeType)Random.Range(0, 5);
-            o.pipeSlot.InitSlot(o);
+
         });
     }
 
@@ -89,16 +89,30 @@ public class PipeManager : MonoBehaviour
         pipeDatas.Clear();
     }
 
-    public void SetColorDefaulfPipeSlotData()
-    {
-        pipeDatas.ForEach(o=> {
-            o.pipeSlot.GetComponent<PipeSlot>().ColorDefalut();
-        });
-    }
-
     public PipeModel GetPipeModel(PipeType _pipeType)
     {
         return pipeDatabase.GetPipeModel(_pipeType);
+    }
+
+    public float GetRotationZ(Direction dir)
+    {
+        float result = 0f;
+        switch (dir)
+        {
+            case Direction.Up:
+            result = 180f;
+            break;
+            case Direction.Right:
+            result = 90f;
+            break;
+            case Direction.Down:
+            result = 0f;
+            break;
+            case Direction.Left:
+            result = 270f;
+            break;
+        }
+        return result;
     }
 
     public void UpdatePipeSlotTOList(Vector2 _pos, PipeData _pipeData)
@@ -112,7 +126,5 @@ public class PipeManager : MonoBehaviour
                 //Debug.Log($"UpdatePipe: {pipeDatasDIC[_pos].pos} | {pipeDatasDIC[_pos].pipeType} | {pipeDatasDIC[_pos].direction}");
             }
         });
-    }
-
-   
+    }   
 }

@@ -36,7 +36,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -437, y: -640}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 128, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4028727723487080172
@@ -102,9 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pipeData:
-    pipeID: 
     pos: {x: 0, y: 0}
     pipeType: 7
     direction: 0
-    pipeSlot: {fileID: 0}
   isRotating: 0
