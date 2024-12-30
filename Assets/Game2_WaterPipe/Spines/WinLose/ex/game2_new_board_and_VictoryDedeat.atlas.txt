@@ -1,0 +1,68 @@
+
+game2_new_board_and_VictoryDedeat.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 1
+  rotate: false
+  xy: 1911, 2166
+  size: 1118, 469
+  orig: 1138, 491
+  offset: 10, 11
+  index: -1
+light1
+  rotate: false
+  xy: 2, 393
+  size: 2162, 1771
+  orig: 2162, 1771
+  offset: 0, 0
+  index: -1
+light2
+  rotate: true
+  xy: 2166, 2
+  size: 2162, 1771
+  orig: 2162, 1771
+  offset: 0, 0
+  index: -1
+star1
+  rotate: false
+  xy: 2, 2253
+  size: 390, 382
+  orig: 410, 405
+  offset: 10, 11
+  index: -1
+star3
+  rotate: false
+  xy: 2, 2253
+  size: 390, 382
+  orig: 410, 405
+  offset: 10, 11
+  index: -1
+star2
+  rotate: false
+  xy: 1461, 2197
+  size: 448, 438
+  orig: 466, 460
+  offset: 9, 11
+  index: -1
+star_BG
+  rotate: false
+  xy: 394, 2219
+  size: 1065, 416
+  orig: 1072, 424
+  offset: 4, 4
+  index: -1
+
+game2_new_board_and_VictoryDedeat2.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light3
+  rotate: false
+  xy: 2, 2
+  size: 2141, 3174
+  orig: 2143, 3183
+  offset: 1, 8
+  index: -1

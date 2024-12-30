@@ -56,5 +56,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "New_HistoryGames2.sln"
+    "dotnet.defaultSolution": "New_HistoryGames2.sln",
+    "dotnet.preferCSharpExtension": true
 }
