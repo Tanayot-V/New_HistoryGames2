@@ -6,12 +6,15 @@ using UnityEngine.EventSystems;
 public class Obstacle : MonoBehaviour, IPointerClickHandler
 {
     public PipeObject pipeObject;
-    private PipeSlotCanvas slot;
+    public PipeSlotCanvas slot;
     // Start is called before the first frame update
     void Start()
     {
         pipeObject = GetComponent<PipeObject>();
-        slot = GetComponentInParent<PipeSlotCanvas>();
+        if(pipeObject.pipeData.pipeType != PipeType.Road)
+        {
+            slot = GetComponentInParent<PipeSlotCanvas>();
+        }
     }
 
     // Update is called once per frame
@@ -21,10 +24,19 @@ public class Obstacle : MonoBehaviour, IPointerClickHandler
     }
     public void OnPointerClick(PointerEventData eventData)
     {
-        slot.item = null;
         //Open minigame
-
+        
         //Mini game Callback
+        if(pipeObject.pipeData.pipeType == PipeType.Road)
+        {
+            slot.roadObject = null;
+        }
+        else
+        {
+            slot.item = null;
+            slot.isDefault = false;
+        }
         Destroy(gameObject);
+
     }
 }

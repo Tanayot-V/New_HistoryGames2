@@ -24,6 +24,11 @@ public class GridCanvas : MonoBehaviour
 
     public Transform decorateParent;
 
+    public Transform roadParemt;
+
+    public string savelevelName;
+    public string loadlevelName;
+
     void Start()
     {
         string[] lines = levelData.text.Split('\n');
@@ -37,11 +42,16 @@ public class GridCanvas : MonoBehaviour
             cell = line.Split(',');
             for (int x = 0; x < columns; x++)
             {
-                dataString[x,y] = cell[x];
+                dataString[x, y] = cell[x].Trim();
             }
         }
         CreateGrid();
         CreateLevel();
+        
+        if(!string.IsNullOrEmpty(loadlevelName))
+        {
+            LoadState(loadlevelName);
+        }
     }
 
     public void CreateGrid()
@@ -110,17 +120,24 @@ public class GridCanvas : MonoBehaviour
         {
             string dataString = PlayerPrefs.GetString(levelname);
             Savadata data = JsonConvert.DeserializeObject<Savadata>(dataString);
-            Debug.Log($"Load Data : {data.datas.Count}");
+            //Debug.Log($"Load Data : {data.datas.Count}");
             for (int i = 0; i < data.datas.Count; i++)
             {
                 if(slots[data.datas[i].posX, data.datas[i].posY].item != null)
                 {
+                    Debug.Log($"detect default item at {data.datas[i].posX} : {data.datas[i].posY} = slotItemData");
                     string slotItemData = this.dataString[data.datas[i].posX, data.datas[i].posY];
-                    if(slotItemData.StartsWith("4") || slotItemData.StartsWith("1") || slotItemData.StartsWith("2")) continue;
-                    Destroy(slots[data.datas[i].posX, data.datas[i].posY].item);
+                    if(slotItemData.StartsWith("4") || slotItemData.StartsWith("1") || slotItemData.StartsWith("2"))
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        DestroyImmediate(slots[data.datas[i].posX, data.datas[i].posY].item);
+                    }
                 }
                 PipeModel pm = GameManager.Instance.pipeManager.GetPipeModel(data.datas[i].pipeType);
-                Debug.Log($"Load {data.datas[i].pipeType} Dir {data.datas[i].direction} At {data.datas[i].posX}:{data.datas[i].posY}");
+                //Debug.Log($"Load {data.datas[i].pipeType} Dir {data.datas[i].direction} At {data.datas[i].posX}:{data.datas[i].posY}");
                 PipeObject po = Instantiate(pm.prefab,slots[data.datas[i].posX, data.datas[i].posY].transform).GetComponent<PipeObject>();
                 po.transform.localPosition = Vector3.zero;
                 slots[data.datas[i].posX, data.datas[i].posY].item = po.gameObject;
@@ -146,16 +163,29 @@ public class GridCanvas : MonoBehaviour
                 {
                     id = dataString[x,y].Substring(0, 3) + "00";
                 }
-                else if(dataString[x,y] == "30001" || dataString[x,y] == "30002")
+                else if(dataString[x,y] == "30001" || dataString[x,y] == "30002" || dataString[x,y] == "30020")
                 {
                     id = dataString[x,y];
                 }
-                else if(dataString[x,y] == "30013" || dataString[x,y] == "30020") continue;
-                Debug.Log($"{x}-{y} : {dataString[x,y]}");
+                else if(dataString[x,y] == "30013")
+                {
+                    CreateRoad(x,y);
+                    continue;
+                }
+                //Debug.Log($"{x}-{y} : {dataString[x,y]} / {id}");
                 GridObject gridObj = gridDatabase.GetGridObjectByID(id);
                 GameObject go = Instantiate(gridObj.prefab, slots[x, y].transform);
                 go.transform.localPosition = Vector3.zero;
                 slots[x, y].item = go;
+                slots[x,y].isDefault = true;
+                if(dataString[x,y].StartsWith("1"))
+                {
+                    GameManager.Instance.pipeStarts.Add(go.GetComponent<PipeStart>());
+                }
+                if(dataString[x,y].StartsWith("2"))
+                {
+                    GameManager.Instance.pipeEnds.Add(go.GetComponent<PipeEnd>());
+                }
                 CreateDecorate(x,y);
             }
         }
@@ -190,6 +220,37 @@ public class GridCanvas : MonoBehaviour
             go.transform.localPosition = Vector3.zero;
             go.transform.SetParent(decorateParent);
         }
+    }
+
+    public void CreateRoad(int _x, int _y)
+    {
+        GridObject gridObj = gridDatabase.GetGridObjectByID("30013");
+        GameObject go = Instantiate(gridObj.prefab, slots[_x, _y].transform);
+        go.GetComponent<Obstacle>().slot = slots[_x, _y];
+        go.GetComponent<DraggableItem>().SnapToSlot();
+        go.transform.localPosition = Vector3.zero;
+        slots[_x, _y].isDefaultRoad = true;
+        slots[_x, _y].roadObject = go;
+        go.transform.SetParent(roadParemt);
+    }
+
+    public bool CheckRoad()
+    {
+        for (int y = 0; y < rows; y++)
+        {
+            for (int x = 0; x < columns; x++)
+            {
+                if(slots[x,y].isDefaultRoad)
+                {
+                    Debug.Log($"Check Road {x} - {y} : {slots[x,y].roadObject == null}");
+                    if(slots[x,y].roadObject == null)
+                    {
+                        return false;
+                    }
+                }
+            }
+        }
+        return true;
     }
 }
 

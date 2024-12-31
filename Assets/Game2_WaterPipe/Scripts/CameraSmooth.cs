@@ -81,7 +81,7 @@ namespace CityTycoon
                     Vector3 difference = Camera.main.ScreenToWorldPoint(touch.position) - Camera.main.ScreenToWorldPoint(dragOrigin);
                     Vector3 newPosition = cam.transform.position - difference;
                     float halfHeight = cam.orthographicSize;
-                    float halfWidth = cam.aspect * halfHeight;
+                    float halfWidth = 9f/16f * halfHeight;
                     newPosition.x = Mathf.Clamp(newPosition.x, moveArea.x + halfWidth, moveArea.width - halfWidth);
                     newPosition.y = Mathf.Clamp(newPosition.y, moveArea.y + halfHeight, moveArea.height - halfHeight);
                     cam.transform.position = newPosition;
@@ -95,7 +95,7 @@ namespace CityTycoon
                 Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - Camera.main.ScreenToWorldPoint(dragOrigin);
                 Vector3 newPosition = cam.transform.position - difference;
                 float halfHeight = cam.orthographicSize;
-                float halfWidth = cam.aspect * halfHeight;
+                float halfWidth = 9f/16f * halfHeight;
                 newPosition.x = Mathf.Clamp(newPosition.x, moveArea.x + halfWidth, moveArea.width - halfWidth);
                 newPosition.y = Mathf.Clamp(newPosition.y, moveArea.y + halfHeight, moveArea.height - halfHeight);
                 cam.transform.position = newPosition;

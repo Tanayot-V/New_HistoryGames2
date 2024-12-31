@@ -48,11 +48,11 @@ public class GridSystemEditor : Editor
         GUILayout.BeginHorizontal();
         if (GUILayout.Button("Save Level Data"))
         {
-            gridManager.SaveState("TestLevel");
+            gridManager.SaveState(gridManager.savelevelName);
         }
         if (GUILayout.Button("Load Level Data"))
         {
-            gridManager.LoadState("TestLevel");
+            gridManager.LoadState(gridManager.loadlevelName);
         }
         GUILayout.EndHorizontal();
     }

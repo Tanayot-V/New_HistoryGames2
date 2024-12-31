@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Assertions.Must;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
@@ -13,12 +14,18 @@ public class GameManager : Singletons<GameManager>
     [Header("Game Data")]
     public float timePlay = 600;
     private float timer;
-    public int moveCount = 20;
+    public int moveCount = 0;
     public int hammerCount = 5;
 
     public bool onHammer;
     public GraphicRaycaster uiRaycaster;
     public EventSystem eventSystem;
+
+    public List<PipeStart> pipeStarts = new List<PipeStart>();
+    public List<PipeEnd> pipeEnds = new List<PipeEnd>();
+
+    public float runTimer = 2f;
+    public bool isRunWater = false;
 
     public void Start()
     {
@@ -31,6 +38,7 @@ public class GameManager : Singletons<GameManager>
         if (timer <= 0)
         {
             // lose game
+            StartCoroutine(EndGame(false, LoseCondition.timeOut));
             return;
         }
         timer -= Time.deltaTime;
@@ -40,6 +48,16 @@ public class GameManager : Singletons<GameManager>
             if (Input.GetMouseButtonDown(0))
             {
                 CheckClick();
+            }
+        }
+
+        if(isRunWater)
+        {
+            runTimer -= Time.deltaTime;
+            if(runTimer <= 0)
+            {
+                isRunWater = false;
+                EndGameCheck();
             }
         }
     }
@@ -92,7 +110,7 @@ public class GameManager : Singletons<GameManager>
         gameUiManager.OnEndHammer();
     }
 
-    public bool UseMove()
+    public bool UseMove(int count)
     {
         if (moveCount <= 0)
         {
@@ -100,8 +118,58 @@ public class GameManager : Singletons<GameManager>
 
             return false;
         } 
-        moveCount--;
+        moveCount += count;
         gameUiManager.UpdateMoveCount(moveCount);
         return true;
     }
+
+    public void StartRunWater()
+    {
+        pipeStarts.ForEach(x => x.RunWater());
+        isRunWater = true;
+    }
+
+    public void RunningWater()
+    {
+        isRunWater = true;
+        runTimer = 2f;
+    }
+
+    public void EndGameCheck()
+    {
+        if (pipeEnds.TrueForAll(x => x.isFinish))
+        {
+            if(!gridCanvas.CheckRoad())
+            {
+                // lose game
+                StartCoroutine(EndGame(false, LoseCondition.RoadNonComplete));
+                return;
+            }
+            // win game
+            StartCoroutine(EndGame(true, LoseCondition.PipeNonComplete));
+        }
+        else
+        {
+            // lose game
+            StartCoroutine(EndGame(false, LoseCondition.PipeNonComplete));
+        }
+    }
+
+    private IEnumerator EndGame(bool isWin,LoseCondition loseCondition)
+    {
+        if(isWin)
+        {
+            gridCanvas.SaveState(gridCanvas.savelevelName);
+        }
+        yield return new WaitForSeconds(1f);
+        gameUiManager.ShowResult(isWin,loseCondition);
+    }
+}
+
+public enum LoseCondition
+{
+    timeOut,
+    PipeNonComplete,
+    RoadNonComplete,
+    WasteNonComplete
 }

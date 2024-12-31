@@ -21,6 +21,11 @@ public class PipeStart : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        GameManager.Instance.StartRunWater();
+    }
+
+    public void RunWater()
+    {
         Debug.Log("PipeStart OnPointerClick");
         List<Vector2> dirs = new List<Vector2>();
         switch (pipeObject.pipeData.direction)

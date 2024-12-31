@@ -18,6 +18,10 @@ public class PipeObject : MonoBehaviour
     private bool isFullWater = false;
     public bool canpass2 = false;
 
+    public Color wasteColor;
+    bool isWaste = false;
+    Vector2 startPipePos = Vector2.zero;
+
     void Start()
     {
         PipeSlotCanvas slot = GetComponentInParent<PipeSlotCanvas>();
@@ -43,15 +47,23 @@ public class PipeObject : MonoBehaviour
             {
                 isRotating = false;
                 if (targetRotationZ >= 360) targetRotationZ = 0;
-                GameManager.Instance.UseMove();
+                GameManager.Instance.UseMove(1);
             });
         GameManager.Instance.UpdatePipeSlotTOList(pipeData.pos, pipeData);
     }
 
-    public bool WaterIn(Vector2 pos)
+    public bool WaterIn(Vector2 pos, bool mIsWaste, Vector2 mStartPipePos)
     {
         if(isFullWater) return false;
-        Debug.Log($"WaterIn {name} {pipeData.pos} from {pos}");
+        GameManager.Instance.RunningWater();
+        //Debug.Log($"WaterIn {name} {pipeData.pos} from {pos}");
+        isWaste = mIsWaste;
+        startPipePos = mStartPipePos;
+        if(isWaste)
+        {
+            waterFillImg0.color = wasteColor;
+            waterFillImg1.color = wasteColor;
+        }
         if (pipeData.pipeType == PipeType.None || pipeData.pipeType == PipeType.Obstacle
         || pipeData.pipeType == PipeType.Start || pipeData.pipeType == PipeType.Map) 
         return false;
@@ -59,6 +71,11 @@ public class PipeObject : MonoBehaviour
         if (pipeData.pipeType == PipeType.End)
         {
             // change status pipeEnd
+            PipeEnd pe = GetComponent<PipeEnd>();
+            if(pe != null)
+            {
+                pe.OnWaterIn(isWaste);
+            }
             return true;
         }
 
@@ -697,7 +714,11 @@ public class PipeObject : MonoBehaviour
         {
             Vector2 nextPipePos = pipeData.pos + dirs[i];
             Debug.Log($"WaterOut {name} {pipeData.pos} to {nextPipePos}");
-            GameManager.Instance.gridCanvas.slots[(int)nextPipePos.x, (int)nextPipePos.y].item.GetComponent<PipeObject>().WaterIn(pipeData.pos);
+            PipeObject next = GameManager.Instance.gridCanvas.slots[(int)nextPipePos.x, (int)nextPipePos.y].item.GetComponent<PipeObject>();
+            if(next != null)
+            {
+                next.WaterIn(pipeData.pos, isWaste, startPipePos);
+            }
         }
     }
 }

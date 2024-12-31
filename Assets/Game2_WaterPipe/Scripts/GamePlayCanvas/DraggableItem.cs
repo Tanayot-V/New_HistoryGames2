@@ -7,6 +7,7 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
     private Vector3 offset;
+    public int placeCount = 1;
 
     PipeObject pipeObject;
 
@@ -44,6 +45,7 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     {
         if (pipeObject != null)
         {
+            if(pipeObject.pipeData.pipeType == PipeType.Road) return;
             if(GameManager.Instance.onHammer)
             {
                 GameManager.Instance.gridCanvas.slots[(int)pipeObject.pipeData.pos.x, (int)pipeObject.pipeData.pos.y].item = null;

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6610149525442965950}
   - component: {fileID: 6373388381358708571}
   - component: {fileID: 1332192869646210795}
+  - component: {fileID: 3820525868720885978}
   m_Layer: 5
   m_Name: 20300
   m_TagString: Untagged
@@ -103,10 +104,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pipeData:
     pos: {x: 0, y: 0}
-    pipeType: 7
+    pipeType: 9
     direction: 3
   isRotating: 0
   duration: 0.5
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  wasteColor: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &3820525868720885978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122268064460672472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 829d0d742a0d1f24eb7a767e29eb5f32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isWaste: 0
+  isFinish: 0

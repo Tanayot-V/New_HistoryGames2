@@ -14,6 +14,10 @@ public class PipeSlotCanvas : MonoBehaviour, IDropHandler, IPointerEnterHandler,
     public Color defaultColor;
     public Color disableColor;
 
+    [Header("Road")]
+    public bool isDefaultRoad = false;
+    public GameObject roadObject;
+
     void Start()
     {
         childImage = transform.GetChild(0).GetComponent<Image>();
@@ -29,23 +33,35 @@ public class PipeSlotCanvas : MonoBehaviour, IDropHandler, IPointerEnterHandler,
     {
         if (eventData.pointerDrag != null)
         {
-            if(item != null) return;
+            PipeObject pipeObject = eventData.pointerDrag.GetComponent<PipeObject>();
             DraggableItem draggableItem = eventData.pointerDrag.GetComponent<DraggableItem>();
-            if(draggableItem.isSnapOnSlot) return;
+            
+            if(pipeObject.pipeData.pipeType == PipeType.Road)
+            {
+                if(roadObject != null) return;
+                roadObject = eventData.pointerDrag;
+                Obstacle obstacle = eventData.pointerDrag.GetComponent<Obstacle>();
+                obstacle.slot = this;
+            }
+            else
+            {
+                if(item != null) return;
+                item = eventData.pointerDrag;
+            }
+
             if (draggableItem != null)
             {
+                if(draggableItem.isSnapOnSlot) return;
                 draggableItem.SnapToSlot();
                 draggableItem.transform.SetParent(transform);
                 draggableItem.transform.localPosition = Vector3.zero;
             }
-            PipeObject pipeObject = eventData.pointerDrag.GetComponent<PipeObject>();
             if (pipeObject != null)
             {
                 pipeObject.pipeData.pos = pos;
                 GameManager.Instance.UpdatePipeSlotTOList(pipeObject.pipeData.pos, pipeObject.pipeData);
             }
-            item = eventData.pointerDrag;
-            GameManager.Instance.UseMove();
+            GameManager.Instance.UseMove(draggableItem.placeCount);
         }
     }
     public void OnPointerEnter(PointerEventData eventData)

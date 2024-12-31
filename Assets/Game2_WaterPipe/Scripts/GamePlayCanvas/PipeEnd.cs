@@ -4,14 +4,25 @@ using UnityEngine;
 
 public class PipeEnd : MonoBehaviour
 {
-    PipeObject pipeObject;
-
-    
-
+    public bool isWaste = false;
     public bool isFinish = false;
 
-    void Start()
+    public void OnWaterIn(bool mIsWaste)
     {
-        pipeObject = GetComponent<PipeObject>();
+        if (isFinish) return;
+        if (mIsWaste)
+        {
+            if (isWaste)
+            {
+                isFinish = true;
+            }
+        }
+        else
+        {
+            if (!isWaste)
+            {
+                isFinish = true;
+            }
+        }
     }
 }

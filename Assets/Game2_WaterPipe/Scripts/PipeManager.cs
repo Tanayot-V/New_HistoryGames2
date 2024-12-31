@@ -68,7 +68,10 @@ public enum PipeType
     Degree90Cross = 7,
     Start = 8,
     End = 9,
-    Map = 10
+    Map = 10,
+    Road = 11,
+    WasteStart = 12,
+    WasteEnd = 13,
 }
 
 public class PipeManager : MonoBehaviour
@@ -137,5 +140,5 @@ public class PipeManager : MonoBehaviour
                 //Debug.Log($"UpdatePipe: {pipeDatasDIC[_pos].pos} | {pipeDatasDIC[_pos].pipeType} | {pipeDatasDIC[_pos].direction}");
             }
         });
-    }   
+    }  
 }
