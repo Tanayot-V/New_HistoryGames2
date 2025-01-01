@@ -67,7 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f6c2e7ebac354f640ae3c7408b0e40ce, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f65efed60a89949ca8c9a81c145128ee, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -110,3 +110,4 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  wasteColor: {r: 0, g: 0, b: 0, a: 0}

@@ -52,6 +52,6 @@ MonoBehaviour:
     camMoveAreaSize: {x: 0, y: 0, z: 0}
     numberIMG: []
   - level: 9
-    originalCam: {x: 0, y: 0, z: -10}
+    originalCam: {x: 30.5, y: -1.5, z: -10}
     camMoveAreaSize: {x: 0, y: 0, z: 0}
     numberIMG: []
