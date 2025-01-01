@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff8859053661c46fb9a5063aaad313ee, type: 3}
+  m_Name: SelectLevelDatabaseSO
+  m_EditorClassIdentifier: 
+  selectLevelModels:
+  - level: 1
+    originalCam: {x: 0.035, y: 0.045, z: -10}
+    camMoveAreaSize: {x: 7, y: 11.5, z: 0}
+    numberIMG:
+    - {fileID: 21300000, guid: 13a123959bd3848f3a7cc6dfbcbbe9e9, type: 3}
+    - {fileID: 21300000, guid: e7f45f36229e4409cb86db72b8699fb6, type: 3}
+    - {fileID: 21300000, guid: aac460cf8f8fd412c93260aea9be872a, type: 3}
+  - level: 2
+    originalCam: {x: 4.5, y: -2.5, z: -10}
+    camMoveAreaSize: {x: 7, y: 0, z: 0}
+    numberIMG:
+    - {fileID: 21300000, guid: 5d181d4e9c7f34e3a85bd636c08186c6, type: 3}
+    - {fileID: 21300000, guid: 37debdaace41d4a30b8fa1370633cd30, type: 3}
+    - {fileID: 21300000, guid: cdc3093ee15e54ae69f37603be073cb9, type: 3}
+  - level: 3
+    originalCam: {x: 7.15, y: -6.5, z: -10}
+    camMoveAreaSize: {x: 0, y: 0, z: 0}
+    numberIMG: []
+  - level: 4
+    originalCam: {x: 5.3, y: -9.8, z: -10}
+    camMoveAreaSize: {x: 0, y: 0, z: 0}
+    numberIMG: []
+  - level: 5
+    originalCam: {x: 14.15, y: -9.5, z: -10}
+    camMoveAreaSize: {x: 0, y: 0, z: 0}
+    numberIMG: []
+  - level: 6
+    originalCam: {x: 21, y: -5.5, z: -10}
+    camMoveAreaSize: {x: 0, y: 0, z: 0}
+    numberIMG: []
+  - level: 7
+    originalCam: {x: 19, y: -1, z: -10}
+    camMoveAreaSize: {x: 0, y: 0, z: 0}
+    numberIMG: []
+  - level: 8
+    originalCam: {x: 25.75, y: -0.5, z: -10}
+    camMoveAreaSize: {x: 0, y: 0, z: 0}
+    numberIMG: []
+  - level: 9
+    originalCam: {x: 30.5, y: -1.5, z: -10}
+    camMoveAreaSize: {x: 0, y: 0, z: 0}
+    numberIMG: []

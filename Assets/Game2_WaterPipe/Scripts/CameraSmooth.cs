@@ -34,7 +34,7 @@ namespace CityTycoon
         void Update()
         {
             HandleDrag();
-            HandleZoom();
+            if(maxZoom > 0) HandleZoom();
         }
 
         void HandleDrag()
