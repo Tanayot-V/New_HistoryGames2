@@ -50,7 +50,13 @@ public class DiaryManager : Singletons<DiaryManager>
     {
         diaryOpenOBJ.SetActive(false);
         UiController.Instance.DestorySlot(parentDiary);
-        parentDiary.GetComponent<RectTransform>().position = Vector3.zero;
+        RectTransform parentDiaryRect = parentDiary.GetComponent<RectTransform>();
+        parentDiaryRect.offsetMin = Vector2.zero; // Left, Bottom
+        parentDiaryRect.offsetMax = Vector2.zero; // Right, Top
+        
+        // Set PosY to 0
+        Vector3 anchoredPosition = parentDiaryRect.anchoredPosition;
+        anchoredPosition.y = 0;
     }
 
     #region ClaimReward
