@@ -4,5 +4,7 @@ using UnityEngine;
 
 public class UILobbyGameManager : Singletons<UILobbyGameManager>
 {
-
+    public Material garyMATUI;
+    public Material garyMATWorld;
+    public Material spriteMAT;
 }

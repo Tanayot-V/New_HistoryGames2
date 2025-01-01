@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LobbyGameManager : Singletons<LobbyGameManager>
 {
-    public Material garyMAT;
+    public UILobbyGameManager uiLobbyGameManager;
     public SettingManager settingManager;
     public DiaryManager diaryManager;
     public LeaderboardManager leaderboardManager;

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: DiaryModel_3
   m_EditorClassIdentifier: 
   id: DiaryModel_3
-  headSP: {fileID: 21300000, guid: f45b4d26442fe4576b3dfb40aca3684e, type: 3}
-  itemSP: {fileID: 21300000, guid: 83052c9357cca4bc7a5408e102d849c2, type: 3}
+  headSP: {fileID: 21300000, guid: 8aa8f8f6ee15c495c839269a10f46ea0, type: 3}
+  itemSP: {fileID: 21300000, guid: a04095a97496c4aa6aec4eafdedec7b4, type: 3}
   topicST: "\u0E1A\u0E49\u0E32\u0E19\u0E15\u0E34\u0E14\u0E19\u0E49\u0E33"
   descriptionST: "\u0E43\u0E19\u0E2D\u0E14\u0E35\u0E15\u0E01\u0E32\u0E23\u0E2A\u0E23\u0E49\u0E32\u0E07\u0E1A\u0E49\u0E32\u0E19\u0E15\u0E34\u0E14\u0E19\u0E49\u0E33
     \u0E41\u0E21\u0E49\u0E27\u0E48\u0E32\u0E08\u0E30\u0E2A\u0E30\u0E14\u0E27\u0E01\u0E43\u0E19\u0E01\u0E32\u0E23\u0E04\u0E21\u0E19\u0E32\u0E04\u0E21\u0E2B\u0E23\u0E37\u0E2D\u0E17\u0E33\u0E01\u0E32\u0E23\u0E04\u0E49\u0E32\u0E02\u0E32\u0E22

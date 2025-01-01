@@ -22,7 +22,7 @@ public class DiarySlot : MonoBehaviour
         contentTX.text = _diaryState.modelSO.descriptionST;
         if (_isClaim)
         {
-            itemIMG.material = LobbyGameManager.Instance.garyMAT;
+            itemIMG.material = UILobbyGameManager.Instance.garyMATUI;
             claimedIMG.gameObject.SetActive(true);
         }
         else
