@@ -41,6 +41,11 @@ public class LobbyGameManager : Singletons<LobbyGameManager>
         diaryManager.DiaryClose();
     }
 
+    public void OpenDescriptionButton(DiarySlot _diarySlot)
+    {
+        diaryManager.DescriptionOpen(_diarySlot);
+    }
+
     public void DiaryOpenRewardPage(DiarySlot _diarySlot)
     {
         diaryManager.ClaimRewardPageOpen(_diarySlot);

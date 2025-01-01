@@ -23,6 +23,13 @@ public class DiaryManager : Singletons<DiaryManager>
     public GameObject prefabSlotNull;
     public GameObject parentDiary;
 
+    [Header("Diary Description")]
+    public GameObject diaryDescriptionOBJ;
+    public Image headIMG;
+    public Image textDesIMG;
+    public Image itemBGIMG;
+    public GameObject itemDesOBJ;
+
     [Header("Diary Rewards")]
     public DiarySlot currentClaimSlot;
     public GameObject claimedOpenOBJ;
@@ -38,6 +45,8 @@ public class DiaryManager : Singletons<DiaryManager>
             slot.SetupSlot(o,o.isClaim);
         });
         GameObject slot = UiController.Instance.InstantiateUIView(prefabSlotNull, parentDiary);
+        claimedOpenOBJ.SetActive(false);
+        diaryDescriptionOBJ.SetActive(false);
     }
 
     public void DiaryOpen()
@@ -59,6 +68,33 @@ public class DiaryManager : Singletons<DiaryManager>
         anchoredPosition.y = 0;
     }
 
+    #region Description
+    public void DescriptionOpen(DiarySlot _diarySlot)
+    {
+        diaryDescriptionOBJ.SetActive(true);
+        diaryDescriptionOBJ.transform.GetChild(1).GetComponent<CanvasGroupTransition>().FadeIn();
+
+        headIMG.sprite = _diarySlot.diaryState.modelSO.headIMG;
+        textDesIMG.sprite = _diarySlot.diaryState.modelSO.textDesIMG;
+        itemDesOBJ.transform.GetChild(0).GetComponent<Image>().sprite = _diarySlot.diaryState.modelSO.itemSP;
+
+        if(_diarySlot.diaryState.isClaim)
+        {
+            itemDesOBJ.transform.GetChild(0).GetComponent<Image>().material = UILobbyGameManager.Instance.garyMATWorld;
+            itemDesOBJ.transform.GetChild(1).GetComponent<Image>().material = UILobbyGameManager.Instance.garyMATWorld;
+            itemDesOBJ.transform.GetChild(1).gameObject.SetActive(true);
+            itemBGIMG.material = UILobbyGameManager.Instance.garyMATWorld;
+        }
+        else
+        {
+            itemDesOBJ.transform.GetChild(0).GetComponent<Image>().material = null;
+            itemDesOBJ.transform.GetChild(1).GetComponent<Image>().material = null;
+            itemBGIMG.material = null;
+            itemDesOBJ.transform.GetChild(1).gameObject.SetActive(false);
+        }
+    }
+
+    #endregion
     #region ClaimReward
     public void ClaimRewardPageOpen(DiarySlot _diarySlot)
     {

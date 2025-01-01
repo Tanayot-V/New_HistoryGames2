@@ -12,4 +12,13 @@ public class UILobbyGameManager : Singletons<UILobbyGameManager>
     [Header("Loading")]
     public GameObject loadingGO;
     public LoadingFillAmount loadingFillAmount;
+
+    public void StartLoading(System.Action callback)
+    {
+        loadingGO.SetActive(true);
+        loadingFillAmount.StartFillAmount(() =>
+        {
+            callback();
+        });
+    }
 }

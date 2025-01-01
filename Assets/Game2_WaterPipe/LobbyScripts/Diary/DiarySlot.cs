@@ -38,4 +38,9 @@ public class DiarySlot : MonoBehaviour
         LobbyGameManager.Instance.DiaryOpenRewardPage(this);
         Debug.Log("ClaimButton:" + name);
     }
+
+    public void OpenDescriptionButton()
+    {
+        LobbyGameManager.Instance.OpenDescriptionButton(this);
+    }
 }

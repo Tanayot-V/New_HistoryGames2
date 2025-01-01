@@ -7,13 +7,6 @@ public class LoadingFillAmount : MonoBehaviour
 {
     public Image fillIMG;
     public float duration = 1;
-    void Start()
-    {
-        StartFillAmount(() => 
-        {
-            Debug.Log("Loading Complete");
-        }); 
-    }
 
     private IEnumerator StartLoading(System.Action callback)
     {
