@@ -116,7 +116,7 @@ namespace CityTycoon
                 Camera.main.orthographicSize = size;
                 Vector3 newPosition = cam.transform.position;
                 float halfHeight = cam.orthographicSize;
-                float halfWidth = cam.aspect * halfHeight;
+                float halfWidth = 9f/16f * halfHeight;
                 newPosition.x = Mathf.Clamp(newPosition.x, moveArea.x + halfWidth, moveArea.width - halfWidth);
                 newPosition.y = Mathf.Clamp(newPosition.y, moveArea.y + halfHeight, moveArea.height - halfHeight);
                 cam.transform.position = newPosition;
@@ -145,7 +145,7 @@ namespace CityTycoon
                     Camera.main.orthographicSize = Mathf.Clamp(initialZoom * pinchRatio, minZoom, maxZoom);
                     Vector3 newPosition = cam.transform.position;
                     float halfHeight = cam.orthographicSize;
-                    float halfWidth = cam.aspect * halfHeight;
+                    float halfWidth = 9f/16f * halfHeight;
                     newPosition.x = Mathf.Clamp(newPosition.x, moveArea.x + halfWidth, moveArea.width - halfWidth);
                     newPosition.y = Mathf.Clamp(newPosition.y, moveArea.y + halfHeight, moveArea.height - halfHeight);
                     cam.transform.position = newPosition;
