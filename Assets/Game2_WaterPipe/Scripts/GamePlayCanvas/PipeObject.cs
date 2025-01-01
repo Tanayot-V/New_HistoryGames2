@@ -18,8 +18,7 @@ public class PipeObject : MonoBehaviour
     private bool isFullWater = false;
     public bool canpass2 = false;
 
-    public Color wasteColor;
-    bool isWaste = false;
+    public bool isWaste = false;
     Vector2 startPipePos = Vector2.zero;
 
     void Start()
@@ -61,8 +60,8 @@ public class PipeObject : MonoBehaviour
         startPipePos = mStartPipePos;
         if(isWaste)
         {
-            waterFillImg0.color = wasteColor;
-            waterFillImg1.color = wasteColor;
+            waterFillImg0.color = GameManager.Instance.pipeManager.wasteColor;
+            waterFillImg1.color = GameManager.Instance.pipeManager.wasteColor;
         }
         if (pipeData.pipeType == PipeType.None || pipeData.pipeType == PipeType.Obstacle
         || pipeData.pipeType == PipeType.Start || pipeData.pipeType == PipeType.Map) 

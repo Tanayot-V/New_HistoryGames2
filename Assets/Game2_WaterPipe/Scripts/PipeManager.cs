@@ -83,6 +83,8 @@ public class PipeManager : MonoBehaviour
     [SerializeField] private List<PipeData> pipeDatas = new List<PipeData>();
     public Dictionary<Vector2,PipeData> pipeDatasDIC = new Dictionary<Vector2, PipeData>();
 
+    public Color wasteColor;
+
     public void RandomPipeMap()
     {
         pipeDatas.ForEach(o => {

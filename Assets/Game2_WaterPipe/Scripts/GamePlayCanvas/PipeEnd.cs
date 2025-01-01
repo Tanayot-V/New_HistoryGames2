@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PipeEnd : MonoBehaviour
 {
     public bool isWaste = false;
     public bool isFinish = false;
+
+    public UnityEvent onFinished;
 
     public void OnWaterIn(bool mIsWaste)
     {
@@ -15,6 +18,7 @@ public class PipeEnd : MonoBehaviour
             if (isWaste)
             {
                 isFinish = true;
+                onFinished?.Invoke();
             }
         }
         else
@@ -22,6 +26,7 @@ public class PipeEnd : MonoBehaviour
             if (!isWaste)
             {
                 isFinish = true;
+                onFinished?.Invoke();
             }
         }
     }

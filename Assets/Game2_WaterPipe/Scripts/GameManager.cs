@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Collections;
 using UnityEngine;
 using UnityEngine.Assertions.Must;
 using UnityEngine.EventSystems;
@@ -30,7 +31,11 @@ public class GameManager : Singletons<GameManager>
     public void Start()
     {
         timer = timePlay;
+        pipeStarts.Clear();
+        pipeEnds.Clear();
         gameUiManager.Init(1f, moveCount, hammerCount);
+        pipeStarts.AddRange(FindObjectsOfType<PipeStart>());
+        pipeEnds.AddRange(FindObjectsOfType<PipeEnd>());
     }
 
     void Update()
@@ -125,7 +130,11 @@ public class GameManager : Singletons<GameManager>
 
     public void StartRunWater()
     {
-        pipeStarts.ForEach(x => x.RunWater());
+        pipeStarts.ForEach(x =>
+        {
+            if(!x.isWaitWaterIn)
+                x.RunWater();
+        });
         isRunWater = true;
     }
 

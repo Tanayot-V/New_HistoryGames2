@@ -1,22 +1,48 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class PipeStart : MonoBehaviour, IPointerClickHandler
 {
     public PipeObject pipeObject;
 
-    // Start is called before the first frame update
+    public bool isWaitWaterIn = false;
+    public List<PipeEnd> pipeEnds = new List<PipeEnd>();
+    public int finnishCount = 0;
+    public bool isWasteWater = false;
+    public Image westPipeImage;
+    public bool isFinish = false; 
+
     void Start()
     {
         pipeObject = GetComponent<PipeObject>();
+        if(isWaitWaterIn)
+        {
+            for (int i = 0; i < pipeEnds.Count; i++)
+            {
+                pipeEnds[i].onFinished.AddListener(OnPipeEndFinnish);
+            }
+        }
+        if(isWasteWater)
+        {
+            pipeObject.isWaste = true;
+            if(westPipeImage!=null)
+            {
+                westPipeImage.color = GameManager.Instance.pipeManager.wasteColor;
+            }
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnPipeEndFinnish()
     {
-        
+        finnishCount++;
+        if(finnishCount == pipeEnds.Count)
+        {
+            RunWater();
+        }
     }
 
     public void OnPointerClick(PointerEventData eventData)

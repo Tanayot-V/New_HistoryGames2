@@ -31,6 +31,30 @@ public class GridCanvas : MonoBehaviour
 
     void Start()
     {
+        ReadMapData();
+        // CreateGrid();
+        // CreateLevel();
+
+        slots = new PipeSlotCanvas[columns, rows];
+        for (int x = 0; x < columns; x++)
+        {
+            for (int y = 0; y < rows; y++)
+            {
+                GameObject slot = GameObject.Find("Slot_" + x + "-" + y);
+                PipeSlotCanvas pipeSlot = slot.GetComponent<PipeSlotCanvas>();
+                pipeSlot.pos = new Vector2(x, y);
+                slots[x, y] = pipeSlot;
+            }
+        }
+        
+        if(!string.IsNullOrEmpty(loadlevelName))
+        {
+            LoadState(loadlevelName);
+        }
+    }
+
+    public void ReadMapData()
+    {
         string[] lines = levelData.text.Split('\n');
         string[] cell = lines[0].Split(',');
         rows = lines.Length;
@@ -45,17 +69,11 @@ public class GridCanvas : MonoBehaviour
                 dataString[x, y] = cell[x].Trim();
             }
         }
-        CreateGrid();
-        CreateLevel();
-        
-        if(!string.IsNullOrEmpty(loadlevelName))
-        {
-            LoadState(loadlevelName);
-        }
     }
 
     public void CreateGrid()
     {
+        ReadMapData();
         slots = new PipeSlotCanvas[columns, rows];
         for (int x = 0; x < columns; x++)
         {
@@ -75,13 +93,21 @@ public class GridCanvas : MonoBehaviour
 
     public void ClearGrid()
     {
-        if (slots.Length > 0)
+        slots = null;
+        int childCount = transform.childCount;
+        for (int i = 0; i < childCount; i++)
         {
-            for (int i = 0; i < slots.Length; i++)
-            {
-                DestroyImmediate(transform.GetChild(0).gameObject);
-            }
-            slots = null;
+            DestroyImmediate(transform.GetChild(0).gameObject);
+        }
+        childCount = decorateParent.childCount;
+        for(int i = 0; i < childCount; i++)
+        {
+            DestroyImmediate(decorateParent.GetChild(0).gameObject);
+        }
+        childCount = roadParemt.childCount;
+        for(int i = 0; i < childCount; i++)
+        {
+            DestroyImmediate(roadParemt.GetChild(0).gameObject);
         }
     }
 
@@ -141,6 +167,7 @@ public class GridCanvas : MonoBehaviour
                 PipeObject po = Instantiate(pm.prefab,slots[data.datas[i].posX, data.datas[i].posY].transform).GetComponent<PipeObject>();
                 po.transform.localPosition = Vector3.zero;
                 slots[data.datas[i].posX, data.datas[i].posY].item = po.gameObject;
+                slots[data.datas[i].posX, data.datas[i].posY].isDefault = false;
                 po.pipeData.direction = data.datas[i].direction;
                 po.transform.rotation = Quaternion.Euler(0, 0, GameManager.Instance.pipeManager.GetRotationZ(data.datas[i].direction));
             }
@@ -212,11 +239,12 @@ public class GridCanvas : MonoBehaviour
                 id_y= dataString[_x,_y-1].Substring(3, 2);
             }
         }
-        if((id != id_x && id != id_y) || id == "05" || id == "14")
+        if((id != id_x && id != id_y) || id == "05" || id == "14" || id == "11")
         {
             GridObject gridObj = gridDatabase.GetDecorateObjectByID(id);
             if(gridObj == null) return;
             GameObject go = Instantiate(gridObj.prefab, slots[_x, _y].transform);
+            go.GetComponent<PipeObject>().pipeData.pos = new Vector2(_x, _y);
             go.transform.localPosition = Vector3.zero;
             go.transform.SetParent(decorateParent);
         }
