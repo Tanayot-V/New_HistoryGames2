@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using CityTycoon;
 using UnityEngine;
 
 [System.Serializable]
@@ -17,13 +18,16 @@ public class SelectLevelModel
     }   
 }
 
-
 [System.Serializable]
 public class SelectLevelState
 {
     public int level;
     public int star;
+    public bool isFinished;
     public SelectLevelModel model;
+    public SpriteRenderer moveAreaSR;
+    public SelectLevelNumberSlot selectLevelNumberSlot;
+
 }
 
 public class SelectLevelManager : MonoBehaviour
@@ -31,18 +35,29 @@ public class SelectLevelManager : MonoBehaviour
     public List<SelectLevelState> selectLevelStates = new List<SelectLevelState>();
     public SelectLevelDatabaseSO selectLevelDatabaseSO;
     public Camera mainCam;
-    public SpriteRenderer moveAreaSR;
     public int currentLevel;
-    public Sprite[] stars;
     
     public void Start()
     {
-        SetupLevel(currentLevel);
+        InitSelectLevel();
     }
     
     public void InitSelectLevel()
     {
        SetupLevel(currentLevel);
+        int index = 0;
+        selectLevelStates.ForEach(o => {
+            o.model = selectLevelDatabaseSO.selectLevelModels[index];
+
+            if(o.level < currentLevel) o.isFinished = true;
+            else o.isFinished = false;
+
+            if(o.level == currentLevel) o.selectLevelNumberSlot.SetCurrent(o);
+            else if(o.isFinished) o.selectLevelNumberSlot.SetFinished(o);
+            else o.selectLevelNumberSlot.SetNoClear(o); 
+
+            index++;
+        });
     }
 
     private SelectLevelModel SelectLevel(int level)
@@ -55,5 +70,7 @@ public class SelectLevelManager : MonoBehaviour
     {
          SelectLevelModel selectLevelModel = SelectLevel(currentLevel);
          mainCam.transform.position = selectLevelModel.originalCam;
+         mainCam.GetComponent<CameraSmooth>().SetMoveArea(selectLevelStates[level-1].moveAreaSR);
     }
+    
 }

@@ -1,0 +1,223 @@
+
+peple_02.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+people/acc1
+  rotate: false
+  xy: 166, 162
+  size: 43, 63
+  orig: 43, 63
+  offset: 0, 0
+  index: -1
+people/arm_L_A
+  rotate: false
+  xy: 234, 104
+  size: 17, 31
+  orig: 19, 32
+  offset: 1, 1
+  index: -1
+people/arm_L_B
+  rotate: false
+  xy: 235, 194
+  size: 17, 31
+  orig: 19, 32
+  offset: 1, 1
+  index: -1
+people/arm_L_C
+  rotate: false
+  xy: 230, 37
+  size: 17, 31
+  orig: 19, 32
+  offset: 1, 1
+  index: -1
+people/arm_L_D
+  rotate: true
+  xy: 2, 68
+  size: 17, 31
+  orig: 19, 32
+  offset: 1, 1
+  index: -1
+people/arm_L_E
+  rotate: true
+  xy: 35, 68
+  size: 17, 31
+  orig: 19, 32
+  offset: 1, 1
+  index: -1
+people/arm_R_A
+  rotate: false
+  xy: 190, 60
+  size: 18, 32
+  orig: 19, 32
+  offset: 1, 0
+  index: -1
+people/arm_R_B
+  rotate: false
+  xy: 210, 60
+  size: 18, 32
+  orig: 19, 32
+  offset: 1, 0
+  index: -1
+people/arm_R_C
+  rotate: false
+  xy: 214, 104
+  size: 18, 32
+  orig: 19, 32
+  offset: 1, 0
+  index: -1
+people/arm_R_D
+  rotate: false
+  xy: 230, 70
+  size: 18, 32
+  orig: 19, 32
+  offset: 1, 0
+  index: -1
+people/arm_R_E
+  rotate: false
+  xy: 234, 137
+  size: 18, 32
+  orig: 19, 32
+  offset: 1, 0
+  index: -1
+people/body_A
+  rotate: false
+  xy: 166, 94
+  size: 22, 31
+  orig: 23, 32
+  offset: 1, 1
+  index: -1
+people/body_B
+  rotate: false
+  xy: 166, 61
+  size: 22, 31
+  orig: 23, 32
+  offset: 1, 1
+  index: -1
+people/body_C
+  rotate: false
+  xy: 190, 94
+  size: 22, 31
+  orig: 23, 32
+  offset: 1, 1
+  index: -1
+people/body_D
+  rotate: true
+  xy: 201, 138
+  size: 22, 31
+  orig: 23, 32
+  offset: 1, 1
+  index: -1
+people/body_E
+  rotate: false
+  xy: 211, 194
+  size: 22, 31
+  orig: 23, 32
+  offset: 1, 1
+  index: -1
+people/eye_L
+  rotate: true
+  xy: 201, 130
+  size: 6, 8
+  orig: 6, 8
+  offset: 0, 0
+  index: -1
+people/eye_R
+  rotate: true
+  xy: 201, 130
+  size: 6, 8
+  orig: 6, 8
+  offset: 0, 0
+  index: -1
+people/head
+  rotate: false
+  xy: 166, 127
+  size: 33, 33
+  orig: 33, 33
+  offset: 0, 0
+  index: -1
+people/leg_L_A
+  rotate: false
+  xy: 68, 54
+  size: 16, 31
+  orig: 17, 32
+  offset: 1, 1
+  index: -1
+people/leg_L_B
+  rotate: false
+  xy: 2, 35
+  size: 16, 31
+  orig: 17, 32
+  offset: 1, 1
+  index: -1
+people/leg_L_C
+  rotate: false
+  xy: 20, 35
+  size: 16, 31
+  orig: 17, 32
+  offset: 1, 1
+  index: -1
+people/leg_L_D
+  rotate: false
+  xy: 38, 35
+  size: 16, 31
+  orig: 17, 32
+  offset: 1, 1
+  index: -1
+people/leg_L_E
+  rotate: true
+  xy: 86, 43
+  size: 16, 31
+  orig: 17, 32
+  offset: 1, 1
+  index: -1
+people/leg_R_A
+  rotate: true
+  xy: 86, 70
+  size: 15, 31
+  orig: 17, 32
+  offset: 1, 1
+  index: -1
+people/leg_R_B
+  rotate: false
+  xy: 56, 21
+  size: 15, 31
+  orig: 17, 32
+  offset: 1, 1
+  index: -1
+people/leg_R_C
+  rotate: false
+  xy: 2, 2
+  size: 15, 31
+  orig: 17, 32
+  offset: 1, 1
+  index: -1
+people/leg_R_D
+  rotate: false
+  xy: 19, 2
+  size: 15, 31
+  orig: 17, 32
+  offset: 1, 1
+  index: -1
+people/leg_R_E
+  rotate: false
+  xy: 36, 2
+  size: 15, 31
+  orig: 17, 32
+  offset: 1, 1
+  index: -1
+people/star_01
+  rotate: false
+  xy: 211, 171
+  size: 22, 21
+  orig: 29, 28
+  offset: 3, 3
+  index: -1
+people/star_02
+  rotate: false
+  xy: 2, 87
+  size: 162, 138
+  orig: 179, 157
+  offset: 4, 12
+  index: -1
