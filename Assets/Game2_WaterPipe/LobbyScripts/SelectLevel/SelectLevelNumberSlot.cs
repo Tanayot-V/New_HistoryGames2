@@ -53,11 +53,6 @@ public class SelectLevelNumberSlot : MonoBehaviour
         numberOBJSR.sprite = state.model.numberIMG[1];
     }
 
-    public void OnMouseDown()
-    {
-        Debug.Log("OnMouseDown:" + name);
-    }
-
     public void OnMouseOver()
     {
         Debug.Log("OnMouseOver:" + name);
@@ -68,5 +63,15 @@ public class SelectLevelNumberSlot : MonoBehaviour
     {
         Debug.Log("OnMouseExit:" + name);
         numberOBJ.GetComponent<SpriteRenderer>().color = Color.white;
+    }
+
+    public void OnMouseUp()
+    {
+        Debug.Log("OnMouseUp:" + name);
+        if(UiController.IsPointerOverUIObject()) return;
+        UILobbyGameManager.Instance.StartLoading(() =>
+        {
+            Debug.Log("Loading Complete");
+        });
     }
 }

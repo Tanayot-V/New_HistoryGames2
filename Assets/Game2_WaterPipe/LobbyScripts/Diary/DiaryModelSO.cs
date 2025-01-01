@@ -10,4 +10,8 @@ public class DiaryModelSO : ScriptableObject
     public Sprite itemSP;
     public string topicST;
     public string descriptionST;
+
+    [Header("Description")]
+    public Sprite headIMG;
+    public Sprite textDesIMG;
 }
