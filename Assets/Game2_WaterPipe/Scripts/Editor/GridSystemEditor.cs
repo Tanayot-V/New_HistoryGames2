@@ -10,11 +10,7 @@ public class GridSystemEditor : Editor
         base.OnInspectorGUI();
         GridCanvas gridManager = (GridCanvas)target;
 
-        if (GUILayout.Button("Create Grid"))
-        {
-            gridManager.CreateGrid();
-        }
-
+        GUILayout.BeginHorizontal();
         if (GUILayout.Button("Create Level"))
         {
             gridManager.CreateLevel();
@@ -24,6 +20,18 @@ public class GridSystemEditor : Editor
         {
             gridManager.ClearGrid();
         }
+        GUILayout.EndHorizontal();
+
+        GUILayout.BeginHorizontal();
+        if (GUILayout.Button("Save Level Data"))
+        {
+            gridManager.SaveState(gridManager.savelevelName);
+        }
+        if (GUILayout.Button("Load Level Data"))
+        {
+            gridManager.LoadState(gridManager.loadlevelName);
+        }
+        GUILayout.EndHorizontal();
 
         // Draw table data in slots array
         if (gridManager.slots != null)
@@ -45,16 +53,6 @@ public class GridSystemEditor : Editor
                 GUILayout.EndHorizontal();
             }
         }
-        GUILayout.BeginHorizontal();
-        if (GUILayout.Button("Save Level Data"))
-        {
-            gridManager.SaveState(gridManager.savelevelName);
-        }
-        if (GUILayout.Button("Load Level Data"))
-        {
-            gridManager.LoadState(gridManager.loadlevelName);
-        }
-        GUILayout.EndHorizontal();
     }
 }
 #endif

@@ -73,7 +73,6 @@ public class GridCanvas : MonoBehaviour
 
     public void CreateGrid()
     {
-        ReadMapData();
         slots = new PipeSlotCanvas[columns, rows];
         for (int x = 0; x < columns; x++)
         {
@@ -165,6 +164,7 @@ public class GridCanvas : MonoBehaviour
                 PipeModel pm = GameManager.Instance.pipeManager.GetPipeModel(data.datas[i].pipeType);
                 //Debug.Log($"Load {data.datas[i].pipeType} Dir {data.datas[i].direction} At {data.datas[i].posX}:{data.datas[i].posY}");
                 PipeObject po = Instantiate(pm.prefab,slots[data.datas[i].posX, data.datas[i].posY].transform).GetComponent<PipeObject>();
+                po.GetComponent<DraggableItem>().SnapToSlot();
                 po.transform.localPosition = Vector3.zero;
                 slots[data.datas[i].posX, data.datas[i].posY].item = po.gameObject;
                 slots[data.datas[i].posX, data.datas[i].posY].isDefault = false;
@@ -176,6 +176,9 @@ public class GridCanvas : MonoBehaviour
 
     public void CreateLevel()
     {
+        ReadMapData();
+        ClearGrid();
+        CreateGrid();
         for (int y = 0; y < rows; y++)
         {
             for (int x = 0; x < columns; x++)
@@ -192,7 +195,7 @@ public class GridCanvas : MonoBehaviour
                 }
                 else if(dataString[x,y] == "30001" || dataString[x,y] == "30002" || dataString[x,y] == "30020")
                 {
-                    id = dataString[x,y];
+                    id = dataString[x,y].Substring(0, 5);
                 }
                 else if(dataString[x,y] == "30013")
                 {
@@ -211,42 +214,124 @@ public class GridCanvas : MonoBehaviour
                 }
                 if(dataString[x,y].StartsWith("2"))
                 {
-                    GameManager.Instance.pipeEnds.Add(go.GetComponent<PipeEnd>());
+                    PipeEnd pipeEnd = go.GetComponent<PipeEnd>();
+                    if(pipeEnd != null)
+                    {
+                        GameManager.Instance.pipeEnds.Add(pipeEnd);
+                    }
                 }
-                CreateDecorate(x,y);
+            }
+        }
+        LinkWastePipe();
+        CreateDecorate();
+    }
+
+    public void LinkWastePipe()
+    {
+        for (int y = 0; y < rows; y++)
+        {
+            for (int x = 0; x < columns; x++)
+            {
+                if(dataString[x,y].StartsWith("2"))
+                {
+                    PipeStart pipeStart = slots[x,y].item.GetComponent<PipeStart>();
+                    if(pipeStart != null)
+                    {
+                        pipeStart.pipeEnds = new List<PipeEnd>();
+                        if(dataString[x,y].Substring(3, 2) == "14")
+                        {
+                            Debug.Log($"LinkWastePipe {x}-{y} : {dataString[x,y]} / 14");
+                            PipeEnd pipeEnd = slots[x, y].item.GetComponent<PipeEnd>();
+                            if(pipeEnd != null)
+                            {
+                                pipeStart.pipeEnds.Add(pipeEnd);
+                            }
+                        }
+                        if(dataString[x,y].Length > 5)
+                        {
+                            string decoreLinkPos = dataString[x,y].Split('-')[1];
+                            string[] linkPos = decoreLinkPos.Split('&');
+                            for(int i = 0; i < linkPos.Length; i++)
+                            {
+                                int decoreLinkPosX = int.Parse(linkPos[i].Split(':')[0]);
+                                int decoreLinkPosY = int.Parse(linkPos[i].Split(':')[1]);
+                                Debug.Log($"LinkWastePipe {x}-{y} : {dataString[x,y]} / {decoreLinkPosX}, {decoreLinkPosY}");
+                                PipeEnd pipeEnd = slots[decoreLinkPosX, decoreLinkPosY].item.GetComponent<PipeEnd>();
+                                if(pipeEnd != null)
+                                {
+                                    pipeStart.pipeEnds.Add(pipeEnd);
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
 
-    public void CreateDecorate(int _x, int _y)
+    public void CreateDecorate()
     {
-        if(dataString[_x,_y] == "00") return;
-        string id = dataString[_x,_y].Substring(3, 2);
-        if(id == "01") return;
-        string id_x = "00";
-        string id_y = "00";
-        if(_x >= 1)
+        Debug.Log("Create Decorate");
+        for (int y = 0; y < rows; y++)
         {
-            if(!dataString[_x-1,_y].StartsWith("0"))
+            for (int x = 0; x < columns; x++)
             {
-                id_x = dataString[_x-1,_y].Substring(3, 2);
+                if(dataString[x,y].StartsWith("0")) continue;
+                string id = dataString[x,y].Substring(3, 2);
+                Debug.Log($"Decorate {x}-{y} : {dataString[x,y]} / {id}");
+                if(id == "01") continue;
+                string id_x = "00";
+                string id_y = "00";
+                if(x >= 1)
+                {
+                    if(!dataString[x-1,y].StartsWith("0"))
+                    {
+                        id_x = dataString[x-1,y].Substring(3, 2);
+                    }
+                }
+                if(y >= 1)
+                {
+                    if(!dataString[x,y-1].StartsWith("0"))
+                    {
+                        id_y= dataString[x,y-1].Substring(3, 2);
+                    }
+                }
+                if((id != id_x && id != id_y) || id == "05" || id == "14" || id == "11")
+                {
+                    GridObject gridObj = gridDatabase.GetDecorateObjectByID(id);
+                    if(gridObj == null) continue;
+                    GameObject go = Instantiate(gridObj.prefab, slots[x, y].transform);
+                    go.GetComponent<PipeObject>().pipeData.pos = new Vector2(x, y);
+                    go.transform.localPosition = Vector3.zero;
+                    go.transform.SetParent(decorateParent);
+                    
+                    Decoration decoration = go.GetComponent<Decoration>();
+                    if(decoration != null)
+                    {
+                        decoration.SuccessPipeEnds = new List<PipeEnd>();
+                    }
+                    if(dataString[x,y].Length > 5)
+                    {
+                        string decoreLinkPos = dataString[x,y].Split('-')[1];
+                        string[] linkPos = decoreLinkPos.Split('&');
+                        for(int i = 0; i < linkPos.Length; i++)
+                        {
+                            int decoreLinkPosX = int.Parse(linkPos[i].Split(':')[0]);
+                            int decoreLinkPosY = int.Parse(linkPos[i].Split(':')[1]);
+                            Debug.Log($"LinkWastePipe {x}-{y} : {dataString[x,y]} / {decoreLinkPosX}, {decoreLinkPosY}");
+                            PipeEnd pipeEnd = slots[decoreLinkPosX, decoreLinkPosY].item.GetComponent<PipeEnd>();
+                            if(pipeEnd != null)
+                            {
+                                decoration.SuccessPipeEnds.Add(pipeEnd);
+                            }
+                        }
+                    }
+                    if(id == "14")
+                    {
+                        decoration.SuccessPipeEnds.Add(slots[x, y].item.GetComponent<PipeEnd>());
+                    }
+                }
             }
-        }
-        if(_y >= 1)
-        {
-            if(!dataString[_x,_y-1].StartsWith("0"))
-            {
-                id_y= dataString[_x,_y-1].Substring(3, 2);
-            }
-        }
-        if((id != id_x && id != id_y) || id == "05" || id == "14" || id == "11")
-        {
-            GridObject gridObj = gridDatabase.GetDecorateObjectByID(id);
-            if(gridObj == null) return;
-            GameObject go = Instantiate(gridObj.prefab, slots[_x, _y].transform);
-            go.GetComponent<PipeObject>().pipeData.pos = new Vector2(_x, _y);
-            go.transform.localPosition = Vector3.zero;
-            go.transform.SetParent(decorateParent);
         }
     }
 
