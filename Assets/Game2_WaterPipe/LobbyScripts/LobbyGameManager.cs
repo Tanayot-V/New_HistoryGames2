@@ -12,9 +12,11 @@ public class LobbyGameManager : Singletons<LobbyGameManager>
 
     public void Start()
     {
+        
         SoundManager.Instance.Init(audioModelSO);
         SoundManager.Instance.PlayAudioSource("BGM"); 
         SoundManager.Instance.SetVolumeBGM(0.25f);
+        SoundManager.Instance.SetVolumeSFX(1);
         
         settingManager.ClosePage();
         diaryManager.DiaryClose();
@@ -60,11 +62,13 @@ public class LobbyGameManager : Singletons<LobbyGameManager>
 
     public void DiaryCloseRewardPageButton()
     {
+        UILobbyGameManager.Instance.ClickAudio();
         diaryManager.ClaimRewardPageClose();
     }
 
     public void DiaryRewardClaimButton()
     {
+        UILobbyGameManager.Instance.ClickAudio();
         diaryManager.ClaimReward();
     }
     #endregion
@@ -74,11 +78,13 @@ public class LobbyGameManager : Singletons<LobbyGameManager>
     {
         leaderboardManager.OpenPage();
         leaderboardManager.InitLeaderboard();
+        UILobbyGameManager.Instance.ClickAudio();
     }    
     
     public void LeaderboardCloseButton()
     {
         leaderboardManager.ClosePage();
+        UILobbyGameManager.Instance.ClickAudio();
     }
     #endregion
 

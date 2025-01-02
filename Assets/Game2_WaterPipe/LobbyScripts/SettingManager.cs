@@ -17,6 +17,7 @@ public class SettingManager : MonoBehaviour
     public void OpenPage()
     {
         settingOBJ.SetActive(true);
+        InitSetting();
     }
 
     public void ClosePage()
@@ -42,6 +43,11 @@ public class SettingManager : MonoBehaviour
 
     public void ClickAudio()
     {
+        if (SoundManager.Instance == null)
+        {
+            Debug.LogWarning("SoundManager instance is not available.");
+            return;
+        }
         SoundManager.Instance.PlayAudioSource("Click");
     }
 }
