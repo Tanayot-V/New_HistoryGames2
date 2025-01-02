@@ -20,7 +20,8 @@ public class LobbyGameManager : Singletons<LobbyGameManager>
         settingManager.ClosePage();
         diaryManager.DiaryClose();
         leaderboardManager.ClosePage();
-        AdsManager.Instance.OpenDOAdsPage();
+        //AdsManager.Instance.OpenDOAdsPage();
+        //Debug.Log(CalculateScoreLeaderbaord(900, 768, 31,  29, 350, 200, 5));
     }
 
     #region Setting
@@ -87,5 +88,4 @@ public class LobbyGameManager : Singletons<LobbyGameManager>
         UILobbyGameManager.Instance.ClickAudio();
     }
     #endregion
-
 }
