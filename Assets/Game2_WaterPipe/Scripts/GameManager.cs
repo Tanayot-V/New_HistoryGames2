@@ -28,6 +28,8 @@ public class GameManager : Singletons<GameManager>
     public float runTimer = 2f;
     public bool isRunWater = false;
 
+    public bool isGameEnd = false;
+
     public void Start()
     {
         timer = timePlay;
@@ -40,6 +42,8 @@ public class GameManager : Singletons<GameManager>
 
     void Update()
     {
+        if(isGameEnd) return;
+        
         if (timer <= 0)
         {
             // lose game
@@ -117,12 +121,6 @@ public class GameManager : Singletons<GameManager>
 
     public bool UseMove(int count)
     {
-        if (moveCount <= 0)
-        {
-            // lose game
-
-            return false;
-        } 
         moveCount += count;
         gameUiManager.UpdateMoveCount(moveCount);
         return true;
@@ -166,6 +164,8 @@ public class GameManager : Singletons<GameManager>
 
     private IEnumerator EndGame(bool isWin,LoseCondition loseCondition)
     {
+        if(isGameEnd) yield break;
+        isGameEnd = true;
         if(isWin)
         {
             gridCanvas.SaveState(gridCanvas.savelevelName);

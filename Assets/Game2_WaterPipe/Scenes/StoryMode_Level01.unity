@@ -198,6 +198,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1082649
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1135,6 +1137,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &60423914
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1295,9 +1299,9 @@ RectTransform:
   - {fileID: 1981885854}
   m_Father: {fileID: 101074217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1385, y: -150}
   m_SizeDelta: {x: 230, y: 232.6718}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &73376793
@@ -1928,6 +1932,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &128300089
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2563,6 +2569,126 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 202591845}
   m_CullTransparentMesh: 1
+--- !u!1 &212315127
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 212315128}
+  - component: {fileID: 212315130}
+  - component: {fileID: 212315129}
+  - component: {fileID: 212315132}
+  - component: {fileID: 212315131}
+  m_Layer: 5
+  m_Name: MiniGame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &212315128
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212315127}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1518152445}
+  m_Father: {fileID: 584849794}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &212315129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212315127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.6666667}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &212315130
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212315127}
+  m_CullTransparentMesh: 1
+--- !u!114 &212315131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212315127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 346e5866b5f466c42836ce4258ae6172, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemImg: {fileID: 1353541614}
+  itemData:
+  - itemId: 30001
+    itemSprite: {fileID: 21300000, guid: 3173b59669fe64b519f80c9fa2f3536f, type: 3}
+    lowHpSprite: {fileID: 21300000, guid: 13aa8234f02f6e64bb0032edbf2e1d0a, type: 3}
+  - itemId: 30002
+    itemSprite: {fileID: 21300000, guid: cb52f4ee3fbfb4486a72b5d7bd453d0e, type: 3}
+    lowHpSprite: {fileID: 21300000, guid: 71677af9540095c4f9c364d0fb62c67a, type: 3}
+  - itemId: 30013
+    itemSprite: {fileID: 21300000, guid: 5d1b53891ba7a4a0b8c8267e0533e5ff, type: 3}
+    lowHpSprite: {fileID: 21300000, guid: ef87e523239be438b86966a41fca4a60, type: 3}
+  currentItemData:
+    itemId: 
+    itemSprite: {fileID: 0}
+    lowHpSprite: {fileID: 0}
+  minHitCount: 3
+  maxHitCount: 5
+  hitCount: 0
+--- !u!225 &212315132
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212315127}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &214829043
 GameObject:
   m_ObjectHideFlags: 0
@@ -2945,8 +3071,8 @@ Camera:
   m_GameObject: {fileID: 231106613}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.39607847, g: 0.29411766, b: 0.14509805, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -2996,7 +3122,7 @@ Transform:
   m_GameObject: {fileID: 231106613}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.61, y: 4.9, z: -10}
+  m_LocalPosition: {x: 5.61, y: 4.27, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3297,6 +3423,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &271826081
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -3425,6 +3553,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &293134855
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -3510,9 +3640,9 @@ RectTransform:
   - {fileID: 344371501}
   m_Father: {fileID: 101074217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 635, y: -150}
   m_SizeDelta: {x: 230, y: 232.6718}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &301579860
@@ -4447,6 +4577,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &378573847
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -4557,6 +4689,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &387268984
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -4863,9 +4997,9 @@ RectTransform:
   - {fileID: 617418671}
   m_Father: {fileID: 101074217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 135, y: -150}
   m_SizeDelta: {x: 230, y: 232.6718}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &405097009
@@ -5127,6 +5261,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &407091714
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -5961,6 +6097,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &437074677
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -6046,9 +6184,9 @@ RectTransform:
   - {fileID: 188582583}
   m_Father: {fileID: 101074217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 385, y: -150}
   m_SizeDelta: {x: 230, y: 232.6718}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &439194933
@@ -6726,6 +6864,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &491874814
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -7183,6 +7323,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &554067884
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -7556,6 +7698,7 @@ RectTransform:
   - {fileID: 829542231}
   - {fileID: 234330729}
   - {fileID: 703113086}
+  - {fileID: 212315128}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -7761,8 +7904,8 @@ MonoBehaviour:
   pipeManager: {fileID: 748566186}
   gameUiManager: {fileID: 602540495}
   gridCanvas: {fileID: 753102201}
-  timePlay: 300
-  moveCount: 20
+  timePlay: 30
+  moveCount: 0
   hammerCount: 5
   onHammer: 0
   uiRaycaster: {fileID: 313400271}
@@ -7771,6 +7914,7 @@ MonoBehaviour:
   pipeEnds: []
   runTimer: 2
   isRunWater: 0
+  isGameEnd: 0
 --- !u!114 &602540495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7795,6 +7939,8 @@ MonoBehaviour:
   - {fileID: 417511360}
   - {fileID: 1056400864}
   - {fileID: 1657551044}
+  minigamePanel: {fileID: 212315132}
+  minigameManager: {fileID: 212315131}
 --- !u!1 &608225312
 GameObject:
   m_ObjectHideFlags: 0
@@ -8778,6 +8924,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &750058323
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -9258,6 +9406,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &801550356
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -10747,6 +10897,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &864489388
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -11440,6 +11592,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &922485486
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -11662,6 +11816,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &932592088
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -11869,6 +12025,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &978671403
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -12779,6 +12937,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1073656087
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -12904,6 +13064,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1094087724
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -13661,6 +13823,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1216447225
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -15104,6 +15268,138 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1350810176}
   m_CullTransparentMesh: 1
+--- !u!1 &1353541612
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1353541613}
+  - component: {fileID: 1353541615}
+  - component: {fileID: 1353541614}
+  - component: {fileID: 1353541616}
+  m_Layer: 5
+  m_Name: item
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1353541613
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353541612}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1518152445}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 537.6201, y: 537.6201}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1353541614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353541612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 0591d331b78d1473e812e195cf0a3d0c, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1353541615
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353541612}
+  m_CullTransparentMesh: 1
+--- !u!114 &1353541616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353541612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1353541614}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 212315131}
+        m_TargetAssemblyTypeName: MinigameManager, Assembly-CSharp
+        m_MethodName: Hit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1364088013
 GameObject:
   m_ObjectHideFlags: 0
@@ -15236,9 +15532,9 @@ RectTransform:
   - {fileID: 720472115}
   m_Father: {fileID: 101074217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1635, y: -150}
   m_SizeDelta: {x: 230, y: 232.6718}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1394066915
@@ -15579,6 +15875,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1410872254
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -15882,6 +16180,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1424038626
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -16104,6 +16404,82 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1455859122}
   m_CullTransparentMesh: 1
+--- !u!1 &1518152444
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1518152445}
+  - component: {fileID: 1518152447}
+  - component: {fileID: 1518152446}
+  m_Layer: 5
+  m_Name: Frame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1518152445
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518152444}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1353541613}
+  m_Father: {fileID: 212315128}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 989.574, y: 1335.0771}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1518152446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518152444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 1316a84a6a273104ab374f01f20e9f3f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1518152447
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518152444}
+  m_CullTransparentMesh: 1
 --- !u!1 &1531386779
 GameObject:
   m_ObjectHideFlags: 0
@@ -16164,6 +16540,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1531386782
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -16729,6 +17107,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1590144008
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -17104,6 +17484,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1605046308
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -17648,6 +18030,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1655871333
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -18532,9 +18916,9 @@ RectTransform:
   - {fileID: 1633644596}
   m_Father: {fileID: 101074217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 885, y: -150}
   m_SizeDelta: {x: 230, y: 232.6718}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1723791359
@@ -18933,6 +19317,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1753658420
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -19139,6 +19525,7 @@ MonoBehaviour:
   finnishCount: 0
   isWasteWater: 0
   westPipeImage: {fileID: 0}
+  isFinish: 0
 --- !u!114 &1793364625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19160,6 +19547,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1793364626
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -19414,6 +19803,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1808324896
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -19614,6 +20005,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1858557738
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -20099,6 +20492,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1896105312
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -21139,6 +21534,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &2016698909
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -21317,7 +21714,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3556.6, y: 1515}
+  m_AnchoredPosition: {x: 3556.7, y: 1283}
   m_SizeDelta: {x: 8193, y: 14565.33}
   m_Pivot: {x: 0.5, y: 0.50000006}
 --- !u!114 &2027328963
@@ -21393,9 +21790,9 @@ RectTransform:
   - {fileID: 1744565410}
   m_Father: {fileID: 101074217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1135, y: -150}
   m_SizeDelta: {x: 230, y: 232.6718}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2033500760
@@ -21766,6 +22163,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &2089372715
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -22482,6 +22881,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &2144982187
 CanvasGroup:
   m_ObjectHideFlags: 0

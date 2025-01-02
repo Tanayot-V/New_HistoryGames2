@@ -16,6 +16,12 @@ public class GameUiManager : MonoBehaviour
     public GameObject winPanel;
     public GameObject losePanel;
     public List<GameObject> loseCases;
+
+    [Header("Minigame")]
+    public CanvasGroup minigamePanel;
+    public MinigameManager minigameManager;
+    public System.Action<bool> minigameCallback;
+
     public void Init(float timepercent, int moveCount, int hammerCount)
     {
         timerBar.fillAmount = timepercent;
@@ -71,5 +77,50 @@ public class GameUiManager : MonoBehaviour
     public void OnEndHammer()
     {
         hammerBgImage.color = Color.white;
+    }
+
+    public void ShowMinigame(string itemId, System.Action<bool> callback)
+    {
+        minigameCallback = callback;
+        minigameManager.SetUP(itemId);
+        minigamePanel.alpha = 0;
+        minigamePanel.blocksRaycasts = true;
+        minigamePanel.interactable = true;
+        StopAllCoroutines();
+        StartCoroutine(FadeMinigame(true));
+    }
+
+    private IEnumerator FadeMinigame(bool isfadein)
+    {
+        if(isfadein)
+        {
+            minigamePanel.alpha = 0;
+            while (minigamePanel.alpha < 1)
+            {
+                minigamePanel.alpha += Time.deltaTime * 2f;
+                yield return null;
+            }
+            minigamePanel.alpha = 1;
+        }
+        else
+        {
+            minigamePanel.alpha = 1;
+            while (minigamePanel.alpha > 0)
+            {
+                minigamePanel.alpha -= Time.deltaTime  * 2f;
+                yield return null;
+            }
+            minigamePanel.alpha = 0;
+            minigamePanel.blocksRaycasts = false;
+            minigamePanel.interactable = false;
+        }
+        yield break;
+    }
+
+    public void hideMinigame(bool isfinish)
+    {
+        StopAllCoroutines();
+        StartCoroutine(FadeMinigame(false));
+        minigameCallback?.Invoke(isfinish);
     }
 }

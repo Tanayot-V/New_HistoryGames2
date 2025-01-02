@@ -25,7 +25,19 @@ public class Obstacle : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData)
     {
         //Open minigame
-        
+        GameManager.Instance.gameUiManager.ShowMinigame(gameObject.name.Substring(0,5), (isFinish) =>
+        {
+            if(isFinish)
+            {
+                DestroyObstacle();
+            }
+        });
+
+    }
+
+    public void DestroyObstacle()
+    {
+        Debug.Log("1");
         //Mini game Callback
         if(pipeObject.pipeData.pipeType == PipeType.Road)
         {
@@ -36,7 +48,6 @@ public class Obstacle : MonoBehaviour, IPointerClickHandler
             slot.item = null;
             slot.isDefault = false;
         }
-        Destroy(gameObject);
-
+        DestroyImmediate(gameObject);
     }
 }

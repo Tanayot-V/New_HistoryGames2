@@ -20,7 +20,11 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        if(pipeObject.isRotating || isSnapOnSlot) return;
+        if(pipeObject.isRotating || isSnapOnSlot)
+        {
+            eventData.pointerDrag = null;
+            return;
+        } 
         transform.SetParent(transform.root);
         canvasGroup.blocksRaycasts = false;
         offset = rectTransform.position - Camera.main.ScreenToWorldPoint(eventData.position);
@@ -28,7 +32,11 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
     public void OnDrag(PointerEventData eventData)
     {
-        if(pipeObject.isRotating || isSnapOnSlot) return;
+        if(pipeObject.isRotating || isSnapOnSlot)
+        {
+            eventData.pointerDrag = null;
+            return;
+        } 
         Vector3 newPosition = Camera.main.ScreenToWorldPoint(eventData.position) + offset;
         rectTransform.position = new Vector3(newPosition.x, newPosition.y, rectTransform.position.z);
     }

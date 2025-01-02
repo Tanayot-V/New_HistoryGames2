@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -19,6 +20,21 @@ public class PipeEnd : MonoBehaviour
             {
                 isFinish = true;
                 onFinished?.Invoke();
+                PipeObject pipeObject = GetComponentInChildren<PipeObject>();
+                if (pipeObject != null)
+                {
+                    GameObject go = GameManager.Instance.gridCanvas.slots[(int)pipeObject.startPipePos.x,(int)pipeObject.startPipePos.y].item;
+                    if(go != null)
+                    {
+                        PipeStart ps = go.GetComponent<PipeStart>();
+                        if(ps != null)
+                        {
+                            Debug.Log($"Waste Pipe start finish {ps.name} ay {pipeObject.startPipePos}");
+                            ps.isFinish = true;
+                        }
+                    }
+
+                }
             }
         }
         else

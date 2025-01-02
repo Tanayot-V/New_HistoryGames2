@@ -184,6 +184,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &4744863
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1199,6 +1201,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &24309216
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2615,6 +2619,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &69207224
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2725,6 +2731,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &69222715
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -3183,6 +3191,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &82647850
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -3321,6 +3331,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &82932344
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -3556,6 +3568,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &85367058
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -3666,6 +3680,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &87868943
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -3776,6 +3792,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &87962139
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -3886,6 +3904,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &91976273
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -5501,6 +5521,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &125850469
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -5622,6 +5644,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &127342128
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -5826,6 +5850,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &129102438
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -6367,6 +6393,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &140127440
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -6604,6 +6632,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &151903524
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -7090,6 +7120,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &161683835
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -7444,6 +7476,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &169817848
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -7629,6 +7663,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &177592259
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -7987,6 +8023,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &182979415
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -8292,6 +8330,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &186084217
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -8552,6 +8592,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &188867787
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -8741,6 +8783,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &196004462
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -8996,6 +9040,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &196800298
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -9677,6 +9723,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &208930660
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -9801,6 +9849,126 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 211884538}
+  m_CullTransparentMesh: 1
+--- !u!1 &213134458
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 213134459}
+  - component: {fileID: 213134463}
+  - component: {fileID: 213134462}
+  - component: {fileID: 213134461}
+  - component: {fileID: 213134460}
+  m_Layer: 5
+  m_Name: MiniGame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &213134459
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213134458}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 670427737}
+  m_Father: {fileID: 584849794}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &213134460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213134458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 346e5866b5f466c42836ce4258ae6172, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemImg: {fileID: 1427069057}
+  itemData:
+  - itemId: 30001
+    itemSprite: {fileID: 21300000, guid: 3173b59669fe64b519f80c9fa2f3536f, type: 3}
+    lowHpSprite: {fileID: 21300000, guid: 13aa8234f02f6e64bb0032edbf2e1d0a, type: 3}
+  - itemId: 30002
+    itemSprite: {fileID: 21300000, guid: cb52f4ee3fbfb4486a72b5d7bd453d0e, type: 3}
+    lowHpSprite: {fileID: 21300000, guid: 71677af9540095c4f9c364d0fb62c67a, type: 3}
+  - itemId: 30013
+    itemSprite: {fileID: 21300000, guid: 5d1b53891ba7a4a0b8c8267e0533e5ff, type: 3}
+    lowHpSprite: {fileID: 21300000, guid: ef87e523239be438b86966a41fca4a60, type: 3}
+  currentItemData:
+    itemId: 
+    itemSprite: {fileID: 0}
+    lowHpSprite: {fileID: 0}
+  minHitCount: 3
+  maxHitCount: 5
+  hitCount: 0
+--- !u!225 &213134461
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213134458}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
+--- !u!114 &213134462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213134458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.6666667}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &213134463
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213134458}
   m_CullTransparentMesh: 1
 --- !u!1 &215790922
 GameObject:
@@ -10323,6 +10491,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &225053679
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -10444,6 +10614,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &225342652
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -10940,6 +11112,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &229850495
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -11214,6 +11388,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &234220789
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -11735,6 +11911,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &240272584
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -11845,6 +12023,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &240526949
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -12168,6 +12348,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &246379949
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -12393,6 +12575,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &247972004
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -12596,6 +12780,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &249158498
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -12907,6 +13093,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &253509353
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -13361,6 +13549,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &261582396
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -13649,6 +13839,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &262971141
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -13774,6 +13966,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &265895852
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -14345,6 +14539,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &273976647
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -14660,6 +14856,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &276774973
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -14977,6 +15175,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &284911532
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -15195,6 +15395,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &290124967
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -15335,6 +15537,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &290357065
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -16119,6 +16323,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &307153208
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -16487,6 +16693,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &310968178
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -17022,6 +17230,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &317834092
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -17143,6 +17353,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &318265473
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -17767,6 +17979,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &336582742
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -18777,6 +18991,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &363506319
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -18887,6 +19103,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &363961161
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -19112,6 +19330,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &364350916
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -19312,6 +19532,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &364580297
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -19433,6 +19655,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &364883184
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -19562,6 +19786,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &366641109
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -19770,6 +19996,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &372765846
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -20296,6 +20524,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &381966157
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -20406,6 +20636,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &389685765
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -20527,6 +20759,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &395329260
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -21409,6 +21643,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &406707159
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -21794,6 +22030,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &414473863
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -22407,6 +22645,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &430340009
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -23129,6 +23369,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &445462879
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -23843,6 +24085,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &461737465
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -24480,6 +24724,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &471073337
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -24590,6 +24836,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &471812357
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -24884,6 +25132,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &474046816
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -25013,6 +25263,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &474728180
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -25489,6 +25741,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &483332043
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -25692,6 +25946,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &487059709
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -25934,6 +26190,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &494930397
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -26459,6 +26717,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &513465762
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -26659,6 +26919,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &517885955
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -26867,6 +27129,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &520106719
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -27066,6 +27330,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &522753715
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -27213,6 +27479,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &527135190
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -27571,6 +27839,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &534593450
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -27806,6 +28076,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &535939651
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -28116,6 +28388,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &539422395
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -28237,6 +28511,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &542553287
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -28377,6 +28653,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &544090965
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -28656,6 +28934,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &549696437
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -28766,6 +29046,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &550633297
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -29060,6 +29342,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &559971924
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -29465,6 +29749,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &569422045
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -30056,6 +30342,7 @@ RectTransform:
   - {fileID: 829542231}
   - {fileID: 234330729}
   - {fileID: 703113086}
+  - {fileID: 213134459}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -30141,6 +30428,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &585932197
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -30370,6 +30659,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &587696869
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -30583,6 +30874,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &588011645
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -30918,6 +31211,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &593194468
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -31291,6 +31586,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &597685269
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -31602,6 +31899,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &598567412
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -31733,6 +32032,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &599032094
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -31906,9 +32207,9 @@ MonoBehaviour:
   pipeManager: {fileID: 748566186}
   gameUiManager: {fileID: 602540495}
   gridCanvas: {fileID: 753102201}
-  timePlay: 300
+  timePlay: 420
   moveCount: 20
-  hammerCount: 5
+  hammerCount: 10
   onHammer: 0
   uiRaycaster: {fileID: 313400271}
   eventSystem: {fileID: 192384232}
@@ -31916,6 +32217,7 @@ MonoBehaviour:
   pipeEnds: []
   runTimer: 2
   isRunWater: 0
+  isGameEnd: 0
 --- !u!114 &602540495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31940,6 +32242,8 @@ MonoBehaviour:
   - {fileID: 417511360}
   - {fileID: 1056400864}
   - {fileID: 1657551044}
+  minigamePanel: {fileID: 213134461}
+  minigameManager: {fileID: 213134460}
 --- !u!1 &605936251
 GameObject:
   m_ObjectHideFlags: 0
@@ -32222,6 +32526,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &607016148
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -32537,6 +32843,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &612231799
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -33159,6 +33467,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &625028526
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -33964,6 +34274,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &641018239
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -34170,6 +34482,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &645814145
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -34886,6 +35200,82 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 669962756}
   m_CullTransparentMesh: 1
+--- !u!1 &670427736
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 670427737}
+  - component: {fileID: 670427739}
+  - component: {fileID: 670427738}
+  m_Layer: 5
+  m_Name: Frame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &670427737
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670427736}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1427069055}
+  m_Father: {fileID: 213134459}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 989.574, y: 1335.0771}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &670427738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670427736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 1316a84a6a273104ab374f01f20e9f3f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &670427739
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670427736}
+  m_CullTransparentMesh: 1
 --- !u!1 &671391571
 GameObject:
   m_ObjectHideFlags: 0
@@ -34957,6 +35347,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &671391575
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -35161,6 +35553,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &673014241
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -36880,6 +37274,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &701584568
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -37008,6 +37404,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &701679058
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -37350,6 +37748,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &704226775
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -37727,6 +38127,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &710043423
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -37837,6 +38239,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &713472762
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -37965,6 +38369,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &715641406
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -38903,6 +39309,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &732542038
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -39024,6 +39432,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &736386095
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -39269,6 +39679,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &739889205
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -39551,6 +39963,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &741601878
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -39672,6 +40086,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &742351159
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -39801,6 +40217,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &742513999
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -41035,6 +41453,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &755828202
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -41166,6 +41586,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &756467476
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -41276,6 +41698,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &756810441
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -41674,6 +42098,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &769203270
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -42336,6 +42762,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &784346894
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -42850,6 +43278,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &789451275
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -43150,6 +43580,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &794839269
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -44086,6 +44518,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &824006295
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -44207,6 +44641,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &827699915
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -44691,6 +45127,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &831804492
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -45043,6 +45481,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &834679558
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -45419,6 +45859,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &838478242
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -45615,6 +46057,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &844628064
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -45859,6 +46303,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &852814443
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -46044,6 +46490,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &857171284
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -46338,6 +46786,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &861993875
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -47091,6 +47541,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &876148939
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -47748,6 +48200,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &884376095
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -48920,6 +49374,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &913879775
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -49142,6 +49598,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &914320522
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -49263,6 +49721,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &914635205
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -49508,6 +49968,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &917012700
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -49637,6 +50099,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &917814140
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -49822,6 +50286,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &918683198
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -50310,6 +50776,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &927368742
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -50460,6 +50928,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &929127423
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -50829,6 +51299,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &937535370
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -51325,6 +51797,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &949423655
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -51900,6 +52374,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &955984928
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -52372,6 +52848,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &960441010
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -52654,6 +53132,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &961916909
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -53195,6 +53675,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &974092681
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -53399,6 +53881,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &976354253
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -53524,6 +54008,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &976368497
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -54286,6 +54772,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &985328134
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -54471,6 +54959,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &993150189
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -54731,6 +55221,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1005059060
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -55013,6 +55505,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1007492429
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -55790,6 +56284,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1023080559
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -56091,6 +56587,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1027054361
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -56437,6 +56935,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1038497537
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -56887,6 +57387,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1049526864
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -57555,6 +58057,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1056287159
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -57991,6 +58495,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1057358524
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -58297,6 +58803,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1068865171
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -58425,6 +58933,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1068900287
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -58955,6 +59465,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1079597923
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -59594,6 +60106,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1092322537
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -60100,6 +60614,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1100514307
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -60326,6 +60842,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1101881185
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -60770,6 +61288,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1107892845
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -61289,6 +61809,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1121791420
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -61410,6 +61932,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1123425231
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -61873,6 +62397,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1128261803
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -62002,6 +62528,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1128378456
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -62406,6 +62934,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1137426987
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -62861,6 +63391,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1147279706
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -63579,6 +64111,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1161017431
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -63707,6 +64241,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1162107175
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -63913,6 +64449,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1168889740
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -64431,6 +64969,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1174576601
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -64581,6 +65121,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1175312517
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -64712,6 +65254,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1175363567
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -65091,6 +65635,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1183748045
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -65488,6 +66034,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1201589320
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -66826,6 +67374,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1226193199
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -67109,6 +67659,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1228595731
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -67488,6 +68040,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1237150315
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -67609,6 +68163,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1240605684
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -67735,7 +68291,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ef4bc0c4307504ed5845c6c6dce6ccf0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4ddee63b24b568546b1edf81df993e7e, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -68001,6 +68557,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1243882330
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -68214,6 +68772,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1245408242
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -68485,6 +69045,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1254264499
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -68808,6 +69370,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1258850751
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -68918,6 +69482,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1260370996
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -69028,6 +69594,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1264416602
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -69576,6 +70144,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1273108723
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -70181,6 +70751,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1291227052
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -70409,6 +70981,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1295133635
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -70789,6 +71363,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1302710722
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -70927,6 +71503,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1302878576
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -71237,6 +71815,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1314442216
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -72063,6 +72643,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1326576001
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -72173,6 +72755,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1329199082
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -72526,6 +73110,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1333090043
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -72722,6 +73308,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1334799416
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -72880,6 +73468,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1336444958
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -73531,6 +74121,7 @@ MonoBehaviour:
   finnishCount: 0
   isWasteWater: 0
   westPipeImage: {fileID: 0}
+  isFinish: 0
 --- !u!114 &1352285557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73552,6 +74143,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1352285558
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -73770,6 +74363,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1356036273
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -74071,6 +74666,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1371008128
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -74928,6 +75525,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1393220020
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -75192,6 +75791,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1394198501
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -75302,6 +75903,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1396658234
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -75487,6 +76090,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1398086386
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -75898,6 +76503,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1412171232
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -76442,6 +77049,138 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1424950514}
   m_CullTransparentMesh: 1
+--- !u!1 &1427069054
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1427069055}
+  - component: {fileID: 1427069058}
+  - component: {fileID: 1427069057}
+  - component: {fileID: 1427069056}
+  m_Layer: 5
+  m_Name: item
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1427069055
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427069054}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 670427737}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 537.6201, y: 537.6201}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1427069056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427069054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1427069057}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 213134460}
+        m_TargetAssemblyTypeName: MinigameManager, Assembly-CSharp
+        m_MethodName: Hit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1427069057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427069054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 0591d331b78d1473e812e195cf0a3d0c, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1427069058
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427069054}
+  m_CullTransparentMesh: 1
 --- !u!1 &1434855713
 GameObject:
   m_ObjectHideFlags: 0
@@ -76517,6 +77256,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1434855717
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -76730,6 +77471,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1437448199
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -76855,6 +77598,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1439086560
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -76983,6 +77728,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1439610139
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -77303,6 +78050,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1442169533
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -77521,6 +78270,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1456773576
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -77678,6 +78429,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1464211134
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -78186,6 +78939,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1477646526
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -78314,6 +79069,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1480364861
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -78521,6 +79278,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1485897795
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -78757,6 +79516,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1488351786
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -79546,6 +80307,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1499965959
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -79801,6 +80564,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1502231683
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -79922,6 +80687,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1505766904
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -80224,6 +80991,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1510211197
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -80345,6 +81114,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1510978525
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -80502,6 +81273,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1511578497
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -80724,6 +81497,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1515282770
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -80862,6 +81637,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1515930400
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -81263,6 +82040,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1521875215
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -81401,6 +82180,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1524097392
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -81620,6 +82401,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1525751383
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -82828,6 +83611,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1544421846
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -83692,6 +84477,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1561236065
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -83821,6 +84608,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1562000395
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -83949,6 +84738,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1562833848
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -84145,6 +84936,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1563501089
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -84588,6 +85381,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1569912708
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -85267,6 +86062,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1583047333
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -86781,6 +87578,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1613378050
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -86994,6 +87793,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1621458696
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -87538,6 +88339,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1624043405
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -87813,6 +88616,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1632385190
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -88438,6 +89243,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1640926928
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -88731,6 +89538,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1646965617
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -88953,6 +89762,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1649540803
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -90086,6 +90897,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1681696027
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -91111,6 +91924,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1696679341
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -91239,6 +92054,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1696882738
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -91458,6 +92275,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1703947582
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -91759,6 +92578,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1711136382
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -91869,6 +92690,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1711968168
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -92351,6 +93174,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1723027059
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -93078,6 +93903,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1741448887
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -93301,6 +94128,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1742468468
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -93733,6 +94562,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1749860326
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -93968,6 +94799,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1755534796
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -94392,6 +95225,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1761363427
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -94523,6 +95358,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1763973903
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -94914,6 +95751,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1770246653
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -95236,6 +96075,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1775532826
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -95958,6 +96799,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1786038200
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -96143,6 +96986,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1790955757
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -96673,6 +97518,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1799881287
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -96858,6 +97705,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1802264471
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -97112,6 +97961,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1804607126
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -97243,6 +98094,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1804805690
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -97364,6 +98217,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1806458878
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -97493,6 +98348,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1810894815
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -97861,6 +98718,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1814202923
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -98151,6 +99010,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1819639089
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -98496,6 +99357,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1821829233
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -98681,6 +99544,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1824578218
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -99176,6 +100041,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1835538526
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -99665,6 +100532,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1848355069
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -100332,6 +101201,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1859854865
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -100463,6 +101334,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1861192555
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -101141,6 +102014,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1869820185
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -101739,6 +102614,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1879151942
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -101870,6 +102747,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1881095794
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -102153,6 +103032,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1889371733
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -102284,6 +103165,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1889516383
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -102497,6 +103380,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1891770108
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -102635,6 +103520,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1893693071
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -102756,6 +103643,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1894876963
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -103888,6 +104777,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1922622497
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -104166,6 +105057,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1928466341
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -104726,6 +105619,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1931749612
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -105292,6 +106187,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1948498066
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -105617,6 +106514,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1954271976
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -105727,6 +106626,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1954838594
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -105945,6 +106846,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1956841923
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -106172,6 +107075,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1962395469
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -106398,6 +107303,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1969050817
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -107422,6 +108329,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1985938086
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -107681,6 +108590,7 @@ MonoBehaviour:
   finnishCount: 0
   isWasteWater: 0
   westPipeImage: {fileID: 0}
+  isFinish: 0
 --- !u!114 &1987279449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107702,6 +108612,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1987279450
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -108209,6 +109121,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1993271392
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -108660,6 +109574,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1998657401
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -108798,6 +109714,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &1998791962
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -109274,6 +110192,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &2009509959
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -109674,6 +110594,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &2013935935
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -109889,6 +110811,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &2019829001
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -110085,6 +111009,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &2020292589
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -111447,6 +112373,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &2043081773
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -111741,6 +112669,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &2046658755
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -112139,6 +113069,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &2052578067
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -112512,6 +113444,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &2058534468
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -112892,6 +113826,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &2063804139
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -113017,6 +113953,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &2065085120
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -113536,6 +114474,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &2087241378
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -113905,6 +114845,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &2093202573
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -114026,6 +114968,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &2093645023
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -114909,6 +115853,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &2112756808
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -115019,6 +115965,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &2115946262
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -115549,6 +116497,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &2126498256
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -115734,6 +116684,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &2129573957
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -115955,6 +116907,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &2132307273
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -116065,6 +117019,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!225 &2139689049
 CanvasGroup:
   m_ObjectHideFlags: 0
