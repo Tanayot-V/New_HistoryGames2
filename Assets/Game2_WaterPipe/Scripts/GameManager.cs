@@ -8,19 +8,19 @@ using UnityEngine.UI;
 
 public class GameManager : Singletons<GameManager>
 {
+    public bool isDebug = false;
+    public int debugStarCount = 3;
+    [Space(20)]
     public PipeManager pipeManager;
     public GameUiManager gameUiManager;
     public GridCanvas gridCanvas;
+    public ItemManager itemManager;
 
     [Header("Game Data")]
+    public bool isStartGame = false;
     public float timePlay = 600;
     private float timer;
     public int moveCount = 0;
-    public int hammerCount = 5;
-
-    public bool onHammer;
-    public GraphicRaycaster uiRaycaster;
-    public EventSystem eventSystem;
 
     public List<PipeStart> pipeStarts = new List<PipeStart>();
     public List<PipeEnd> pipeEnds = new List<PipeEnd>();
@@ -35,29 +35,27 @@ public class GameManager : Singletons<GameManager>
         timer = timePlay;
         pipeStarts.Clear();
         pipeEnds.Clear();
-        gameUiManager.Init(1f, moveCount, hammerCount);
+        gameUiManager.Init(1f, moveCount, itemManager.addTimeCount, itemManager.drawLineCount, itemManager.hammerCount);
         pipeStarts.AddRange(FindObjectsOfType<PipeStart>());
         pipeEnds.AddRange(FindObjectsOfType<PipeEnd>());
     }
 
+    public void StartGame()
+    {
+        isStartGame = true;
+        gameUiManager.buttomBar.SetActive(true);
+        gameUiManager.letsDoItBtn.SetActive(false);
+    }
+
     void Update()
     {
-        if(isGameEnd) return;
-        
+        if(isGameEnd || !isStartGame) return;
+
         if (timer <= 0)
         {
             // lose game
             StartCoroutine(EndGame(false, LoseCondition.timeOut));
             return;
-        }
-        timer -= Time.deltaTime;
-        gameUiManager.UpdateTime(timer / timePlay);
-        if(onHammer)
-        {
-            if (Input.GetMouseButtonDown(0))
-            {
-                CheckClick();
-            }
         }
 
         if(isRunWater)
@@ -65,58 +63,26 @@ public class GameManager : Singletons<GameManager>
             runTimer -= Time.deltaTime;
             if(runTimer <= 0)
             {
-                isRunWater = false;
+                //isRunWater = false;
                 EndGameCheck();
             }
         }
+        else
+        {
+            timer -= Time.deltaTime;
+            gameUiManager.UpdateTime(timer / timePlay);
+        }
+    }
+
+    public void AddTime(float time)
+    {
+        timer += time;
+        gameUiManager.UpdateTime(timer / timePlay);
     }
 
     public void UpdatePipeSlotTOList(Vector2 _pos, PipeData _pipeData)
     {
         pipeManager.UpdatePipeSlotTOList(_pos, _pipeData);
-    }
-
-    void CheckClick()
-    {
-        PointerEventData pointerEventData = new PointerEventData(eventSystem);
-        pointerEventData.position = Input.mousePosition;
-
-        List<RaycastResult> results = new List<RaycastResult>();
-        uiRaycaster.Raycast(pointerEventData, results);
-        
-        bool clickedOnPipeObject = false;
-
-       foreach (RaycastResult result in results)
-        {
-            PipeObject pipeObject = result.gameObject.GetComponent<PipeObject>();
-            if (pipeObject != null)
-            {
-                clickedOnPipeObject = true;
-                break;
-            }
-        }
-
-        if (!clickedOnPipeObject)
-        {
-            Debug.Log("Clicked on something other than a PipeObject or empty space");
-            onHammer = false;
-            gameUiManager.OnEndHammer();
-        }
-    }
-
-    public void UseHammer()
-    {
-        if (hammerCount <= 0) return;
-        // Hammer logic
-        onHammer = true;
-    }
-
-    public void UseHammerComplete()
-    {
-        hammerCount--;
-        gameUiManager.UpdateHammerCount(hammerCount);
-        onHammer = false;
-        gameUiManager.OnEndHammer();
     }
 
     public bool UseMove(int count)
@@ -166,12 +132,20 @@ public class GameManager : Singletons<GameManager>
     {
         if(isGameEnd) yield break;
         isGameEnd = true;
-        if(isWin)
+        if(isDebug)
         {
-            gridCanvas.SaveState(gridCanvas.savelevelName);
+            yield return new WaitForSeconds(1f);
+            gameUiManager.ShowResult(true,loseCondition,debugStarCount);
         }
-        yield return new WaitForSeconds(1f);
-        gameUiManager.ShowResult(isWin,loseCondition);
+        else
+        {
+            if(isWin)
+            {
+                gridCanvas.SaveState(gridCanvas.savelevelName);
+            }
+            yield return new WaitForSeconds(1f);
+            gameUiManager.ShowResult(isWin,loseCondition,Random.Range(1,4));
+        }
     }
 }
 

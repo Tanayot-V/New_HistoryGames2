@@ -70,7 +70,7 @@ MonoBehaviour:
   initialSkinName: default
   initialFlipX: 0
   initialFlipY: 0
-  startingAnimation: 
+  startingAnimation: happy2
   startingLoop: 1
   timeScale: 1
   freeze: 0
@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 1824014376552994142}
   m_Layer: 5
   m_Name: 06
-  m_TagString: Untagged
+  m_TagString: GamePlay
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -232,6 +232,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cff7ec886a265a48b8305c164797f64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFarm: 0
+  isFinish: 0
   image: {fileID: 5557158952543866678}
   decorationDatas:
   - mainSprite: {fileID: 21300000, guid: 3d93c7c0b7caf4dc2a91c3f6b2ab620f, type: 3}
@@ -245,6 +247,8 @@ MonoBehaviour:
     successSprite: {fileID: 0}
   currentDecorationIndex: 0
   SuccessPipeEnds: []
+  sauc:
+  - {fileID: 8567142425852085744}
 --- !u!1 &7364301642869619923
 GameObject:
   m_ObjectHideFlags: 0

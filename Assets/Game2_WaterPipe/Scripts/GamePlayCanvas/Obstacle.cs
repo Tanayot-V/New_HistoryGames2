@@ -7,7 +7,7 @@ public class Obstacle : MonoBehaviour, IPointerClickHandler
 {
     public PipeObject pipeObject;
     public PipeSlotCanvas slot;
-    // Start is called before the first frame update
+
     void Start()
     {
         pipeObject = GetComponent<PipeObject>();
@@ -17,14 +17,9 @@ public class Obstacle : MonoBehaviour, IPointerClickHandler
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void OnPointerClick(PointerEventData eventData)
     {
-        //Open minigame
+        if(GameManager.Instance.isGameEnd || !GameManager.Instance.isStartGame || GameManager.Instance.isRunWater) return;
         GameManager.Instance.gameUiManager.ShowMinigame(gameObject.name.Substring(0,5), (isFinish) =>
         {
             if(isFinish)
@@ -32,13 +27,10 @@ public class Obstacle : MonoBehaviour, IPointerClickHandler
                 DestroyObstacle();
             }
         });
-
     }
 
     public void DestroyObstacle()
     {
-        Debug.Log("1");
-        //Mini game Callback
         if(pipeObject.pipeData.pipeType == PipeType.Road)
         {
             slot.roadObject = null;

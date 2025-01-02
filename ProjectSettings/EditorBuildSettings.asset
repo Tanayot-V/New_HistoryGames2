@@ -8,16 +8,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game2_WaterPipe/Scenes/Lobby.unity
     guid: 9428554745f784f3381e87b6eb5b478d
-  - enabled: 1
-    path: Assets/Game2_WaterPipe/Scenes/StoryMode_Level01.unity
-    guid: e2481e6820488544eaf68bb774aeb396
-  - enabled: 1
-    path: Assets/Game2_WaterPipe/Scenes/StoryMode_Level02.unity
-    guid: cbdee4cd806c3fd4ba68537ef4d979e8
-  - enabled: 1
-    path: Assets/Game2_WaterPipe/Scenes/StoryMode_Level03.unity
-    guid: 615027bc3d6ec704cbc08d391edc0237
-  - enabled: 1
-    path: Assets/Game2_WaterPipe/Scenes/StoryMode_Level04.unity
-    guid: af43de1d82fbcf546914d960ed148ef3
   m_configObjects: {}

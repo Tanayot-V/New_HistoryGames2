@@ -6,11 +6,15 @@ using UnityEngine.UI;
 
 public class Decoration : MonoBehaviour
 {
+    public bool isFarm = false;
+    public bool isFinish = false;
     public Image image;
     public DecorationData[] decorationDatas;
     public int currentDecorationIndex = 0;
 
-    public List<PipeEnd> SuccessPipeEnds = new List<PipeEnd>(); 
+    public List<PipeEnd> SuccessPipeEnds = new List<PipeEnd>();
+
+    public List<SpineAnimationUIController> sauc = new List<SpineAnimationUIController>();
 
     void Start()
     {
@@ -20,6 +24,7 @@ public class Decoration : MonoBehaviour
 
     void Update()
     {
+        if(isFinish) return;
         if(GameManager.Instance.isRunWater)
         {
             if(SuccessPipeEnds.TrueForAll(x => x.isFinish))
@@ -28,7 +33,7 @@ public class Decoration : MonoBehaviour
             }
             else
             {
-                if(GameManager.Instance.runTimer <= 0)
+                if(GameManager.Instance.runTimer < 0)
                 {
                     SetFailedDecoration();
                 }
@@ -38,13 +43,51 @@ public class Decoration : MonoBehaviour
 
     public void SetFailedDecoration()
     {
-        if(decorationDatas[currentDecorationIndex].failedSprite!=null)
-            image.sprite = decorationDatas[currentDecorationIndex].failedSprite;
+        if(isFinish) return;
+        isFinish = true;
+        // if(decorationDatas[currentDecorationIndex].failedSprite!=null)
+        //     image.sprite = decorationDatas[currentDecorationIndex].failedSprite;
+        if(isFarm)
+        {
+            foreach (var item in sauc)
+            {
+                item.gameObject.SetActive(true);
+                item.SetAnimation("dry", false);
+            }
+        }
+        else
+        {
+            foreach (var item in sauc)
+            {
+                item.gameObject.SetActive(true);
+                item.SetAnimation("angry", true);
+            }
+        }
+        
     }
     public void SetSuccessDecoration()
     {
-        if(decorationDatas[currentDecorationIndex].successSprite!=null)
-            image.sprite = decorationDatas[currentDecorationIndex].successSprite;
+        if(isFinish) return;
+        isFinish = true;
+        // if(decorationDatas[currentDecorationIndex].successSprite!=null)
+        //     image.sprite = decorationDatas[currentDecorationIndex].successSprite;
+        if(isFarm)
+        {
+            foreach (var item in sauc)
+            {
+                item.gameObject.SetActive(true);
+                item.SetAnimation("wet", false);
+            }
+        }
+        else
+        {
+            foreach (var item in sauc)
+            {
+                item.gameObject.SetActive(true);
+                string animationName = Random.Range(0, 2) == 0 ? "happy" : "happy2";
+                item.SetAnimation(animationName, true);
+            }
+        }
     }
 }
 

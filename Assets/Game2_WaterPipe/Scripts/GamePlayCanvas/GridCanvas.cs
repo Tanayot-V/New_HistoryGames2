@@ -1,11 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Newtonsoft;
 using Newtonsoft.Json;
-using JetBrains.Annotations;
-using Unity.Mathematics;
-using UnityEditor.Search.Providers;
 
 public class GridCanvas : MonoBehaviour
 {
@@ -135,8 +131,9 @@ public class GridCanvas : MonoBehaviour
 
         string dataString = JsonConvert.SerializeObject(data);
 
-        Debug.Log($"Data To Save : {dataString}");
+        //Debug.Log($"Data To Save : {dataString}");
         PlayerPrefs.SetString(levelname, dataString);
+        PlayerPrefs.Save();
     }
 
     public void LoadState(string levelname)
@@ -150,7 +147,7 @@ public class GridCanvas : MonoBehaviour
             {
                 if(slots[data.datas[i].posX, data.datas[i].posY].item != null)
                 {
-                    Debug.Log($"detect default item at {data.datas[i].posX} : {data.datas[i].posY} = slotItemData");
+                    //Debug.Log($"detect default item at {data.datas[i].posX} : {data.datas[i].posY} = slotItemData");
                     string slotItemData = this.dataString[data.datas[i].posX, data.datas[i].posY];
                     if(slotItemData.StartsWith("4") || slotItemData.StartsWith("1") || slotItemData.StartsWith("2"))
                     {
@@ -185,7 +182,7 @@ public class GridCanvas : MonoBehaviour
             {
                 string id = "";
                 if(dataString[x,y].StartsWith("0")) continue;
-                else if(dataString[x,y].StartsWith("40"))
+                else if(dataString[x,y].StartsWith("4"))
                 {
                     id = "40000";
                 }
@@ -240,7 +237,7 @@ public class GridCanvas : MonoBehaviour
                         pipeStart.pipeEnds = new List<PipeEnd>();
                         if(dataString[x,y].Substring(3, 2) == "14")
                         {
-                            Debug.Log($"LinkWastePipe {x}-{y} : {dataString[x,y]} / 14");
+                            //Debug.Log($"LinkWastePipe {x}-{y} : {dataString[x,y]} / 14");
                             PipeEnd pipeEnd = slots[x, y].item.GetComponent<PipeEnd>();
                             if(pipeEnd != null)
                             {
@@ -255,7 +252,7 @@ public class GridCanvas : MonoBehaviour
                             {
                                 int decoreLinkPosX = int.Parse(linkPos[i].Split(':')[0]);
                                 int decoreLinkPosY = int.Parse(linkPos[i].Split(':')[1]);
-                                Debug.Log($"LinkWastePipe {x}-{y} : {dataString[x,y]} / {decoreLinkPosX}, {decoreLinkPosY}");
+                                //Debug.Log($"LinkWastePipe {x}-{y} : {dataString[x,y]} / {decoreLinkPosX}, {decoreLinkPosY}");
                                 PipeEnd pipeEnd = slots[decoreLinkPosX, decoreLinkPosY].item.GetComponent<PipeEnd>();
                                 if(pipeEnd != null)
                                 {
@@ -318,7 +315,7 @@ public class GridCanvas : MonoBehaviour
                         {
                             int decoreLinkPosX = int.Parse(linkPos[i].Split(':')[0]);
                             int decoreLinkPosY = int.Parse(linkPos[i].Split(':')[1]);
-                            Debug.Log($"LinkWastePipe {x}-{y} : {dataString[x,y]} / {decoreLinkPosX}, {decoreLinkPosY}");
+                            //Debug.Log($"LinkWastePipe {x}-{y} : {dataString[x,y]} / {decoreLinkPosX}, {decoreLinkPosY}");
                             PipeEnd pipeEnd = slots[decoreLinkPosX, decoreLinkPosY].item.GetComponent<PipeEnd>();
                             if(pipeEnd != null)
                             {
@@ -355,7 +352,7 @@ public class GridCanvas : MonoBehaviour
             {
                 if(slots[x,y].isDefaultRoad)
                 {
-                    Debug.Log($"Check Road {x} - {y} : {slots[x,y].roadObject == null}");
+                    //Debug.Log($"Check Road {x} - {y} : {slots[x,y].roadObject == null}");
                     if(slots[x,y].roadObject == null)
                     {
                         return false;
@@ -364,6 +361,27 @@ public class GridCanvas : MonoBehaviour
             }
         }
         return true;
+    }
+
+    public void PrepairEndgame()
+    {
+        for (int y = 0; y < rows; y++)
+        {
+            for (int x = 0; x < columns; x++)
+            {
+                if(slots[x,y].item != null)
+                {
+                    PipeObject po = slots[x,y].item.GetComponent<PipeObject>();
+                    if(po != null)
+                    {
+                        if(po.pipeData.pipeType == PipeType.Obstacle)
+                        {
+                            po.transform.SetParent(decorateParent);
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
