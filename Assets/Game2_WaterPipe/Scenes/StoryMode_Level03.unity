@@ -506,7 +506,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1585102527}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 602540495}
+        m_TargetAssemblyTypeName: GameUiManager, Assembly-CSharp
+        m_MethodName: OnResetBtnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &13217398
 GameObject:
   m_ObjectHideFlags: 0
@@ -565,6 +577,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &13217401
@@ -663,6 +676,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &15933010
@@ -911,6 +925,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &19819586
@@ -1083,6 +1098,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 310968174}
 --- !u!114 &24002520
@@ -1699,6 +1715,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &46382372
@@ -1796,6 +1813,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &47672161
@@ -1898,6 +1916,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &51745754
@@ -2818,9 +2837,9 @@ RectTransform:
   - {fileID: 1981885854}
   m_Father: {fileID: 101074217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1385, y: -150}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 230, y: 232.6718}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &73376793
@@ -2976,6 +2995,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 1848355065}
 --- !u!114 &74100955
@@ -3073,6 +3093,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 671391571}
 --- !u!114 &78027736
@@ -3440,6 +3461,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 844628060}
 --- !u!114 &83707687
@@ -4089,6 +4111,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &97167730
@@ -4262,6 +4285,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &100678338
@@ -4359,6 +4383,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 1814202919}
 --- !u!114 &100886184
@@ -4540,6 +4565,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &101526381
@@ -4997,6 +5023,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &114355243
@@ -5169,6 +5196,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 494930393}
 --- !u!114 &117266879
@@ -5266,6 +5294,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 151903520}
 --- !u!114 &118922826
@@ -5306,6 +5335,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 118922823}
   m_CullTransparentMesh: 1
+--- !u!1 &119281923 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4091056219390869699, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+  m_PrefabInstance: {fileID: 1349389685}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &119513557
 GameObject:
   m_ObjectHideFlags: 0
@@ -5959,6 +5993,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &134072992
@@ -6207,6 +6242,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &136464912
@@ -6521,6 +6557,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &143797277
@@ -6761,6 +6798,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &152864758
@@ -7009,6 +7047,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &157803186
@@ -7773,6 +7812,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &179735890
@@ -8133,6 +8173,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &183385267
@@ -8230,6 +8271,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &184593906
@@ -8912,6 +8954,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &196068825
@@ -9225,6 +9268,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &203082103
@@ -9623,6 +9667,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &208303574
@@ -10028,6 +10073,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &215790925
@@ -10200,6 +10246,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &218379724
@@ -10298,6 +10345,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &222384092
@@ -10817,6 +10865,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &226725569
@@ -10915,6 +10964,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &229469432
@@ -11012,6 +11062,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &229537128
@@ -11695,6 +11746,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &235382220
@@ -11793,6 +11845,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &239586340
@@ -12132,6 +12185,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &243327938
@@ -12230,6 +12284,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &244316442
@@ -12457,6 +12512,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &247913087
@@ -12965,6 +13021,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &251479061
@@ -13352,6 +13409,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &256992952
@@ -13449,6 +13507,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 612231795}
 --- !u!114 &257355908
@@ -14075,6 +14134,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &265933127
@@ -14248,6 +14308,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &270062231
@@ -14421,6 +14482,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &272930876
@@ -14648,6 +14710,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &276374288
@@ -14745,6 +14808,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &276738206
@@ -14985,6 +15049,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &278616029
@@ -15284,6 +15349,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &288703184
@@ -15741,6 +15807,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &294387808
@@ -15839,6 +15906,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &295312036
@@ -15989,9 +16057,9 @@ RectTransform:
   - {fileID: 344371501}
   m_Father: {fileID: 101074217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 635, y: -150}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 230, y: 232.6718}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &301579860
@@ -16090,6 +16158,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 301579858}
   m_CullTransparentMesh: 1
+--- !u!1 &304648198 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1950059283558808173, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+  m_PrefabInstance: {fileID: 1098552659}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &306204317
 GameObject:
   m_ObjectHideFlags: 0
@@ -16223,6 +16296,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &306425634
@@ -16432,6 +16506,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &308330652
@@ -17005,6 +17080,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &314078810
@@ -17102,6 +17178,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 1956841919}
 --- !u!114 &315331474
@@ -17481,6 +17558,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &320853319
@@ -17879,6 +17957,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &335418497
@@ -18163,6 +18242,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &340320578
@@ -18410,6 +18490,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 276774969}
 --- !u!114 &346502767
@@ -18508,6 +18589,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &356017143
@@ -18891,6 +18973,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &362589072
@@ -19212,6 +19295,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &364286631
@@ -19896,6 +19980,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &371961591
@@ -20256,6 +20341,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &378217741
@@ -20887,6 +20973,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &398661714
@@ -21182,6 +21269,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &401896462
@@ -21407,9 +21495,9 @@ RectTransform:
   - {fileID: 617418671}
   m_Father: {fileID: 101074217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 135, y: -150}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 230, y: 232.6718}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &405097009
@@ -21827,6 +21915,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 1107892841}
 --- !u!114 &411730372
@@ -22276,6 +22365,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &419421603
@@ -23058,6 +23148,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &438049443
@@ -23133,9 +23224,9 @@ RectTransform:
   - {fileID: 188582583}
   m_Father: {fileID: 101074217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 385, y: -150}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 230, y: 232.6718}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &439194933
@@ -23704,6 +23795,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &456137465
@@ -23801,6 +23893,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 225342648}
 --- !u!114 &456303312
@@ -23974,6 +24067,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &459422663
@@ -24213,6 +24307,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &463846103
@@ -24311,6 +24406,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &464189261
@@ -24408,6 +24504,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 884376091}
 --- !u!114 &468678789
@@ -24505,6 +24602,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &470816315
@@ -24603,6 +24701,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &470830409
@@ -25021,6 +25120,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &472643332
@@ -25373,6 +25473,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &474817015
@@ -25545,6 +25646,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &481730566
@@ -27029,6 +27131,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &518978653
@@ -27589,6 +27692,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &528203788
@@ -27948,6 +28052,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &535023702
@@ -28260,6 +28365,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &538486316
@@ -29231,6 +29337,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &556467127
@@ -29621,6 +29728,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &565672700
@@ -29859,6 +29967,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &573333923
@@ -30106,6 +30215,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 1561236061}
 --- !u!114 &578277525
@@ -30204,6 +30314,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &583740825
@@ -30343,6 +30454,9 @@ RectTransform:
   - {fileID: 234330729}
   - {fileID: 703113086}
   - {fileID: 213134459}
+  - {fileID: 1098552660}
+  - {fileID: 1349389686}
+  - {fileID: 709579367}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -30538,6 +30652,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &586107887
@@ -31471,6 +31586,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &597598109
@@ -31771,6 +31887,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &597725287
@@ -32204,6 +32321,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5d930eca4ded4c94865eff1c50ef255, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDebug: 1
+  debugStarCount: 3
   pipeManager: {fileID: 748566186}
   gameUiManager: {fileID: 602540495}
   gridCanvas: {fileID: 753102201}
@@ -32242,8 +32361,13 @@ MonoBehaviour:
   - {fileID: 417511360}
   - {fileID: 1056400864}
   - {fileID: 1657551044}
+  underGroundLayer: {fileID: 28041211}
+  skeletonGraphic: {fileID: 2146079811}
   minigamePanel: {fileID: 213134461}
   minigameManager: {fileID: 213134460}
+  settingManager: {fileID: 709579368}
+  resetPanel: {fileID: 304648198}
+  homePanel: {fileID: 119281923}
 --- !u!1 &605936251
 GameObject:
   m_ObjectHideFlags: 0
@@ -32301,6 +32425,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &605936254
@@ -32398,6 +32523,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 927368738}
 --- !u!114 &606625388
@@ -32635,6 +32761,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &607316569
@@ -32732,6 +32859,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &608740953
@@ -33271,6 +33399,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &620614624
@@ -33577,6 +33706,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &628443202
@@ -33749,6 +33879,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &629670980
@@ -34146,6 +34277,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &639415541
@@ -34741,6 +34873,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &650864284
@@ -34988,6 +35121,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &667631584
@@ -35085,6 +35219,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &669827926
@@ -35662,6 +35797,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 1174576597}
 --- !u!114 &676606865
@@ -35834,6 +35970,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &677754390
@@ -35931,6 +36068,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &678312409
@@ -36108,6 +36246,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &683067803
@@ -36356,6 +36495,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &683865488
@@ -36829,6 +36969,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &692411965
@@ -37076,6 +37217,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &695790772
@@ -37174,6 +37316,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &699321834
@@ -37513,6 +37656,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 1499965955}
 --- !u!114 &701908511
@@ -37877,6 +38021,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &704339646
@@ -38067,6 +38212,163 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 709418649}
   m_CullTransparentMesh: 1
+--- !u!1001 &709579366
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 584849794}
+    m_Modifications:
+    - target: {fileID: 2085329032833316126, guid: 72b85f15403284ec69266e02263820f3, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2085329032833316126, guid: 72b85f15403284ec69266e02263820f3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4418537176933974387, guid: 72b85f15403284ec69266e02263820f3, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4418537176933974387, guid: 72b85f15403284ec69266e02263820f3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440474917642422720, guid: 72b85f15403284ec69266e02263820f3, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440474917642422720, guid: 72b85f15403284ec69266e02263820f3, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440474917642422720, guid: 72b85f15403284ec69266e02263820f3, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440474917642422720, guid: 72b85f15403284ec69266e02263820f3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440474917642422720, guid: 72b85f15403284ec69266e02263820f3, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440474917642422720, guid: 72b85f15403284ec69266e02263820f3, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440474917642422720, guid: 72b85f15403284ec69266e02263820f3, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440474917642422720, guid: 72b85f15403284ec69266e02263820f3, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440474917642422720, guid: 72b85f15403284ec69266e02263820f3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440474917642422720, guid: 72b85f15403284ec69266e02263820f3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440474917642422720, guid: 72b85f15403284ec69266e02263820f3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440474917642422720, guid: 72b85f15403284ec69266e02263820f3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440474917642422720, guid: 72b85f15403284ec69266e02263820f3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440474917642422720, guid: 72b85f15403284ec69266e02263820f3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440474917642422720, guid: 72b85f15403284ec69266e02263820f3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440474917642422720, guid: 72b85f15403284ec69266e02263820f3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440474917642422720, guid: 72b85f15403284ec69266e02263820f3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440474917642422720, guid: 72b85f15403284ec69266e02263820f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440474917642422720, guid: 72b85f15403284ec69266e02263820f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440474917642422720, guid: 72b85f15403284ec69266e02263820f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4552172573727869068, guid: 72b85f15403284ec69266e02263820f3, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4552172573727869068, guid: 72b85f15403284ec69266e02263820f3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4552172573727869068, guid: 72b85f15403284ec69266e02263820f3, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4930458681833970169, guid: 72b85f15403284ec69266e02263820f3, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4930458681833970169, guid: 72b85f15403284ec69266e02263820f3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4930458681833970169, guid: 72b85f15403284ec69266e02263820f3, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8211986244904162951, guid: 72b85f15403284ec69266e02263820f3, type: 3}
+      propertyPath: m_Name
+      value: Setting-Prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 8211986244904162951, guid: 72b85f15403284ec69266e02263820f3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 72b85f15403284ec69266e02263820f3, type: 3}
+--- !u!224 &709579367 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4440474917642422720, guid: 72b85f15403284ec69266e02263820f3, type: 3}
+  m_PrefabInstance: {fileID: 709579366}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &709579368 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8671809198294945011, guid: 72b85f15403284ec69266e02263820f3, type: 3}
+  m_PrefabInstance: {fileID: 709579366}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8625af99fb7bc46fabb0e8ed90bc7fed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &710043420
 GameObject:
   m_ObjectHideFlags: 0
@@ -38703,6 +39005,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &720130851
@@ -39031,6 +39334,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &725545407
@@ -39561,6 +39865,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &739530358
@@ -39863,6 +40168,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 1646965613}
 --- !u!114 &741538948
@@ -40326,6 +40632,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 1510978521}
 --- !u!114 &743909909
@@ -40423,6 +40730,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &746373002
@@ -40520,6 +40828,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &747774288
@@ -40617,6 +40926,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &748545436
@@ -41353,6 +41663,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &754236475
@@ -41807,6 +42118,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &760985038
@@ -41980,6 +42292,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &765449872
@@ -42283,6 +42596,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &772241186
@@ -42381,6 +42695,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &775261429
@@ -42479,6 +42794,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &779424263
@@ -42651,6 +42967,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 1123425227}
 --- !u!114 &782927646
@@ -42890,6 +43207,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 914635201}
 --- !u!114 &785417341
@@ -42988,6 +43306,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &786909465
@@ -43085,6 +43404,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &788812511
@@ -43387,6 +43707,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &789973249
@@ -43840,6 +44161,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &810988077
@@ -43937,6 +44259,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 1563501085}
 --- !u!114 &812113478
@@ -44109,6 +44432,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &815275182
@@ -44206,6 +44530,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &816491747
@@ -44303,6 +44628,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &818329228
@@ -44400,6 +44726,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &823744517
@@ -44934,6 +45261,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 784346890}
 --- !u!114 &830084677
@@ -45236,6 +45564,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &832374723
@@ -45609,6 +45938,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 542553283}
 --- !u!114 &835512822
@@ -46185,6 +46515,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &845106306
@@ -46600,6 +46931,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &860425227
@@ -47129,6 +47461,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9070980151685845592, guid: 985a8c671690ed8468226941ff1d60a1, type: 3}
+      propertyPath: freeze
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9070980151685845592, guid: 985a8c671690ed8468226941ff1d60a1, type: 3}
+      propertyPath: startingLoop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9070980151685845592, guid: 985a8c671690ed8468226941ff1d60a1, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -47430,6 +47774,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 430340005}
 --- !u!114 &874455839
@@ -47669,6 +48014,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 1525751379}
 --- !u!114 &876723396
@@ -47842,6 +48188,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &878304003
@@ -47939,6 +48286,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &879589563
@@ -48403,6 +48751,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &890127236
@@ -48725,6 +49074,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &895948068
@@ -48822,6 +49172,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &899255125
@@ -48994,6 +49345,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &904168212
@@ -49091,6 +49443,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &909653452
@@ -49263,6 +49616,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &911409488
@@ -50470,6 +50824,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 974092677}
 --- !u!114 &919850427
@@ -50567,6 +50922,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 1254264495}
 --- !u!114 &922876078
@@ -50665,6 +51021,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &923878829
@@ -51188,6 +51545,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &937378379
@@ -51428,6 +51786,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &940467700
@@ -51525,6 +51884,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 1894876959}
 --- !u!114 &943865218
@@ -51622,6 +51982,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &943966058
@@ -51907,6 +52268,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &951455457
@@ -52004,6 +52366,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &953302300
@@ -52177,6 +52540,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &954697460
@@ -52274,6 +52638,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &955514066
@@ -52463,6 +52828,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 2019828996}
 --- !u!114 &956049007
@@ -52580,6 +52946,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &957952934
@@ -53032,6 +53399,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 127342124}
 --- !u!114 &961423041
@@ -53391,6 +53759,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &966055683
@@ -53564,6 +53933,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &972770583
@@ -54117,6 +54487,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 913879771}
 --- !u!114 &977368998
@@ -54289,6 +54660,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &980284929
@@ -54387,6 +54759,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &983144793
@@ -54485,6 +54858,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &983284542
@@ -54582,6 +54956,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 1819639085}
 --- !u!114 &983603454
@@ -55330,6 +55705,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1005431303
@@ -55614,6 +55990,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1009679173
@@ -55711,6 +56088,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1010425866
@@ -55808,6 +56186,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1011994212
@@ -56469,6 +56848,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1024941642
@@ -57572,6 +57952,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1050084768
@@ -57745,6 +58126,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1050878262
@@ -57842,6 +58224,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1052800548
@@ -57939,6 +58322,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 937535366}
 --- !u!114 &1053430536
@@ -58302,6 +58686,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1056811526
@@ -58605,6 +58990,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1066601138
@@ -58703,6 +59089,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1068439236
@@ -59192,6 +59579,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1075160963
@@ -59290,6 +59678,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1077525933
@@ -59649,6 +60038,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 1505766900}
 --- !u!114 &1084010061
@@ -59747,6 +60137,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1084137919
@@ -59845,6 +60236,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1088284783
@@ -60309,6 +60701,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 559971920}
 --- !u!114 &1093981128
@@ -60406,6 +60799,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1097219939
@@ -60446,6 +60840,168 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1097219936}
   m_CullTransparentMesh: 1
+--- !u!1001 &1098552659
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 584849794}
+    m_Modifications:
+    - target: {fileID: 1809820658732240704, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809820658732240704, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809820658732240704, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809820658732240704, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809820658732240704, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809820658732240704, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809820658732240704, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809820658732240704, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809820658732240704, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809820658732240704, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809820658732240704, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809820658732240704, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809820658732240704, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809820658732240704, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809820658732240704, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809820658732240704, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809820658732240704, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809820658732240704, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809820658732240704, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809820658732240704, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1950059283558808173, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_Name
+      value: Reset
+      objectReference: {fileID: 0}
+    - target: {fileID: 1950059283558808173, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5260718725859936823, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5260718725859936823, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5260718725859936823, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 602540495}
+    - target: {fileID: 5260718725859936823, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5260718725859936823, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnResetConfirmBtnClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 5260718725859936823, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameUiManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5260718725859936823, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5315848202778214747, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5315848202778214747, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5315848202778214747, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 602540495}
+    - target: {fileID: 5315848202778214747, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5315848202778214747, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnResetCancelBtnClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 5315848202778214747, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameUiManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5315848202778214747, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+--- !u!224 &1098552660 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1809820658732240704, guid: feed8a4541827ea4c851341476359fbc, type: 3}
+  m_PrefabInstance: {fileID: 1098552659}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1100007707
 GameObject:
   m_ObjectHideFlags: 0
@@ -60503,6 +61059,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1100007710
@@ -60742,6 +61299,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1101564643
@@ -60952,6 +61510,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1102169766
@@ -61417,6 +61976,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1110881940
@@ -61515,6 +62075,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1111936796
@@ -61688,6 +62249,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1120335643
@@ -62211,6 +62773,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1127817560
@@ -62638,6 +63201,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1131781721
@@ -62736,6 +63300,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1132035170
@@ -62834,6 +63399,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1133962577
@@ -63193,6 +63759,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1146619602
@@ -63291,6 +63858,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1146879448
@@ -63725,6 +64293,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1150196193
@@ -63823,6 +64392,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1151730752
@@ -63921,6 +64491,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1153555614
@@ -64558,6 +65129,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 395329256}
 --- !u!114 &1168923829
@@ -65438,6 +66010,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 461737461}
 --- !u!114 &1177830465
@@ -65535,6 +66108,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 474046812}
 --- !u!114 &1181168535
@@ -65744,6 +66318,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1186078586
@@ -65841,6 +66416,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1187526326
@@ -66144,6 +66720,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1203629178
@@ -66499,6 +67076,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1209110839
@@ -66596,6 +67174,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 861993871}
 --- !u!114 &1213172561
@@ -66693,6 +67272,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1215169738
@@ -66790,6 +67370,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 2043081769}
 --- !u!114 &1217097463
@@ -66888,6 +67469,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1218233040
@@ -67060,6 +67642,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1219658643
@@ -67158,6 +67741,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1221711452
@@ -67256,6 +67840,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1225890882
@@ -67484,6 +68069,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1226781312
@@ -67768,6 +68354,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1229425479
@@ -67940,6 +68527,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1236722690
@@ -68457,6 +69045,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1243177557
@@ -69249,6 +69838,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1256322371
@@ -69779,6 +70369,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1268876136
@@ -69951,6 +70542,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1270581761
@@ -70478,6 +71070,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1280891390
@@ -70576,6 +71169,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1287608826
@@ -70860,6 +71454,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1293850154
@@ -71091,6 +71686,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1295848779
@@ -71188,6 +71784,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1296472570
@@ -71612,6 +72209,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1313205279
@@ -71925,6 +72523,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1314611466
@@ -72023,6 +72622,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1314887491
@@ -72267,6 +72867,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1318664904
@@ -72515,6 +73116,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1323685231
@@ -73577,6 +74179,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1337040437
@@ -73674,6 +74277,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1341117076
@@ -73987,6 +74591,164 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1342287264}
   m_CullTransparentMesh: 1
+--- !u!1001 &1349389685
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 584849794}
+    m_Modifications:
+    - target: {fileID: 1789244457896640454, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789244457896640454, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789244457896640454, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 602540495}
+    - target: {fileID: 1789244457896640454, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789244457896640454, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnHomeCancelBtnClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789244457896640454, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameUiManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789244457896640454, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2966027989854001614, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2966027989854001614, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2966027989854001614, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 602540495}
+    - target: {fileID: 2966027989854001614, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2966027989854001614, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnHomeConfirmBtnClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 2966027989854001614, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameUiManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2966027989854001614, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091056219390869699, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+      propertyPath: m_Name
+      value: BackMainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832742812032266370, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832742812032266370, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832742812032266370, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832742812032266370, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832742812032266370, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832742812032266370, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832742812032266370, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832742812032266370, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832742812032266370, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832742812032266370, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832742812032266370, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832742812032266370, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832742812032266370, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832742812032266370, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832742812032266370, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832742812032266370, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832742812032266370, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832742812032266370, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832742812032266370, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832742812032266370, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+--- !u!224 &1349389686 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8832742812032266370, guid: d950349c35d77334ea1b1b8368f1f5f7, type: 3}
+  m_PrefabInstance: {fileID: 1349389685}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1349598014
 GameObject:
   m_ObjectHideFlags: 0
@@ -74252,6 +75014,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1353901032
@@ -74566,6 +75329,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1360314161
@@ -74925,6 +75689,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1378747183
@@ -75247,6 +76012,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1389253188
@@ -75612,9 +76378,9 @@ RectTransform:
   - {fileID: 720472115}
   m_Father: {fileID: 101074217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1635, y: -150}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 230, y: 232.6718}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1394066915
@@ -76200,6 +76966,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1402588067
@@ -76382,6 +77149,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1407858961
@@ -76612,6 +77380,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1418975749
@@ -77009,6 +77778,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1424950517
@@ -77838,6 +78608,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1440927103
@@ -77935,6 +78706,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 1356036269}
 --- !u!114 &1441388556
@@ -78159,6 +78931,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1452220489
@@ -78764,6 +79537,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1475330728
@@ -79178,6 +79952,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1485016424
@@ -79388,6 +80163,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1486385902
@@ -79626,6 +80402,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1489048709
@@ -79724,6 +80501,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1489614575
@@ -79896,6 +80674,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1491611397
@@ -80435,6 +81214,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 140127436}
 --- !u!114 &1499966283
@@ -80816,6 +81596,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1505989161
@@ -81382,6 +82163,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1512000379
@@ -81746,6 +82528,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 1334799412}
 --- !u!114 &1520159054
@@ -81843,6 +82626,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1520175517
@@ -81940,6 +82724,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 917012696}
 --- !u!114 &1521631635
@@ -82290,6 +83075,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1525588206
@@ -82604,6 +83390,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1530367363
@@ -82702,6 +83489,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1531662228
@@ -82800,6 +83588,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1536952847
@@ -82897,6 +83686,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1537323346
@@ -82995,6 +83785,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1537789025
@@ -83092,6 +83883,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1538337614
@@ -83190,6 +83982,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1538454531
@@ -83362,6 +84155,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 1038497533}
 --- !u!114 &1541140732
@@ -83522,7 +84316,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1241527552}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 602540495}
+        m_TargetAssemblyTypeName: GameUiManager, Assembly-CSharp
+        m_MethodName: OnHomeBtnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1544421842
 GameObject:
   m_ObjectHideFlags: 0
@@ -83796,6 +84602,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1548106670
@@ -84044,6 +84851,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1554156818
@@ -84141,6 +84949,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1555348112
@@ -85065,6 +85874,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1563854191
@@ -85163,6 +85973,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1565017591
@@ -85260,6 +86071,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1569379651
@@ -85566,6 +86378,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1571139898
@@ -86171,6 +86984,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 318265469}
 --- !u!114 &1584407640
@@ -86269,6 +87083,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1584846707
@@ -86441,6 +87256,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1592979918
@@ -86616,6 +87432,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 364883180}
 --- !u!114 &1595211466
@@ -86788,6 +87605,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1602728328
@@ -86886,6 +87704,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1604638140
@@ -86984,6 +87803,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1607436194
@@ -87231,6 +88051,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1608698290
@@ -87328,6 +88149,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 1456773572}
 --- !u!114 &1609624767
@@ -88725,6 +89547,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 1703947578}
 --- !u!114 &1632731224
@@ -89122,6 +89945,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1640302147
@@ -89427,6 +90251,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 834679554}
 --- !u!114 &1644877755
@@ -89871,6 +90696,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1650992198
@@ -89968,6 +90794,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1652584456
@@ -90066,6 +90893,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1656170452
@@ -90602,6 +91430,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1665599345
@@ -90700,6 +91529,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1672512207
@@ -90797,6 +91627,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1680264975
@@ -91157,6 +91988,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1689447738
@@ -91392,7 +92224,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 410014338}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 602540495}
+        m_TargetAssemblyTypeName: GameUiManager, Assembly-CSharp
+        m_MethodName: OnSettingBtnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1690913966
 GameObject:
   m_ObjectHideFlags: 0
@@ -91526,6 +92370,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1691169614
@@ -91624,6 +92469,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1694187156
@@ -91721,6 +92567,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1695221358
@@ -92164,6 +93011,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1702936223
@@ -92478,6 +93326,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1710420851
@@ -92874,6 +93723,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1714628896
@@ -93046,6 +93896,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 1770246649}
 --- !u!114 &1721937272
@@ -93336,9 +94187,9 @@ RectTransform:
   - {fileID: 1633644596}
   m_Father: {fileID: 101074217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 885, y: -150}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 230, y: 232.6718}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1723791359
@@ -93494,6 +94345,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1729276010
@@ -93591,6 +94443,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 522753711}
 --- !u!114 &1731612275
@@ -93688,6 +94541,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 1806458874}
 --- !u!114 &1736195635
@@ -93785,6 +94639,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 742351155}
 --- !u!114 &1739930729
@@ -94013,6 +94868,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1741590902
@@ -94387,6 +95243,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1744938631
@@ -94671,6 +95528,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1751070356
@@ -94908,6 +95766,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1756914045
@@ -95006,6 +95865,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1758438835
@@ -95104,6 +95964,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1759209534
@@ -95468,6 +96329,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1764000966
@@ -95565,6 +96427,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 161683831}
 --- !u!114 &1766210101
@@ -95954,6 +96817,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1773435403
@@ -96184,6 +97048,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 1240605680}
 --- !u!114 &1775738553
@@ -96281,6 +97146,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 827699911}
 --- !u!114 &1777917100
@@ -96603,6 +97469,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1784805970
@@ -97096,6 +97963,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1791575640
@@ -97268,6 +98136,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 736386091}
 --- !u!114 &1792946471
@@ -97861,6 +98730,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 2020292585}
 --- !u!114 &1803819174
@@ -98532,6 +99402,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1811930370
@@ -99138,6 +100009,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1820131078
@@ -99236,6 +100108,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1820648562
@@ -99728,6 +100601,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1828432994
@@ -99826,6 +100700,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1829293053
@@ -99923,6 +100798,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1832031940
@@ -100151,6 +101027,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1836328451
@@ -100249,6 +101126,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1837654870
@@ -100421,6 +101299,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1847823017
@@ -100660,6 +101539,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1849796423
@@ -100758,6 +101638,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1851822070
@@ -100930,6 +101811,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 1092322533}
 --- !u!114 &1854598659
@@ -101444,6 +102326,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1863049089
@@ -101541,6 +102424,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1863336157
@@ -101639,6 +102523,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1864224824
@@ -101886,6 +102771,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1868173649
@@ -102499,6 +103385,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1878173975
@@ -102857,6 +103744,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1882786701
@@ -103771,6 +104659,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1901068990
@@ -103869,6 +104758,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1902961501
@@ -103967,6 +104857,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1905418672
@@ -104064,6 +104955,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1905548948
@@ -104236,6 +105128,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1908987593
@@ -104333,6 +105226,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1912352079
@@ -104505,6 +105399,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 1100514303}
 --- !u!114 &1917837146
@@ -104602,6 +105497,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1919520205
@@ -105879,6 +106775,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1937311808
@@ -106296,6 +107193,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1949061587
@@ -106393,6 +107291,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 544090961}
 --- !u!114 &1953749778
@@ -106735,6 +107634,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1955937859
@@ -106975,6 +107875,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1957382545
@@ -107185,6 +108086,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1964091992
@@ -107562,6 +108464,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 290124963}
 --- !u!114 &1972583605
@@ -107660,6 +108563,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1973889514
@@ -108058,6 +108962,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1981656473
@@ -108796,6 +109701,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1990152149
@@ -109381,6 +110287,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &1997170117
@@ -109899,6 +110806,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &2005941160
@@ -110071,6 +110979,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &2008200966
@@ -110301,6 +111210,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 704226771}
 --- !u!114 &2012432646
@@ -110399,6 +111309,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &2012710069
@@ -111138,6 +112049,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &2021245000
@@ -111535,6 +112447,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &2028215222
@@ -111760,9 +112673,9 @@ RectTransform:
   - {fileID: 1744565410}
   m_Father: {fileID: 101074217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1135, y: -150}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 230, y: 232.6718}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2033500760
@@ -111918,6 +112831,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 290357061}
 --- !u!114 &2035095772
@@ -112165,6 +113079,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 876148935}
 --- !u!114 &2037527353
@@ -112262,6 +113177,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &2037702924
@@ -112854,6 +113770,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &2049499558
@@ -112951,6 +113868,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &2049597125
@@ -113254,6 +114172,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &2057203467
@@ -113553,6 +114472,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 2093645019}
 --- !u!114 &2059485200
@@ -113651,6 +114571,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &2062295648
@@ -114184,6 +115105,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &2077912617
@@ -114281,6 +115203,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 1128261799}
 --- !u!114 &2082544105
@@ -114583,6 +115506,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &2087737105
@@ -115559,6 +116483,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 1
   roadObject: {fileID: 196004458}
 --- !u!114 &2103235935
@@ -115656,6 +116581,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &2107336661
@@ -115753,6 +116679,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &2109758177
@@ -116075,6 +117002,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &2116817745
@@ -116322,6 +117250,7 @@ MonoBehaviour:
   heightLightColor: {r: 0.6184975, g: 1, b: 0, a: 0.57254905}
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
   disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.52156866}
+  heightLightItemObject: {fileID: 0}
   isDefaultRoad: 0
   roadObject: {fileID: 0}
 --- !u!114 &2123370428
@@ -117296,6 +118225,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2146069503}
   m_CullTransparentMesh: 1
+--- !u!114 &2146079811 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9070980151685845592, guid: 985a8c671690ed8468226941ff1d60a1, type: 3}
+  m_PrefabInstance: {fileID: 866833492}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d85b887af7e6c3f45a2e2d2920d641bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2146172361
 GameObject:
   m_ObjectHideFlags: 0

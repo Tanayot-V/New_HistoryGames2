@@ -2,7 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
+using Spine.Unity;
 
 public class GameUiManager : MonoBehaviour
 {
@@ -16,11 +18,22 @@ public class GameUiManager : MonoBehaviour
     public GameObject winPanel;
     public GameObject losePanel;
     public List<GameObject> loseCases;
+    public CanvasGroup underGroundLayer;
+    public SkeletonGraphic skeletonGraphic;
 
     [Header("Minigame")]
     public CanvasGroup minigamePanel;
     public MinigameManager minigameManager;
     public System.Action<bool> minigameCallback;
+
+    [Header("Setting")]
+    public SettingManager settingManager;
+
+    [Header("Reset")]
+    public GameObject resetPanel;
+
+    [Header("Home")]
+    public GameObject homePanel;
 
     public void Init(float timepercent, int moveCount, int hammerCount)
     {
@@ -44,27 +57,52 @@ public class GameUiManager : MonoBehaviour
         hammerCountText.text = "x" + hammerCount.ToString();
     }
 
-    public void ShowResult(bool isWin, LoseCondition loseCondition)
+    public void ShowResult(bool isWin, LoseCondition loseCondition, int starCount)
     {
-        StartCoroutine(ShowResultCoroutine(isWin,loseCondition));
+        StartCoroutine(ShowResultCoroutine(isWin, loseCondition, starCount));
     }
 
-    private IEnumerator ShowResultCoroutine(bool isWin,LoseCondition loseCondition)
+    private IEnumerator ShowResultCoroutine(bool isWin,LoseCondition loseCondition, int starCount)
     {
-        winPanel.SetActive(isWin);
-        losePanel.SetActive(!isWin);
-        if(!isWin)
+        if(isWin)
         {
+            underGroundLayer.alpha = 1f;
+            underGroundLayer.blocksRaycasts = true;
+            underGroundLayer.interactable = true;
+            while(underGroundLayer.alpha > 0)
+            {
+                underGroundLayer.alpha -= Time.deltaTime * 2f;
+                yield return null;
+            }
+            underGroundLayer.alpha = 0f;
+            yield return new WaitForSeconds(2f);
+        }
+        else
+        {
+            yield return new WaitForSeconds(2f);
             foreach (var loseCase in loseCases)
             {
                 loseCase.SetActive(false);
             }
             loseCases[(int)loseCondition].SetActive(true);
         }
+
+        winPanel.SetActive(isWin);
+        losePanel.SetActive(!isWin);
         while (resultPanel.alpha < 1)
         {
-            resultPanel.alpha += Time.deltaTime;
+            resultPanel.alpha += Time.deltaTime * 2f;
             yield return null;
+        }
+        if(isWin)
+        {
+            yield return new WaitForSeconds(0.25f);
+            if(starCount > 0)
+            {
+                skeletonGraphic.AnimationState.SetAnimation(0,starCount + " star_in", false);
+                skeletonGraphic.AnimationState.AddAnimation(0,starCount + " star_loop", true, 0);
+                skeletonGraphic.freeze = false;
+            }
         }
     }
 
@@ -122,5 +160,41 @@ public class GameUiManager : MonoBehaviour
         StopAllCoroutines();
         StartCoroutine(FadeMinigame(false));
         minigameCallback?.Invoke(isfinish);
+    }
+
+    public void OnSettingBtnClick()
+    {
+        settingManager.OpenPage();
+    }
+
+    public void OnResetBtnClick()
+    {
+        resetPanel.SetActive(true);
+    }
+
+    public void OnResetCancelBtnClick()
+    {
+        resetPanel.SetActive(false);
+    }
+
+    public void OnResetConfirmBtnClick()
+    {
+        int activeSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(activeSceneIndex);
+    }
+
+    public void OnHomeBtnClick()
+    {
+        homePanel.SetActive(true);
+    }
+
+    public void OnHomeCancelBtnClick()
+    {
+        homePanel.SetActive(false);
+    }
+
+    public void OnHomeConfirmBtnClick()
+    {
+        SceneManager.LoadScene(0);
     }
 }

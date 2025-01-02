@@ -185,7 +185,7 @@ public class GridCanvas : MonoBehaviour
             {
                 string id = "";
                 if(dataString[x,y].StartsWith("0")) continue;
-                else if(dataString[x,y].StartsWith("40"))
+                else if(dataString[x,y].StartsWith("4"))
                 {
                     id = "40000";
                 }
@@ -202,7 +202,7 @@ public class GridCanvas : MonoBehaviour
                     CreateRoad(x,y);
                     continue;
                 }
-                //Debug.Log($"{x}-{y} : {dataString[x,y]} / {id}");
+                Debug.Log($"{x}-{y} : {dataString[x,y]} / {id}");
                 GridObject gridObj = gridDatabase.GetGridObjectByID(id);
                 GameObject go = Instantiate(gridObj.prefab, slots[x, y].transform);
                 go.transform.localPosition = Vector3.zero;

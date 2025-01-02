@@ -8,6 +8,9 @@ using UnityEngine.UI;
 
 public class GameManager : Singletons<GameManager>
 {
+    public bool isDebug = false;
+    public int debugStarCount = 3;
+    [Space(20)]
     public PipeManager pipeManager;
     public GameUiManager gameUiManager;
     public GridCanvas gridCanvas;
@@ -43,15 +46,14 @@ public class GameManager : Singletons<GameManager>
     void Update()
     {
         if(isGameEnd) return;
-        
+
         if (timer <= 0)
         {
             // lose game
             StartCoroutine(EndGame(false, LoseCondition.timeOut));
             return;
         }
-        timer -= Time.deltaTime;
-        gameUiManager.UpdateTime(timer / timePlay);
+
         if(onHammer)
         {
             if (Input.GetMouseButtonDown(0))
@@ -68,6 +70,11 @@ public class GameManager : Singletons<GameManager>
                 isRunWater = false;
                 EndGameCheck();
             }
+        }
+        else
+        {
+            timer -= Time.deltaTime;
+            gameUiManager.UpdateTime(timer / timePlay);
         }
     }
 
@@ -166,12 +173,20 @@ public class GameManager : Singletons<GameManager>
     {
         if(isGameEnd) yield break;
         isGameEnd = true;
-        if(isWin)
+        if(isDebug)
         {
-            gridCanvas.SaveState(gridCanvas.savelevelName);
+            yield return new WaitForSeconds(1f);
+            gameUiManager.ShowResult(true,loseCondition,debugStarCount);
         }
-        yield return new WaitForSeconds(1f);
-        gameUiManager.ShowResult(isWin,loseCondition);
+        else
+        {
+            if(isWin)
+            {
+                gridCanvas.SaveState(gridCanvas.savelevelName);
+            }
+            yield return new WaitForSeconds(1f);
+            gameUiManager.ShowResult(isWin,loseCondition,Random.Range(1,4));
+        }
     }
 }
 
