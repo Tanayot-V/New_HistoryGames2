@@ -96,8 +96,11 @@ public class VidPlayer : MonoBehaviour
         }
     }
 
+    float soundBGM;
     private void OnVideoPrepared(VideoPlayer source)
     {
+        soundBGM = SoundManager.Instance.volumeBGM;
+        SoundManager.Instance.SetVolumeBGM(0);
         videoPlayer.Play();
     }
 
@@ -105,6 +108,7 @@ public class VidPlayer : MonoBehaviour
     {
         Debug.Log("OnVideoFinished");
         rawOdj.gameObject.SetActive(false); // ซ่อนวัตถุ
+        SoundManager.Instance.SetVolumeBGM(soundBGM);
     }
 
     private void OnVideoError(VideoPlayer source, string message)

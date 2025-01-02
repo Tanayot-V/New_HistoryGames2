@@ -5,6 +5,7 @@ using System.Linq;
 
 public class SelectLevelNumberSlot : MonoBehaviour
 {
+    private SelectLevelState state;
     public GameObject numberOBJ;
     public GameObject pointOBJ;
     public GameObject starOBJ;
@@ -14,8 +15,9 @@ public class SelectLevelNumberSlot : MonoBehaviour
     {
     }
 
-    public void SetFinished(SelectLevelState state)
+    public void SetFinished(SelectLevelState _state)
     {
+        state = _state;
         SpriteRenderer numberOBJSR = numberOBJ.GetComponent<SpriteRenderer>();  
        if(state.isFinished)
         {
@@ -37,16 +39,18 @@ public class SelectLevelNumberSlot : MonoBehaviour
         }
     }
 
-    public void SetCurrent(SelectLevelState state)
+    public void SetCurrent(SelectLevelState _state)
     {
+        state = _state;
         pointOBJ.SetActive(true);
         starOBJ.SetActive(false);
         SpriteRenderer numberOBJSR = numberOBJ.GetComponent<SpriteRenderer>();  
         numberOBJSR.sprite = state.model.numberIMG[0];
     }
 
-    public void SetNoClear(SelectLevelState state)
+    public void SetNoClear(SelectLevelState _state)
     {
+        state = _state;
         pointOBJ.SetActive(false);
         starOBJ.SetActive(false);
         SpriteRenderer numberOBJSR = numberOBJ.GetComponent<SpriteRenderer>();  
@@ -74,8 +78,10 @@ public class SelectLevelNumberSlot : MonoBehaviour
     {
         Debug.Log("OnMouseDown:" + name);
         if(UiController.IsPointerOverUIObject()) return;
+        if(state == null) return;
         UILobbyGameManager.Instance.StartLoading(() =>
         {
+            DataCenterManager.Instance.LoadSceneByName(state.model.sceneName);
             Debug.Log("Loading Complete");
         });
     }

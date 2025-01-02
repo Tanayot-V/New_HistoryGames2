@@ -36,7 +36,7 @@ public class SoundManager : MonoBehaviour
         {
             audioModelSO = Resources.Load<AudioModelSO>("AudioModelSO_Game2_Waterpipe");
         }
-        
+
         AudioModel audioModel = audioModelSO.GetAudioModel(_name);
         AudioClip audioClip = audioModel.audioClip;
         AudioSource source = CreateAudioSource(_name, audioModel.audioType);
@@ -68,7 +68,6 @@ public class SoundManager : MonoBehaviour
         if (_audioType == AudioType.BGM) sourceMusic.volume = volumeBGM;
         else sourceMusic.volume = volumeSFX;
         audio.name = _name;
-        Debug.Log(name + sourceMusic.volume);
         return audio.GetComponent<AudioSource>();
     }
 
@@ -87,9 +86,11 @@ public class SoundManager : MonoBehaviour
         {
             sourceMusic.volume = volumeBGM;
         }
+        PlayerPrefs.SetFloat("VolumeBGM", volumeBGM);
     }
     public void SetVolumeSFX(float _volume)
     {
         volumeSFX = _volume;
+        PlayerPrefs.SetFloat("VolumeSFX", volumeSFX);
     }
 }

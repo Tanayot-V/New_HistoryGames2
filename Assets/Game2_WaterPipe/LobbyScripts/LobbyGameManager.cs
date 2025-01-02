@@ -12,7 +12,6 @@ public class LobbyGameManager : Singletons<LobbyGameManager>
 
     public void Start()
     {
-        
         SoundManager.Instance.Init(audioModelSO);
         SoundManager.Instance.PlayAudioSource("BGM"); 
         SoundManager.Instance.SetVolumeBGM(0.25f);
@@ -21,6 +20,7 @@ public class LobbyGameManager : Singletons<LobbyGameManager>
         settingManager.ClosePage();
         diaryManager.DiaryClose();
         leaderboardManager.ClosePage();
+        AdsManager.Instance.OpenDOAdsPage();
     }
 
     #region Setting

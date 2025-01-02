@@ -10,6 +10,8 @@ public class SelectLevelModel
     public Vector3 originalCam;
     public Sprite[] numberIMG;
 
+    public string sceneName;
+    
     public SelectLevelModel(int _level, Vector3 _originalCam, Vector3 _camMoveAreaSize,Sprite[] _numberIMG)
     {
         level = _level;

@@ -19,51 +19,60 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 13a123959bd3848f3a7cc6dfbcbbe9e9, type: 3}
     - {fileID: 21300000, guid: e7f45f36229e4409cb86db72b8699fb6, type: 3}
     - {fileID: 21300000, guid: aac460cf8f8fd412c93260aea9be872a, type: 3}
+    sceneName: StoryMode_Level01
   - level: 2
     originalCam: {x: 4.5, y: -2.5, z: -10}
     numberIMG:
     - {fileID: 21300000, guid: 5d181d4e9c7f34e3a85bd636c08186c6, type: 3}
     - {fileID: 21300000, guid: 37debdaace41d4a30b8fa1370633cd30, type: 3}
     - {fileID: 21300000, guid: cdc3093ee15e54ae69f37603be073cb9, type: 3}
+    sceneName: StoryMode_Level02
   - level: 3
     originalCam: {x: 7.15, y: -6.5, z: -10}
     numberIMG:
     - {fileID: 21300000, guid: 13d5edc2a9aa64e2bbd1bceceebf3ac6, type: 3}
     - {fileID: 21300000, guid: 2f9a96b61b4b64eac88cad9e83dcf4ae, type: 3}
     - {fileID: 21300000, guid: a05ef804100d34db9b97f1fdbdfa4daa, type: 3}
+    sceneName: StoryMode_Level03
   - level: 4
     originalCam: {x: 5.3, y: -9.8, z: -10}
     numberIMG:
     - {fileID: 21300000, guid: 2cbe222b48de14626bbe21e3d106ec26, type: 3}
     - {fileID: 21300000, guid: f8eb07753943947858c118f98d54cb9e, type: 3}
     - {fileID: 21300000, guid: cc07de60e9ba64ebeba6f03e964e2db7, type: 3}
+    sceneName: StoryMode_Level04
   - level: 5
     originalCam: {x: 14.15, y: -9.5, z: -10}
     numberIMG:
     - {fileID: 21300000, guid: 8d1ec86a44c83478694f71de634046d3, type: 3}
     - {fileID: 21300000, guid: c39b8352818674bcea6fe30cd1ad58a8, type: 3}
     - {fileID: 21300000, guid: a11d05eaf74b1485eaf03f1e700457f5, type: 3}
+    sceneName: StoryMode_Level05
   - level: 6
     originalCam: {x: 21, y: -5.5, z: -10}
     numberIMG:
     - {fileID: 21300000, guid: 7a67f0b0aad784650b186f8106bc97b9, type: 3}
     - {fileID: 21300000, guid: e7a4cf3838ab04bffbc61c7b02f2aa92, type: 3}
     - {fileID: 21300000, guid: 65fa47380338a412d95a1a5fdfb54ebe, type: 3}
+    sceneName: StoryMode_Level06
   - level: 7
     originalCam: {x: 19, y: -1, z: -10}
     numberIMG:
     - {fileID: 21300000, guid: b3f2752630782442997e4aecf04c185f, type: 3}
     - {fileID: 21300000, guid: 2b816c15e514846a28f2f9d058a543a5, type: 3}
     - {fileID: 21300000, guid: 13786c997ff3545a2863cbd9c7769588, type: 3}
+    sceneName: StoryMode_Level07
   - level: 8
     originalCam: {x: 25.75, y: -0.5, z: -10}
     numberIMG:
     - {fileID: 21300000, guid: cc410181fef734bd58f25ef114c9cacc, type: 3}
     - {fileID: 21300000, guid: 78816861888ec4bb2b753fb34fbe644b, type: 3}
     - {fileID: 21300000, guid: c1e618c820be945b79f89136c111dea5, type: 3}
+    sceneName: StoryMode_Level08
   - level: 9
     originalCam: {x: 30.5, y: -1.5, z: -10}
     numberIMG:
     - {fileID: 21300000, guid: 60169243675234cc5a2370889525be5a, type: 3}
     - {fileID: 21300000, guid: 183da17cd41c94bc2ac268b4eeabdedc, type: 3}
     - {fileID: 21300000, guid: 72099e82c370f41858ca00f53951f83d, type: 3}
+    sceneName: StoryMode_Level09
