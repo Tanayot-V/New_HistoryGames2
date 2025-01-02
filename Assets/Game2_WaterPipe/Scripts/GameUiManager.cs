@@ -12,9 +12,12 @@ public class GameUiManager : MonoBehaviour
     public TMP_Text moveText;
     public TMP_Text hammerCountText;
     public Image hammerBgImage;
+    public GameObject hammerAdsImage;
     public TMP_Text drawLineCountText;
     public Image drawLineBgImage;
+    public GameObject drawLineAdsImage;
     public TMP_Text addTimeCountText;
+    public GameObject addTimeAdsImage;
 
     public GameObject buttomBar;
     public GameObject letsDoItBtn;
@@ -75,16 +78,26 @@ public class GameUiManager : MonoBehaviour
     public void UpdateHammerCount(int count)
     {
         hammerCountText.text = "x" + count.ToString();
+        if(count <= 0)
+        {
+            hammerAdsImage.SetActive(true);
+        }
+        else
+        {
+            hammerAdsImage.SetActive(false);
+        }
     }
 
     public void OnDrawLineBtnClick()
     {
+        GameManager.Instance.itemManager.DrawLineBtnClick();
         drawLineBgImage.color = Color.green;
     }
 
     public void OnEndDrawLine()
     {
         drawLineBgImage.color = Color.white;
+        drawLineBgImage.fillAmount = 1f;
     }
 
     public void UpdateDrawTimer(float fillAmount)
@@ -95,6 +108,14 @@ public class GameUiManager : MonoBehaviour
     public void UpdateDrawLineCount(int count)
     {
         drawLineCountText.text = "x" + count.ToString();
+        if(count <= 0)
+        {
+            drawLineAdsImage.SetActive(true);
+        }
+        else
+        {
+            drawLineAdsImage.SetActive(false);
+        }
     }
 
     public void OnAddTimeBtnClick()
@@ -104,6 +125,14 @@ public class GameUiManager : MonoBehaviour
     public void UpdateAddTimeCount(int count)
     {
         addTimeCountText.text = "x" + count.ToString();
+        if(count <= 0)
+        {
+            addTimeAdsImage.SetActive(true);
+        }
+        else
+        {
+            addTimeAdsImage.SetActive(false);
+        }
     }
 
     public void ShowResult(bool isWin, LoseCondition loseCondition, int starCount)

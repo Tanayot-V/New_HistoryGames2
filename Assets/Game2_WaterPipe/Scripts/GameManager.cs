@@ -49,7 +49,7 @@ public class GameManager : Singletons<GameManager>
 
     void Update()
     {
-        if(isGameEnd || !isStartGame) return;
+        if(isGameEnd || !isStartGame || itemManager.isDrawLine) return;
 
         if (timer <= 0)
         {

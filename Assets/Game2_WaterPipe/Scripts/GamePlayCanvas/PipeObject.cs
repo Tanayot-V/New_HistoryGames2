@@ -21,12 +21,39 @@ public class PipeObject : MonoBehaviour
     public bool isWaste = false;
     public Vector2 startPipePos = Vector2.zero;
 
+    private CanvasGroup canvasGroup;
+    private DraggableItem draggableItem;
+
     void Start()
     {
+        canvasGroup = GetComponent<CanvasGroup>();
+        draggableItem = GetComponent<DraggableItem>();
         PipeSlotCanvas slot = GetComponentInParent<PipeSlotCanvas>();
         if(slot != null) pipeData.pos = slot.pos;
         if(waterFillImg0 != null) waterFillImg0.fillAmount = 0;
         if(waterFillImg1 != null) waterFillImg1.fillAmount = 0;
+    }
+
+    void Update()
+    {
+        if(draggableItem != null)
+        {
+            if(!draggableItem.isSnapOnSlot)
+            {
+                canvasGroup.blocksRaycasts = false;
+                return;
+            }
+        }
+        if(GameManager.Instance.itemManager.isDrawLine)
+        {
+            canvasGroup.blocksRaycasts = false;
+            canvasGroup.alpha = 0.5f;
+        }
+        else
+        {
+            canvasGroup.blocksRaycasts = true;
+            canvasGroup.alpha = 1f;
+        }
     }
 
     public void Rotat()

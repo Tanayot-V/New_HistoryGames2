@@ -30,7 +30,9 @@ public class AdsManager : Singletons<AdsManager>
     public VidPlayer vidPlayer;
     [Header("Do Ads Page")]
     public GameObject adsPageOBJ;
-    public GameObject contentOBJ;   
+    public GameObject contentOBJ;
+    private System.Action adsCallback;   
+
     public void Start() 
     {
         //OpenDOAdsPage();
@@ -76,9 +78,15 @@ public class AdsManager : Singletons<AdsManager>
         if(_itemIMG != null) adsPageOBJ.GetComponent<AdsPrefab>().itemImage.sprite = _itemIMG.sprite;
     }
 
+    public void OpenDOAdsPage(System.Action _callback, Image _itemIMG = null)
+    {
+        adsCallback = _callback;
+        OpenDOAdsPage(_itemIMG);
+    }
+
     public void AdsClick()
     {
-        OpenAdsVideo(AdsType.AdsItem);
+        OpenAdsVideo(AdsType.AdsItem, adsCallback);
         adsPageOBJ.transform.GetChild(0).gameObject.SetActive(false);
     }
 
@@ -87,15 +95,31 @@ public class AdsManager : Singletons<AdsManager>
         AdsModel adsModel = adsDatabaseSO.GetAdsModel(_AdsType);
         if (adsModel != null)
         {
-                if(_AdsType == AdsType.AdsItem)
-                {
-                    int randomIndex = Random.Range(0, adsModel.videoClips.Length);
-                    vidPlayer.PlayVideoURL(adsModel.paths[randomIndex]);
-                }
-                else
-                {
-                    vidPlayer.PlayVideoURL(adsModel.paths[0]);
-                }
+            if(_AdsType == AdsType.AdsItem)
+            {
+                int randomIndex = Random.Range(0, adsModel.videoClips.Length);
+                vidPlayer.PlayVideoURL(adsModel.paths[randomIndex]);
+            }
+            else
+            {
+                vidPlayer.PlayVideoURL(adsModel.paths[0]);
+            }
+        }
+    }
+    public void OpenAdsVideo(AdsType _AdsType, System.Action _callback)
+    {
+        AdsModel adsModel = adsDatabaseSO.GetAdsModel(_AdsType);
+        if (adsModel != null)
+        {
+            if(_AdsType == AdsType.AdsItem)
+            {
+                int randomIndex = Random.Range(0, adsModel.videoClips.Length);
+                vidPlayer.PlayVideoURL(adsModel.paths[randomIndex], _callback);
+            }
+            else
+            {
+                vidPlayer.PlayVideoURL(adsModel.paths[0],_callback);
+            }
         }
     }
 }

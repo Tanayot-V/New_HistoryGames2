@@ -8,6 +8,8 @@ public class VidPlayer : MonoBehaviour
     [SerializeField] private string url = "";
     public GameObject rawOdj;
     private VideoPlayer videoPlayer;
+
+    private System.Action videoCallback;
     //https://github.com/mediaelement/mediaelement-files/blob/master/big_buck_bunny.mp4?raw=true
     //https://github.com/mediaelement/mediaelement-files/blob/master/big_buck_bunny.webm?raw=true
     //https://drive.google.com/uc?export=download&id=12ZF_yikKOtFhU8BUHYg6_bch4vb64HLf
@@ -66,7 +68,7 @@ public class VidPlayer : MonoBehaviour
         }*/
     }
 
-    public void PlayVideoURL(string _URL)
+    public void PlayVideoURL(string _URL, System.Action _callback = null)
     {
         if (videoPlayer)
         {
@@ -78,10 +80,11 @@ public class VidPlayer : MonoBehaviour
                 videoPlayer.errorReceived += OnVideoError;
                 videoPlayer.prepareCompleted += OnVideoPrepared;
                 videoPlayer.loopPointReached += OnVideoFinished;
+                videoCallback = _callback;
         }
     }
 
-    public void PlayVideoClip(VideoClip _clip)
+    public void PlayVideoClip(VideoClip _clip, System.Action _callback = null)
     {
         if (videoPlayer)
         {
@@ -93,6 +96,7 @@ public class VidPlayer : MonoBehaviour
                 videoPlayer.errorReceived += OnVideoError;
                 videoPlayer.prepareCompleted += OnVideoPrepared;
                 videoPlayer.loopPointReached += OnVideoFinished;
+                videoCallback = _callback;
         }
     }
 
@@ -109,6 +113,7 @@ public class VidPlayer : MonoBehaviour
         Debug.Log("OnVideoFinished");
         rawOdj.gameObject.SetActive(false); // ซ่อนวัตถุ
         SoundManager.Instance.SetVolumeBGM(soundBGM);
+        videoCallback?.Invoke();
     }
 
     private void OnVideoError(VideoPlayer source, string message)

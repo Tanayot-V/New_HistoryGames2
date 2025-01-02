@@ -22275,7 +22275,7 @@ MonoBehaviour:
     selectLevelNumberSlot: {fileID: 1760451391}
   selectLevelDatabaseSO: {fileID: 11400000, guid: b3c78f2c124b846a7b57aa42c611dfa7, type: 2}
   mainCam: {fileID: 1530549590}
-  currentLevel: 2
+  currentLevel: 3
 --- !u!1 &1495288102
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class PipeSlotCanvas : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerExitHandler
+public class PipeSlotCanvas : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
     public bool isDefault = false;
     public Vector2 pos;
@@ -24,6 +24,7 @@ public class PipeSlotCanvas : MonoBehaviour, IDropHandler, IPointerEnterHandler,
     {
         childImage = transform.GetChild(0).GetComponent<Image>();
         defaultColor = childImage.color;
+        heightLightItemObject = transform.GetChild(1).gameObject;
         if(transform.childCount > 2)
         {
             item = transform.GetChild(2).gameObject;
@@ -68,17 +69,29 @@ public class PipeSlotCanvas : MonoBehaviour, IDropHandler, IPointerEnterHandler,
     }
     public void OnPointerEnter(PointerEventData eventData)
     {
-        if (eventData.pointerDrag == null) return;
+        Debug.Log("OnPointerEnter");
+        if (childImage != null && GameManager.Instance.itemManager.isDrawLine)
+        {
+            Debug.Log("DrawLine");
+            childImage.color =  heightLightColor;// Change to your desired color
+        }
+        if (eventData.pointerDrag == null) 
+        {
+            Debug.Log("non Obj OnDrag");
+            return;
+        }
         // Change the color of the child image to indicate hover
         if (childImage != null)
         {
             if(item != null)
             {
-                childImage.color =  disableColor;// Change to your desired color
+                Debug.Log("disable");
+                childImage.color = disableColor;// Change to your desired color
             }
             else
             {
-                childImage.color =  heightLightColor;// Change to your desired color
+                Debug.Log("heightLight");
+                childImage.color = heightLightColor;// Change to your desired color
             }
         }
     }
@@ -89,6 +102,17 @@ public class PipeSlotCanvas : MonoBehaviour, IDropHandler, IPointerEnterHandler,
         if (childImage != null)
         {
             childImage.color = defaultColor; // Change to the original color
+        }
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        if(GameManager.Instance.itemManager.isDrawLine)
+        {
+            if( heightLightItemObject != null)
+            {
+                heightLightItemObject.SetActive(!heightLightItemObject.activeSelf);
+            }
         }
     }
 }

@@ -10,6 +10,10 @@ public class ItemManager : MonoBehaviour
     public int drawLineCount = 5;
     public int hammerCount = 5;
 
+    public Image addTimeItem;
+    public Image drawLineItem;
+    public Image hammerItem;
+
     [Header("Add Time")]
     public float timeToAdd = 15f;
 
@@ -39,15 +43,22 @@ public class ItemManager : MonoBehaviour
             GameManager.Instance.gameUiManager.UpdateDrawTimer(drawLineTimer / drawLineTime);
             if(drawLineTimer <= 0)
             {
-                isDrawLine = false;
-                GameManager.Instance.gameUiManager.OnEndDrawLine();
+                UseDrawLineComplete();
             }
         }
     }
 
     public void addtimeBtnClick()
     {
-        if (addTimeCount <= 0) return;
+        if (addTimeCount <= 0)
+        {
+            AdsManager.Instance.OpenDOAdsPage(()=>
+            {
+                addTimeCount += 5;
+                GameManager.Instance.gameUiManager.UpdateAddTimeCount(addTimeCount);
+            },addTimeItem);
+            return;
+        }
         GameManager.Instance.AddTime(timeToAdd);
         addTimeCount--;
         GameManager.Instance.gameUiManager.UpdateAddTimeCount(addTimeCount);
@@ -57,6 +68,11 @@ public class ItemManager : MonoBehaviour
     {
         if (drawLineCount <= 0)
         {
+            AdsManager.Instance.OpenDOAdsPage(()=>
+            {
+                drawLineCount += 5;
+                GameManager.Instance.gameUiManager.UpdateDrawLineCount(drawLineCount);
+            },drawLineItem);        
             GameManager.Instance.gameUiManager.OnEndDrawLine();
             return;
         }
@@ -65,11 +81,24 @@ public class ItemManager : MonoBehaviour
         drawLineTimer = drawLineTime;
     }
 
+    public void UseDrawLineComplete()
+    {
+        drawLineCount--;
+        GameManager.Instance.gameUiManager.UpdateDrawLineCount(drawLineCount);
+        isDrawLine = false;
+        GameManager.Instance.gameUiManager.OnEndDrawLine();
+    }
+
 
     public void HammerBtnClick()
     {
         if (hammerCount <= 0)
         {
+            AdsManager.Instance.OpenDOAdsPage(()=>
+            {
+                hammerCount += 5;
+                GameManager.Instance.gameUiManager.UpdateHammerCount(hammerCount);
+            },hammerItem);        
             GameManager.Instance.gameUiManager.OnEndHammer();
             return;
         } 
