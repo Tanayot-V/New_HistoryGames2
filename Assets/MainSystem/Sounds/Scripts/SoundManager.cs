@@ -21,12 +21,12 @@ public class SoundManager : MonoBehaviour
 
     [SerializeField]private AudioModelSO audioModelSO;
     public AudioSource sourceMusic;
-    public float volume = 1;
+    public float volumeBGM = 0.5f;
+    public float volumeSFX = 0.5f;
 
     public void Init(AudioModelSO _audioModelSO)
     {
         audioModelSO = _audioModelSO;
-        SetVolume(1);
         if (sourceMusic != null) Destroy(sourceMusic.gameObject);
     }
 
@@ -44,13 +44,11 @@ public class SoundManager : MonoBehaviour
         //BGM Sound
         else
         {
-            //audioSources.Add(audio.GetComponent<AudioSource>());
             sourceMusic = source;
             sourceMusic.clip = audioClip;
             sourceMusic.playOnAwake = true;
             sourceMusic.loop = true;
-            if (volume == 1) sourceMusic.volume = 0.5f;
-            else sourceMusic.volume = volume;
+            sourceMusic.volume = volumeBGM;
             sourceMusic.Play();
         }
     }
@@ -62,8 +60,10 @@ public class SoundManager : MonoBehaviour
         audio.transform.rotation = Quaternion.identity;
         audio.transform.SetParent(this.gameObject.transform);
         AudioSource sourceMusic = audio.AddComponent<AudioSource>();
-        sourceMusic.volume = volume;
+        if (_audioType == AudioType.BGM) sourceMusic.volume = volumeBGM;
+        else sourceMusic.volume = volumeSFX;
         audio.name = _name;
+        Debug.Log(name + sourceMusic.volume);
         return audio.GetComponent<AudioSource>();
     }
 
@@ -75,13 +75,16 @@ public class SoundManager : MonoBehaviour
         Destroy(audioObject);
     }
 
-    public void SetVolume(float _volume)
+    public void SetVolumeBGM(float _volume)
     {
-        volume = _volume;
+        volumeBGM = _volume;
         if (sourceMusic != null)
         {
-            if(volume == 1) sourceMusic.volume = 0.5f;
-            else sourceMusic.volume = volume;
+            sourceMusic.volume = volumeBGM;
         }
+    }
+    public void SetVolumeSFX(float _volume)
+    {
+        volumeSFX = _volume;
     }
 }

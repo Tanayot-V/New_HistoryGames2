@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LobbyGameManager : Singletons<LobbyGameManager>
 {
+    public AudioModelSO audioModelSO;
     public UILobbyGameManager uiLobbyGameManager;
     public SettingManager settingManager;
     public DiaryManager diaryManager;
@@ -11,6 +12,10 @@ public class LobbyGameManager : Singletons<LobbyGameManager>
 
     public void Start()
     {
+        SoundManager.Instance.Init(audioModelSO);
+        SoundManager.Instance.PlayAudioSource("BGM"); 
+        SoundManager.Instance.SetVolumeBGM(0.25f);
+        
         settingManager.ClosePage();
         diaryManager.DiaryClose();
         leaderboardManager.ClosePage();
@@ -19,6 +24,7 @@ public class LobbyGameManager : Singletons<LobbyGameManager>
     #region Setting
     public void SettingOpenButton()
     {
+        uiLobbyGameManager.ClickAudio();
         settingManager.OpenPage();
     }
 
@@ -43,6 +49,7 @@ public class LobbyGameManager : Singletons<LobbyGameManager>
 
     public void OpenDescriptionButton(DiarySlot _diarySlot)
     {
+        UILobbyGameManager.Instance.ClickAudio();
         diaryManager.DescriptionOpen(_diarySlot);
     }
 
@@ -54,6 +61,11 @@ public class LobbyGameManager : Singletons<LobbyGameManager>
     public void DiaryCloseRewardPageButton()
     {
         diaryManager.ClaimRewardPageClose();
+    }
+
+    public void DiaryRewardClaimButton()
+    {
+        diaryManager.ClaimReward();
     }
     #endregion
 

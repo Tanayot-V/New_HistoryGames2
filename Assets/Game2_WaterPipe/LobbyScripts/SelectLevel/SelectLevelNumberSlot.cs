@@ -68,6 +68,11 @@ public class SelectLevelNumberSlot : MonoBehaviour
     public void OnMouseUp()
     {
         Debug.Log("OnMouseUp:" + name);
+    }
+
+    public void OnMouseDown()
+    {
+        Debug.Log("OnMouseDown:" + name);
         if(UiController.IsPointerOverUIObject()) return;
         UILobbyGameManager.Instance.StartLoading(() =>
         {

@@ -10,6 +10,7 @@ public class DiarySlot : MonoBehaviour
     public Image topicIMG;
     public Image itemIMG;
     public Image claimedIMG;
+    public GameObject redPointOBJ;
     public TMPro.TextMeshProUGUI topicTX;
     public TMPro.TextMeshProUGUI contentTX;
 
@@ -30,6 +31,15 @@ public class DiarySlot : MonoBehaviour
             itemIMG.material = null;
             claimedIMG.gameObject.SetActive(false);
         }
+
+        if(_diaryState.isRead)
+        {
+            redPointOBJ.SetActive(false);
+        }
+        else
+        {
+            redPointOBJ.SetActive(true);
+        }
     }
 
     public void ClaimButton()
@@ -42,5 +52,7 @@ public class DiarySlot : MonoBehaviour
     public void OpenDescriptionButton()
     {
         LobbyGameManager.Instance.OpenDescriptionButton(this);
+        diaryState.isRead = true;
+        UILobbyGameManager.Instance.ClickAudio();
     }
 }
