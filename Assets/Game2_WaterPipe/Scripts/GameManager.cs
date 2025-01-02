@@ -147,6 +147,43 @@ public class GameManager : Singletons<GameManager>
             gameUiManager.ShowResult(isWin,loseCondition,Random.Range(1,4));
         }
     }
+
+    #region CalculateStarAndScore
+    //_isFixAgain = กลับมาแก้ไขอีกครั้ง _usedTime = เวลาที่ใช้  _totalTime = เวลาทั้งหมด  _moveUsed = จำนวนที่ใช้เคลื่อนท่อ  _maxMoves = จำนวนที่กำหนด
+    public int CalculateStar(bool _isFixAgain,float _usedTime, float _totalTime, int _moveUsed, int _maxMoves)
+    {
+        if (_isFixAgain)
+        {
+            return 1;
+        }
+        //คำนวณดาว
+        float timePercentage = _usedTime / _totalTime;
+        int star = 1;
+        //ใช้เวลาน้อยกว่า 70% และใช้เคลื่อนไหวน้อยกว่าจำนวนที่กำหนด
+        if (timePercentage <= 0.7f && _moveUsed <= _maxMoves)
+        {
+            star = 3;
+        }
+        //ใช้เวลาน้อยกว่า 90% ของเวลาทั้งหมด
+        else if (timePercentage <= 0.9f)
+        {
+            star = 2;
+        }
+        else
+        {
+            star = 1;
+        }
+        return star;
+    }
+
+    //_totalTimeAllowed = เวลาที่เกมกำหนดให้ _totalGridArea = พื้นที่ในด่าน _pointsToConnectPipes = จุดที่ต้องต่อท่อน้ำเพื่อเชื่อมต่อ _pointsToExitWaste = จุดน้ำเสียที่ต้องต่อท่อน้ำออกจากสถานที่ _playerTimeUsed = ระยะเวลาในการเล่น (วินาที) _playerPipesUsed = จำนวนท่อที่ใช้ _levelState = เลวลที่เล่นอยู่
+    public int CalculateScoreLeaderbaord(int _totalTimeAllowed, int _totalGridArea, int _pointsToConnectPipes, int _pointsToExitWaste, int _playerTimeUsed, int _playerPipesUsed, int _levelState)
+    {
+        int score = _totalTimeAllowed + _totalGridArea + ((_pointsToConnectPipes + _pointsToExitWaste) * 10 * _levelState) - (_playerTimeUsed + (_playerPipesUsed * _levelState));
+        Debug.Log($"Score: {score}");
+        return score;
+    }
+    #endregion
 }
 
 public enum LoseCondition

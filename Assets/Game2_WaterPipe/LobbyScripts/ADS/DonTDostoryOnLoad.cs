@@ -19,8 +19,8 @@ public class DonDostoryOnLoad : MonoBehaviour
         }
     }
 
-    public void Start()
+    private void Awake()
     {
-        this.transform.SetParent(UiController.Instance.transform);
+        DontDestroyOnLoad(this.gameObject);
     }
 }
