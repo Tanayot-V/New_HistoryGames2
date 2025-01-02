@@ -12,6 +12,12 @@ public class GameUiManager : MonoBehaviour
     public TMP_Text moveText;
     public TMP_Text hammerCountText;
     public Image hammerBgImage;
+    public TMP_Text drawLineCountText;
+    public Image drawLineBgImage;
+    public TMP_Text addTimeCountText;
+
+    public GameObject buttomBar;
+    public GameObject letsDoItBtn;
 
     [Header("Result")]
     public CanvasGroup resultPanel;
@@ -35,10 +41,12 @@ public class GameUiManager : MonoBehaviour
     [Header("Home")]
     public GameObject homePanel;
 
-    public void Init(float timepercent, int moveCount, int hammerCount)
+    public void Init(float timepercent, int moveCount, int addTimeCount, int drawLineCount, int hammerCount)
     {
         timerBar.fillAmount = timepercent;
         moveText.text = moveCount.ToString();
+        addTimeCountText.text = "x" + addTimeCount.ToString();
+        drawLineCountText.text = "x" + drawLineCount.ToString();
         hammerCountText.text = "x" + hammerCount.ToString();
     }
 
@@ -52,9 +60,45 @@ public class GameUiManager : MonoBehaviour
         moveText.text = moveCount.ToString();
     }
 
-    public void UpdateHammerCount(int hammerCount)
+    
+    public void OnHammerBtnClick()
     {
-        hammerCountText.text = "x" + hammerCount.ToString();
+        GameManager.Instance.itemManager.HammerBtnClick();
+        hammerBgImage.color = Color.green;
+    }
+
+    public void OnEndHammer()
+    {
+        hammerBgImage.color = Color.white;
+    }
+
+    public void UpdateHammerCount(int count)
+    {
+        hammerCountText.text = "x" + count.ToString();
+    }
+
+    public void OnDrawLineBtnClick()
+    {
+        drawLineBgImage.color = Color.green;
+    }
+
+    public void OnEndDrawLine()
+    {
+        drawLineBgImage.color = Color.white;
+    }
+
+    public void UpdateDrawLineCount(int count)
+    {
+        drawLineCountText.text = "x" + count.ToString();
+    }
+
+    public void OnAddTimeBtnClick()
+    {
+        GameManager.Instance.itemManager.addtimeBtnClick();
+    }
+    public void UpdateAddTimeCount(int count)
+    {
+        addTimeCountText.text = "x" + count.ToString();
     }
 
     public void ShowResult(bool isWin, LoseCondition loseCondition, int starCount)
@@ -66,6 +110,7 @@ public class GameUiManager : MonoBehaviour
     {
         if(isWin)
         {
+            GameManager.Instance.gridCanvas.PrepairEndgame();
             underGroundLayer.alpha = 1f;
             underGroundLayer.blocksRaycasts = true;
             underGroundLayer.interactable = true;
@@ -106,17 +151,6 @@ public class GameUiManager : MonoBehaviour
         }
     }
 
-    public void OnHammerBtnClick()
-    {
-        GameManager.Instance.UseHammer();
-        hammerBgImage.color = Color.green;
-    }
-
-    public void OnEndHammer()
-    {
-        hammerBgImage.color = Color.white;
-    }
-
     public void ShowMinigame(string itemId, System.Action<bool> callback)
     {
         minigameCallback = callback;
@@ -143,14 +177,14 @@ public class GameUiManager : MonoBehaviour
         else
         {
             minigamePanel.alpha = 1;
+            minigamePanel.interactable = false;
             while (minigamePanel.alpha > 0)
             {
                 minigamePanel.alpha -= Time.deltaTime  * 2f;
                 yield return null;
             }
-            minigamePanel.alpha = 0;
             minigamePanel.blocksRaycasts = false;
-            minigamePanel.interactable = false;
+            minigamePanel.alpha = 0;
         }
         yield break;
     }

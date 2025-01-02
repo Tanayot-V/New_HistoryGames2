@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7373613222723605397}
   m_Layer: 5
   m_Name: 19
-  m_TagString: Untagged
+  m_TagString: GamePlay
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,6 +128,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cff7ec886a265a48b8305c164797f64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFarm: 0
+  isFinish: 0
   image: {fileID: 5557158952543866678}
   decorationDatas:
   - mainSprite: {fileID: 21300000, guid: 19e37ed881b50477aa7546d3cf6fa3de, type: 3}
@@ -135,6 +137,9 @@ MonoBehaviour:
     successSprite: {fileID: 0}
   currentDecorationIndex: 0
   SuccessPipeEnds: []
+  sauc:
+  - {fileID: 6565193484397178579}
+  - {fileID: 5400933036078528014}
 --- !u!1 &6496725978413439635
 GameObject:
   m_ObjectHideFlags: 0

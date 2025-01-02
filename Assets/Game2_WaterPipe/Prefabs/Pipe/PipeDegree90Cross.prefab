@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3265850030713549780}
   m_Layer: 5
   m_Name: PipeDegree90Cross
-  m_TagString: Untagged
+  m_TagString: GamePlay
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,6 +93,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSnapOnSlot: 0
+  placeCount: 1
 --- !u!225 &3179411090042190627
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -126,6 +127,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 2116707854611655340}
   waterFillImg1: {fileID: 2764954269043701175}
   canpass2: 1
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!1 &4423914070615246642
 GameObject:
   m_ObjectHideFlags: 0

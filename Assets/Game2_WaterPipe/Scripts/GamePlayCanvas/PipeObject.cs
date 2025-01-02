@@ -715,7 +715,7 @@ public class PipeObject : MonoBehaviour
         for (int i = 0; i < dirs.Length; i++)
         {
             Vector2 nextPipePos = pipeData.pos + dirs[i];
-            Debug.Log($"WaterOut {name} {pipeData.pos} to {nextPipePos}");
+            //Debug.Log($"WaterOut {name} {pipeData.pos} to {nextPipePos}");
             if(GameManager.Instance.gridCanvas.slots[(int)nextPipePos.x, (int)nextPipePos.y].item == null) continue;
             PipeObject next = GameManager.Instance.gridCanvas.slots[(int)nextPipePos.x, (int)nextPipePos.y].item.GetComponent<PipeObject>();
             if(next != null)

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -8850643344627416653}
   m_Layer: 5
   m_Name: 21000
-  m_TagString: Untagged
+  m_TagString: GamePlay
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113,7 +113,8 @@ MonoBehaviour:
   waterFillImg0: {fileID: 0}
   waterFillImg1: {fileID: 0}
   canpass2: 0
-  wasteColor: {r: 0, g: 0, b: 0, a: 0}
+  isWaste: 0
+  startPipePos: {x: 0, y: 0}
 --- !u!114 &-8850643344627416653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,6 +129,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isWaste: 0
   isFinish: 0
+  onFinished:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1489353738570735855
 GameObject:
   m_ObjectHideFlags: 0

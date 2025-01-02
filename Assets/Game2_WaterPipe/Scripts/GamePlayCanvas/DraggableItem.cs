@@ -51,14 +51,15 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     }
     public void OnPointerClick(PointerEventData eventData)
     {
+        if(GameManager.Instance.isGameEnd || !GameManager.Instance.isStartGame || GameManager.Instance.isRunWater) return;
         if (pipeObject != null)
         {
             if(pipeObject.pipeData.pipeType == PipeType.Road) return;
-            if(GameManager.Instance.onHammer)
+            if(GameManager.Instance.itemManager.onHammer)
             {
                 GameManager.Instance.gridCanvas.slots[(int)pipeObject.pipeData.pos.x, (int)pipeObject.pipeData.pos.y].item = null;
                 Destroy(gameObject);
-                GameManager.Instance.UseHammerComplete();
+                GameManager.Instance.itemManager.UseHammerComplete();
             }
             else
             {
