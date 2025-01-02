@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4442a05e23ae54dbfa67f221ee5b60a1, type: 3}
+  m_Name: DiaryModel_V_2
+  m_EditorClassIdentifier: 
+  id: Video_2
+  headSP: {fileID: 21300000, guid: d21974b6f9963482493c5cb7251909a5, type: 3}
+  itemSP: {fileID: 21300000, guid: 44bc2020fc5c641368f9d18aa7925f36, type: 3}
+  topicST: "\u0E23\u0E31\u0E1A\u0E0A\u0E21\u0E27\u0E34\u0E14\u0E35\u0E42\u0E2D"
+  descriptionST: "\u0E19\u0E49\u0E33\u0E01\u0E31\u0E1A\u0E04\u0E27\u0E32\u0E21\u0E40\u0E1B\u0E47\u0E19\u0E2D\u0E22\u0E39\u0E48\u0E43\u0E19\u0E01\u0E32\u0E23\u0E2D\u0E38\u0E1B\u0E42\u0E20\u0E04
+    \u0E1A\u0E23\u0E34\u0E42\u0E20\u0E04\u0E02\u0E2D\u0E07\u0E0A\u0E38\u0E21\u0E0A\u0E19 "
+  descriptionST2: "\u0E23\u0E31\u0E1A\u0E0A\u0E21\u0E27\u0E34\u0E14\u0E35\u0E42\u0E2D\u0E42\u0E21\u0E0A\u0E31\u0E48\u0E19\u0E01\u0E23\u0E32\u0E1F\u0E34\u0E01
+    \u0E04\u0E27\u0E32\u0E21\u0E22\u0E32\u0E27 3 \u0E19\u0E32\u0E17\u0E35 \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E23\u0E31\u0E1A\u0E23\u0E32\u0E07\u0E27\u0E31\u0E25"
+  isVideo: 1
+  headIMG: {fileID: 21300000, guid: d999bc4d383004aab8291cbdf735cbdc, type: 3}
+  textDesIMG: {fileID: 21300000, guid: de9d829e2d3ee4fc4a476f3b7162ffba, type: 3}

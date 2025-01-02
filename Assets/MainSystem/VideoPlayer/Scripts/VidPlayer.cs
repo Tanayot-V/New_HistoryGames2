@@ -33,9 +33,10 @@ public class VidPlayer : MonoBehaviour
 
     void Update()
     {
+        /*
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            url = "https://historygame-e98c2.web.app/result/2bc2e25bccc749f7.mp4";
+            //url = "https://historygame-e98c2.web.app/result/2bc2e25bccc749f7.mp4";
             if (videoPlayer)
             {
                 rawOdj.gameObject.SetActive(true);
@@ -62,6 +63,36 @@ public class VidPlayer : MonoBehaviour
                 videoPlayer.prepareCompleted += OnVideoPrepared;
                 videoPlayer.loopPointReached += OnVideoFinished;
             }
+        }*/
+    }
+
+    public void PlayVideoURL(string _URL)
+    {
+        if (videoPlayer)
+        {
+                rawOdj.gameObject.SetActive(true);
+                videoPlayer.url = _URL;
+                videoPlayer.playOnAwake = false;
+                videoPlayer.Prepare();
+
+                videoPlayer.errorReceived += OnVideoError;
+                videoPlayer.prepareCompleted += OnVideoPrepared;
+                videoPlayer.loopPointReached += OnVideoFinished;
+        }
+    }
+
+    public void PlayVideoClip(VideoClip _clip)
+    {
+        if (videoPlayer)
+        {
+                rawOdj.gameObject.SetActive(true);
+                videoPlayer.clip = _clip;  
+                videoPlayer.playOnAwake = false;
+                videoPlayer.Prepare();
+
+                videoPlayer.errorReceived += OnVideoError;
+                videoPlayer.prepareCompleted += OnVideoPrepared;
+                videoPlayer.loopPointReached += OnVideoFinished;
         }
     }
 

@@ -21,4 +21,9 @@ public class UILobbyGameManager : Singletons<UILobbyGameManager>
             callback();
         });
     }
+    
+    public void ClickAudio()
+    {
+        SoundManager.Instance.PlayAudioSource("Click");
+    }
 }
