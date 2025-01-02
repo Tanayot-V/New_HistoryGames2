@@ -24,6 +24,11 @@ public class UILobbyGameManager : Singletons<UILobbyGameManager>
     
     public void ClickAudio()
     {
+        if (SoundManager.Instance == null)
+        {
+            Debug.LogWarning("SoundManager instance is not available.");
+            return;
+        }
         SoundManager.Instance.PlayAudioSource("Click");
     }
 }

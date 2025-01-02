@@ -32,6 +32,11 @@ public class SoundManager : MonoBehaviour
 
     public void PlayAudioSource(string _name)
     {
+        if(audioModelSO == null)
+        {
+            audioModelSO = Resources.Load<AudioModelSO>("AudioModelSO_Game2_Waterpipe");
+        }
+        
         AudioModel audioModel = audioModelSO.GetAudioModel(_name);
         AudioClip audioClip = audioModel.audioClip;
         AudioSource source = CreateAudioSource(_name, audioModel.audioType);
