@@ -5,27 +5,14 @@ using Spine.Unity;
 
 public class SpineAnimationUIController : MonoBehaviour
 {
-    private SkeletonGraphic skeletonGraphic; 
-    [SerializeField] private bool loopDefaultAnimation = false; 
+    [SerializeField]private SkeletonGraphic skeletonGraphic; 
+    [SerializeField]private Spine.AnimationState animationState;
 
-    private Spine.AnimationState animationState;
     public void Start()
     {
-        /*
-        if (loopDefaultAnimation)
-        {
-            AddAnimationToQueue("dry", false);
-        }*/
-    }
-
-    private void Awake()
-    {
-         if (skeletonGraphic == null)
-        {
-            skeletonGraphic = GetComponent<SkeletonGraphic>();
-        }
-
+        if (skeletonGraphic == null) skeletonGraphic = GetComponent<SkeletonGraphic>();
         animationState = skeletonGraphic.AnimationState;
+        //AddAnimationToQueue("dry", false);
     }
 
     public void AddAnimationToQueue(string animationName, bool loop)
