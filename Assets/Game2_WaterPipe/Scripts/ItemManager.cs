@@ -15,7 +15,8 @@ public class ItemManager : MonoBehaviour
 
     [Header("Draw Line")]
     public bool isDrawLine = false;
-    public float DrawLineTime = 15f;
+    public float drawLineTime = 15f;
+    private float drawLineTimer;
 
 
     [Header("Hammer")]
@@ -32,13 +33,36 @@ public class ItemManager : MonoBehaviour
                 CheckClick();
             }
         }
+        if(isDrawLine)
+        {
+            drawLineTimer -= Time.deltaTime;
+            GameManager.Instance.gameUiManager.UpdateDrawTimer(drawLineTimer / drawLineTime);
+            if(drawLineTimer <= 0)
+            {
+                isDrawLine = false;
+                GameManager.Instance.gameUiManager.OnEndDrawLine();
+            }
+        }
     }
 
     public void addtimeBtnClick()
     {
+        if (addTimeCount <= 0) return;
         GameManager.Instance.AddTime(timeToAdd);
         addTimeCount--;
         GameManager.Instance.gameUiManager.UpdateAddTimeCount(addTimeCount);
+    }
+
+    public void DrawLineBtnClick()
+    {
+        if (drawLineCount <= 0)
+        {
+            GameManager.Instance.gameUiManager.OnEndDrawLine();
+            return;
+        }
+        // Draw Line logic
+        isDrawLine = true;
+        drawLineTimer = drawLineTime;
     }
 
 

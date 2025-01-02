@@ -87,6 +87,11 @@ public class GameUiManager : MonoBehaviour
         drawLineBgImage.color = Color.white;
     }
 
+    public void UpdateDrawTimer(float fillAmount)
+    {
+        drawLineBgImage.fillAmount = fillAmount;
+    }
+
     public void UpdateDrawLineCount(int count)
     {
         drawLineCountText.text = "x" + count.ToString();

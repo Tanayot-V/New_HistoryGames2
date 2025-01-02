@@ -1,11 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Newtonsoft;
 using Newtonsoft.Json;
-using JetBrains.Annotations;
-using Unity.Mathematics;
-using UnityEditor.Search.Providers;
 
 public class GridCanvas : MonoBehaviour
 {
