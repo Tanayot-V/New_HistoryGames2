@@ -97,4 +97,9 @@ public class LobbyGameManager : Singletons<LobbyGameManager>
         UILobbyGameManager.Instance.ClickAudio();
     }
     #endregion
+
+    public void ClickLink()
+    {
+        Application.OpenURL("https://gamesflexx-56768.web.app/Game3Hero/index.html");
+    }
 }
