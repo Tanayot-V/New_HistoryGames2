@@ -133,6 +133,20 @@ public class GameManager : Singletons<GameManager>
     {
         if(isGameEnd) yield break;
         isGameEnd = true;
+        if(gridCanvas.isChallangeMode)
+        {
+            if(loseCondition == LoseCondition.timeOut)
+            {
+                gameUiManager.ShowResult(isWin,loseCondition,3);
+                yield break;
+            }
+            gridCanvas.ClearGrid();
+            gridCanvas.CreateGrid();
+            gridCanvas.RandomPipe();
+            isGameEnd = false;
+            isRunWater = false;
+            yield break;
+        }
         if(isDebug)
         {
             yield return new WaitForSeconds(1f);

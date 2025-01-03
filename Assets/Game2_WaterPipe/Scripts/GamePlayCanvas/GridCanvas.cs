@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Newtonsoft.Json;
+using UnityEngine.UIElements.Experimental;
 
 public class GridCanvas : MonoBehaviour
 {
+    public bool isChallangeMode = false;
     public GameObject slotPrefab;
     public int rows = 8;
     public int columns = 8;
@@ -27,6 +29,14 @@ public class GridCanvas : MonoBehaviour
 
     void Start()
     {
+        if(isChallangeMode)
+        {
+            rows = 8;
+            columns = 8;
+            CreateGrid();
+            RandomPipe();
+        }
+
         ReadMapData();
         // CreateGrid();
         // CreateLevel();
@@ -103,6 +113,99 @@ public class GridCanvas : MonoBehaviour
         for(int i = 0; i < childCount; i++)
         {
             DestroyImmediate(roadParemt.GetChild(0).gameObject);
+        }
+    }
+
+    public void RandomPipe()
+    {
+        int startCount = Random.Range(1,4);
+        int endCount = Random.Range(3,10);
+        int obstacleCount = Random.Range(8,14);
+
+        int counter = 0;
+        while (counter < startCount)
+        {
+            int x = Random.Range(1,columns-1);
+            int y = Random.Range(1,rows-1);
+            if(slots[x, y].item != null) continue;
+
+            string id = "1";
+            int direction = Random.Range(1,16);
+            id += direction.ToString("00") + "00";
+            Debug.Log(id);
+            GridObject gridObj = gridDatabase.GetGridObjectByID(id);
+            GameObject go = Instantiate(gridObj.prefab, slots[x, y].transform);
+            go.transform.localPosition = Vector3.zero;
+            slots[x, y].item = go;
+            slots[x,y].isDefault = true;
+            PipeStart ps = go.GetComponent<PipeStart>();
+            if(ps != null)
+            {
+                GameManager.Instance.pipeStarts.Add(ps);
+            }
+            else
+            {
+                DestroyImmediate(go);
+                continue;
+            }
+            counter++;
+        }
+        counter = 0;
+        while (counter < endCount)
+        {
+            int x = Random.Range(1,columns-1);
+            int y = Random.Range(1,rows-1);
+            if(slots[x, y].item != null) continue;
+
+            string id = "2";
+            int direction = Random.Range(1,5);
+            id += direction.ToString("00") + "00";
+
+            GridObject gridObj = gridDatabase.GetGridObjectByID(id);
+            GameObject go = Instantiate(gridObj.prefab, slots[x, y].transform);
+            go.transform.localPosition = Vector3.zero;
+            slots[x, y].item = go;
+            slots[x,y].isDefault = true;
+            PipeEnd pipeEnd = go.GetComponent<PipeEnd>();
+            if(pipeEnd != null)
+            {
+                GameManager.Instance.pipeEnds.Add(pipeEnd);
+            }
+            else
+            {
+                DestroyImmediate(go);
+                continue;
+            }
+            gridObj = gridDatabase.GetDecorateObjectByID("14");
+            if(gridObj == null) continue;
+            go = Instantiate(gridObj.prefab, slots[x, y].transform);
+            go.GetComponent<PipeObject>().pipeData.pos = new Vector2(x, y);
+            go.transform.localPosition = Vector3.zero;
+            go.transform.SetParent(decorateParent);
+            
+            Decoration decoration = go.GetComponent<Decoration>();
+            if(decoration != null)
+            {
+                decoration.SuccessPipeEnds = new List<PipeEnd>();
+            }
+            decoration.SuccessPipeEnds.Add(slots[x, y].item.GetComponent<PipeEnd>());
+            counter++;
+        }
+        counter = 0;
+        while (counter < obstacleCount)
+        {
+            // 30001,30002
+            int x = Random.Range(0,columns);
+            int y = Random.Range(0,rows);
+            if(slots[x, y].item != null) continue;
+
+            string id = "3000" + Random.Range(1,3);
+            GridObject gridObj = gridDatabase.GetGridObjectByID(id);
+            GameObject go = Instantiate(gridObj.prefab, slots[x, y].transform);
+            go.transform.localPosition = Vector3.zero;
+            slots[x, y].item = go;
+            slots[x,y].isDefault = true;
+            counter++;
         }
     }
 

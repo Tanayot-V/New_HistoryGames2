@@ -69,15 +69,12 @@ public class PipeSlotCanvas : MonoBehaviour, IDropHandler, IPointerEnterHandler,
     }
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Debug.Log("OnPointerEnter");
         if (childImage != null && GameManager.Instance.itemManager.isDrawLine)
         {
-            Debug.Log("DrawLine");
             childImage.color =  heightLightColor;// Change to your desired color
         }
         if (eventData.pointerDrag == null) 
         {
-            Debug.Log("non Obj OnDrag");
             return;
         }
         // Change the color of the child image to indicate hover
@@ -85,12 +82,10 @@ public class PipeSlotCanvas : MonoBehaviour, IDropHandler, IPointerEnterHandler,
         {
             if(item != null)
             {
-                Debug.Log("disable");
                 childImage.color = disableColor;// Change to your desired color
             }
             else
             {
-                Debug.Log("heightLight");
                 childImage.color = heightLightColor;// Change to your desired color
             }
         }
