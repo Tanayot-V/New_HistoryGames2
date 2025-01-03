@@ -24,8 +24,10 @@ public class LobbyGameManager : Singletons<LobbyGameManager>
         settingManager.ClosePage();
         diaryManager.DiaryClose();
         leaderboardManager.ClosePage();
-
+        
         selectLevelManager.InitSelectLevel();
+        
+        leaderboardManager.StartLeader();
     }
 
     #region Setting
