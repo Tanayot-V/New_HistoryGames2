@@ -32,43 +32,6 @@ public class AdsManager : Singletons<AdsManager>
     public GameObject contentOBJ;
     private System.Action adsCallback;   
 
-    public void Start() 
-    {
-        //OpenDOAdsPage();
-    }
-
-    public void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            OpenDOAdsPage();
-        }
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            OpenAdsVideo(AdsType.MoveOut);
-        }
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            OpenAdsVideo(AdsType.EndStage2);
-        }
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            OpenAdsVideo(AdsType.EndStage4);
-        }
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            OpenAdsVideo(AdsType.WastWaterMove);
-        }
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            OpenAdsVideo(AdsType.WastWaterGood);
-        }
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            OpenAdsVideo(AdsType.EndStage9);
-        }
-    }
-
     public void OpenDOAdsPage(Image _itemIMG = null)
     {
         adsPageOBJ.SetActive(true);
