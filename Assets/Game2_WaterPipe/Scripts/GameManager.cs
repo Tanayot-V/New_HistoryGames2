@@ -39,6 +39,11 @@ public class GameManager : Singletons<GameManager>
         gameUiManager.Init(1f, moveCount, itemManager.addTimeCount, itemManager.drawLineCount, itemManager.hammerCount);
         pipeStarts.AddRange(FindObjectsOfType<PipeStart>());
         pipeEnds.AddRange(FindObjectsOfType<PipeEnd>());
+
+        if(level == 3)
+        {
+            AdsManager.Instance.OpenAdsVideo(AdsType.EndStage4);
+        }
     }
 
     public void StartGame()
@@ -54,6 +59,12 @@ public class GameManager : Singletons<GameManager>
 
         if (timer <= 0)
         {
+            if(!PlayerPrefs.HasKey("TimeOutVideo"))
+            {
+                AdsManager.Instance.OpenAdsVideo(AdsType.MoveOut, () => {StartCoroutine(EndGame(false, LoseCondition.timeOut));});
+                PlayerPrefs.SetInt("TimeOutVideo",0);
+                return;
+            }
             // lose game
             StartCoroutine(EndGame(false, LoseCondition.timeOut));
             return;
@@ -120,6 +131,27 @@ public class GameManager : Singletons<GameManager>
                 return;
             }
             // win game
+            if(level == 2)
+            {
+                AdsManager.Instance.OpenAdsVideo(AdsType.EndStage2, ()=>{
+                    StartCoroutine(EndGame(true, LoseCondition.PipeNonComplete));
+                });
+                return;
+            }
+            else if(level == 4)
+            {
+                AdsManager.Instance.OpenAdsVideo(AdsType.WastWaterGood, ()=>{
+                    StartCoroutine(EndGame(true, LoseCondition.PipeNonComplete));
+                });
+                return;
+            }
+            else if(level == 9)
+            {
+                AdsManager.Instance.OpenAdsVideo(AdsType.EndStage9, ()=>{
+                    StartCoroutine(EndGame(true, LoseCondition.PipeNonComplete));
+                });
+                return;
+            }
             StartCoroutine(EndGame(true, LoseCondition.PipeNonComplete));
         }
         else

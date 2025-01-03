@@ -21984,7 +21984,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 685749782}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 602540495}
+        m_TargetAssemblyTypeName: GameUiManager, Assembly-CSharp
+        m_MethodName: OnResetConfirmBtnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &685749784
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24036,6 +24048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccf5cece6e0967640ad8a4207b518108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isChallangeMode: 0
   slotPrefab: {fileID: 5994420011969385498, guid: d128103c7c8018242bef162020749dbe, type: 3}
   rows: 8
   columns: 16

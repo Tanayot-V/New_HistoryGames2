@@ -483,6 +483,10 @@ public class GridCanvas : MonoBehaviour
                         }
                     }
                 }
+                if(slots[x,y].roadObject != null)
+                {
+                    slots[x,y].roadObject.transform.SetParent(roadParemt);
+                }
             }
         }
     }

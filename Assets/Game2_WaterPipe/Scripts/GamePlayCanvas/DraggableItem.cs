@@ -1,3 +1,4 @@
+using System.Runtime.Serialization;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -43,6 +44,13 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        if(!PlayerPrefs.HasKey("firstWasteTank"))
+        {
+            GameManager.Instance.isStartGame = false;
+            AdsManager.Instance.OpenAdsVideo(AdsType.WastWaterMove, () => {GameManager.Instance.isStartGame = true;});
+
+            PlayerPrefs.SetInt("firstWasteTank",0);
+        }
         canvasGroup.blocksRaycasts = true;
         if (!isSnapOnSlot)
         {
