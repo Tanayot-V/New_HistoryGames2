@@ -23,6 +23,7 @@ namespace JSG.FortuneSpinWheel
         public float m_Rotation = 0;
 
         public Image m_SpinButton;
+        public Image m_cancleButton;
 
         [HideInInspector]
         public int m_RewardNumber = -1;
@@ -130,6 +131,7 @@ namespace JSG.FortuneSpinWheel
                 m_IsSpinning = true;
                 m_RewardNumber = -1;
                 m_SpinButton.gameObject.SetActive(false);
+                m_cancleButton.gameObject.SetActive(false);
             }
         }
 
@@ -140,7 +142,7 @@ namespace JSG.FortuneSpinWheel
             m_IsSpinning = false;
             m_RewardNumber = -1;
             m_SpinButton.gameObject.SetActive(true);
-            m_RewardPanel.gameObject.SetActive(false);
+            m_cancleButton.gameObject.SetActive(true);
         }
     }
 }

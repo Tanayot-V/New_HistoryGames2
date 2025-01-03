@@ -29,6 +29,7 @@ public class GameUiManager : MonoBehaviour
     public List<GameObject> loseCases;
     public CanvasGroup underGroundLayer;
     public SkeletonGraphic skeletonGraphic;
+    public WheelRewardManager wheelRewardPanel;
 
     [Header("Minigame")]
     public CanvasGroup minigamePanel;
@@ -43,6 +44,19 @@ public class GameUiManager : MonoBehaviour
 
     [Header("Home")]
     public GameObject homePanel;
+
+    [Header("Loading")]
+    public GameObject loadingGO;
+    public LoadingFillAmount loadingFillAmount;
+
+    public void StartLoading(System.Action callback)
+    {
+        loadingGO.SetActive(true);
+        loadingFillAmount.StartFillAmount(() =>
+        {
+            callback();
+        });
+    }
 
     public void Init(float timepercent, int moveCount, int addTimeCount, int drawLineCount, int hammerCount)
     {
@@ -182,6 +196,9 @@ public class GameUiManager : MonoBehaviour
                 skeletonGraphic.AnimationState.AddAnimation(0,starCount + " star_loop", true, 0);
                 skeletonGraphic.freeze = false;
             }
+            yield return new WaitForSeconds(1f);
+            wheelRewardPanel.gameObject.SetActive(true);
+            wheelRewardPanel.Init();
         }
     }
 
@@ -248,7 +265,10 @@ public class GameUiManager : MonoBehaviour
     public void OnResetConfirmBtnClick()
     {
         int activeSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(activeSceneIndex);
+        StartLoading(() =>
+        {
+            SceneManager.LoadScene(activeSceneIndex);
+        });
     }
 
     public void OnHomeBtnClick()
@@ -263,6 +283,18 @@ public class GameUiManager : MonoBehaviour
 
     public void OnHomeConfirmBtnClick()
     {
-        SceneManager.LoadScene(0);
+        StartLoading(() =>
+        {
+            SceneManager.LoadScene(0);
+        });   
+    }
+
+    public void OnNextLevelBtnClick()
+    {
+        int activeSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        StartLoading(() =>
+        {
+            SceneManager.LoadScene(activeSceneIndex + 1);
+        });
     }
 }
