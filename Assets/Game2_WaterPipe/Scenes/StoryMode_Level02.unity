@@ -19561,6 +19561,7 @@ MonoBehaviour:
   gameUiManager: {fileID: 602540495}
   gridCanvas: {fileID: 753102201}
   itemManager: {fileID: 602540496}
+  level: 2
   isStartGame: 0
   timePlay: 120
   moveCount: 0
@@ -19800,6 +19801,7 @@ MonoBehaviour:
   drawLineAdsImage: {fileID: 930421273}
   addTimeCountText: {fileID: 105637151}
   addTimeAdsImage: {fileID: 334282942}
+  homeNotiImage: {fileID: 890133519}
   buttomBar: {fileID: 521078439}
   letsDoItBtn: {fileID: 1854505422}
   resultPanel: {fileID: 703113087}

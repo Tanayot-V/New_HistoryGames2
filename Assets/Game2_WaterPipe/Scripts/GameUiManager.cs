@@ -18,6 +18,7 @@ public class GameUiManager : MonoBehaviour
     public GameObject drawLineAdsImage;
     public TMP_Text addTimeCountText;
     public GameObject addTimeAdsImage;
+    public GameObject homeNotiImage;
 
     public GameObject buttomBar;
     public GameObject letsDoItBtn;
@@ -60,6 +61,7 @@ public class GameUiManager : MonoBehaviour
 
     public void Init(float timepercent, int moveCount, int addTimeCount, int drawLineCount, int hammerCount)
     {
+        homeNotiImage.SetActive(LevelDataManager.Instance.IsAllReadDiary());
         timerBar.fillAmount = timepercent;
         moveText.text = moveCount.ToString();
         addTimeCountText.text = "x" + addTimeCount.ToString();

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.Collections;
 using UnityEngine;
 using UnityEngine.Assertions.Must;
@@ -17,11 +18,11 @@ public class GameManager : Singletons<GameManager>
     public ItemManager itemManager;
 
     [Header("Game Data")]
+    public int level = 1;
     public bool isStartGame = false;
     public float timePlay = 600;
     private float timer;
     public int moveCount = 0;
-
     public List<PipeStart> pipeStarts = new List<PipeStart>();
     public List<PipeEnd> pipeEnds = new List<PipeEnd>();
 
@@ -144,7 +145,17 @@ public class GameManager : Singletons<GameManager>
                 gridCanvas.SaveState(gridCanvas.savelevelName);
             }
             yield return new WaitForSeconds(1f);
-            gameUiManager.ShowResult(isWin,loseCondition,Random.Range(1,4));
+            
+            int star = CalculateStar(false, timePlay - timer, timePlay, moveCount, pipeEnds.Count * 10);
+            
+            int wasteStart = pipeStarts.Count(x => x.isWasteWater == true);
+            int score = CalculateScoreLeaderbaord((int)timePlay, gridCanvas.rows * gridCanvas.columns, pipeEnds.Count, wasteStart, (int)(timePlay - timer), moveCount, level);
+            
+            LevelDataManager.Instance.SetLevelData(level,star,score);
+            LevelDataManager.Instance.SetCurrentLevel(level + 1);
+
+            gameUiManager.ShowResult(isWin,loseCondition,star);
+            
         }
     }
 
