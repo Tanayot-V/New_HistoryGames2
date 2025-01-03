@@ -2241,7 +2241,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: V.2
+  m_text: V.2.3
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 005fd04bfa8064591bb2d365f02a5491, type: 2}
   m_sharedMaterial: {fileID: -3571025858034264899, guid: 005fd04bfa8064591bb2d365f02a5491, type: 2}
@@ -6789,7 +6789,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0af48348cbbe14c0982ec365aa86e5c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentLevel: 2
+  currentLevel: 1
   levelDatas:
   - level: 1
     star: 1
@@ -7081,7 +7081,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0E2B\u0E21\u0E39\u0E40\u0E14\u0E49\u0E07"
+  m_text: "\u0E0A\u0E37\u0E48\u0E2D\u0E1C\u0E39\u0E49\u0E43\u0E0A\u0E49\u0E07\u0E32\u0E19"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 84c76e0b3b0934be1ae95f71c1940299, type: 2}
   m_sharedMaterial: {fileID: -8364337414495713506, guid: 84c76e0b3b0934be1ae95f71c1940299, type: 2}
@@ -18969,7 +18969,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.76
+  orthographic size: 5.75
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -19058,8 +19058,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragSpeed: 2
   zoomSpeed: 2
-  minZoom: 5.76
-  maxZoom: 7
+  minZoom: 5.75
+  maxZoom: 5.75
   moveArea:
     serializedVersion: 2
     x: 0

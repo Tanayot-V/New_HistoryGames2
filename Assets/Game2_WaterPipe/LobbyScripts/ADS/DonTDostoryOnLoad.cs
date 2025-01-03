@@ -4,23 +4,15 @@ using UnityEngine;
 
 public class DonDostoryOnLoad : MonoBehaviour
 {
-    private static DonDostoryOnLoad _Instance;
-    public static DonDostoryOnLoad Instance
-    {
-        get
-        {
-            if (_Instance == null)
-            {
-                GameObject obj = new GameObject("[Script]: -- DonDostoryOnLoad Instance --");
-                _Instance = obj.AddComponent<DonDostoryOnLoad>();
-                DontDestroyOnLoad(obj);
-            }
-            return _Instance;
-        }
-    }
-
     private void Awake()
     {
-        DontDestroyOnLoad(this.gameObject);
+        // เช็คว่ามี instance ของสคริปต์นี้อยู่แล้วหรือยัง
+        if (FindObjectsOfType<DonDostoryOnLoad>().Length > 1)
+        {
+            Destroy(this.gameObject); // ถ้ามีอยู่แล้ว ให้ทำลายตัวเอง
+            return;
+        }
+
+        DontDestroyOnLoad(this.gameObject); // ถ้ายังไม่มี ให้ทำตัวเองคงอยู่ในทุก Scene
     }
 }

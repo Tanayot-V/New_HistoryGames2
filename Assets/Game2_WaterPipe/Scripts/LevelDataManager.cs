@@ -24,13 +24,6 @@ public class LevelDataManager : Singletons<LevelDataManager>
    [SerializeField] private List<LevelData> levelDatas = new List<LevelData>();
    [SerializeField] private bool isAllReadDiary;
 
-public void Update()
-{
-    if(Input.GetKeyDown(KeyCode.A))
-    {
-        SetLevelData(1, 3,300);
-    }
-}
     public void Start()
     {
         if (levelDatas.Count == 0)
