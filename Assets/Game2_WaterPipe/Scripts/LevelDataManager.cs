@@ -31,18 +31,14 @@ public class LevelDataManager : Singletons<LevelDataManager>
             SetupDefault();
         }    
     }
-
-    public void Update()
-    {
-
-    }
     
+    //พี่เอิร์ธ ใช้อันนี้เพื่อเช็คว่าอ่านหมดยัง T = ขึ้นจุดแดง F = ไม่ขึ้นจุดแดง
     public bool IsAllReadDiary()
     {
         return isAllReadDiary;
     }
 
-    public void SetAllReadDiary(bool _isAllReadDiary)
+    public void SetIsAllReadDiary(bool _isAllReadDiary)
     {
         isAllReadDiary = _isAllReadDiary;
     }
@@ -63,6 +59,7 @@ public class LevelDataManager : Singletons<LevelDataManager>
         return currentLevel;
     }
 
+    //พี่เอิร์ธ อันนี้เอาไว้เซ็คว่าเราเล่นถึงไหนแล้ว
     public void SetCurrentLevel(int _level)
     {
         if(currentLevel <= 0) currentLevel = 1;
@@ -89,14 +86,15 @@ public class LevelDataManager : Singletons<LevelDataManager>
         levelData.score = _score;
     }
 
-        public void SetStar(int _level, int _star)
+    //พี่เอิร์ธ ขอดาวหน่อย
+    public void SetStar(int _level, int _star)
     {
         LevelData levelData = GetLevelData(_level);
         if(_star <= 0) _star = 1;
         levelData.star = _star;
     }
 
-        public void SetScore(int _level, int _score)
+    public void SetScore(int _level, int _score)
     {
         LevelData levelData = GetLevelData(_level);
         levelData.score = _score;
