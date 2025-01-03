@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game2_WaterPipe/Scenes/StoryMode_Level09.unity
     guid: b8860a71a7e17284b843e86bf923ac31
+  - enabled: 1
+    path: Assets/Game2_WaterPipe/Scenes/ChallangeMode.unity
+    guid: 91db4a4bc7f15244d9372a7464b200ab
   m_configObjects: {}

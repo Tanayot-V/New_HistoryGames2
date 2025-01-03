@@ -61,8 +61,8 @@ public class GameUiManager : MonoBehaviour
 
     public void Init(float timepercent, int moveCount, int addTimeCount, int drawLineCount, int hammerCount)
     {
-        // if(LevelDataManager.Instance != null)
-        //     homeNotiImage.SetActive(LevelDataManager.Instance.IsAllReadDiary());
+        if(LevelDataManager.Instance != null)
+            homeNotiImage.SetActive(LevelDataManager.Instance.IsAllReadDiary());
         timerBar.fillAmount = timepercent;
         moveText.text = moveCount.ToString();
         addTimeCountText.text = "x" + addTimeCount.ToString();

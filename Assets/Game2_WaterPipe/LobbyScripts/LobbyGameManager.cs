@@ -102,4 +102,13 @@ public class LobbyGameManager : Singletons<LobbyGameManager>
     {
         Application.OpenURL("https://gamesflexx-56768.web.app/Game3Hero/index.html");
     }
+
+    public void ToChallange()
+    {
+        UILobbyGameManager.Instance.StartLoading(() =>
+        {
+            DataCenterManager.Instance.LoadSceneByName("ChallangeMode");
+            Debug.Log("Loading Complete");
+        });
+    }
 }
