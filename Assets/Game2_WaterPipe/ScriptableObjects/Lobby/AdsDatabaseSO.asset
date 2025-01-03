@@ -17,8 +17,6 @@ MonoBehaviour:
     adsType: 0
     paths:
     - https://tanayot-v.github.io/HistoryGamesAdVideo/Game2/001.mp4
-    videoClips:
-    - {fileID: 32900000, guid: dd354bd3b8e0144b1a9fc3b94cea3d72, type: 3}
   - modelID: Ads Item
     adsType: 1
     paths:
@@ -26,34 +24,23 @@ MonoBehaviour:
     - https://tanayot-v.github.io/HistoryGamesAdVideo/Game2/004.mp4
     - https://tanayot-v.github.io/HistoryGamesAdVideo/Game2/005.mp4
     - https://tanayot-v.github.io/HistoryGamesAdVideo/Game2/006.mp4
-    videoClips:
-    - {fileID: 32900000, guid: 6fae6c59ca83949f7af1d65c75a46641, type: 3}
-    - {fileID: 32900000, guid: 4ee93a02d9a644327bcb113babf34388, type: 3}
-    - {fileID: 32900000, guid: 91d4773abf89c42fb9e3d6936b94871d, type: 3}
-    - {fileID: 32900000, guid: 17c9a5e00ba3549009a3edba755f4b19, type: 3}
   - modelID: End Stage 2
     adsType: 2
     paths:
     - https://tanayot-v.github.io/HistoryGamesAdVideo/Game2/007.mp4
-    videoClips:
-    - {fileID: 32900000, guid: 05f767f91f27d4e09879afbb27f67d50, type: 3}
   - modelID: End Stage 4
     adsType: 3
     paths:
     - https://tanayot-v.github.io/HistoryGamesAdVideo/Game2/003.mp4
-    videoClips: []
   - modelID: Wast Water Move
     adsType: 4
     paths:
     - https://tanayot-v.github.io/HistoryGamesAdVideo/Game2/008.mp4
-    videoClips: []
   - modelID: Wast Water Good
     adsType: 5
     paths:
     - https://tanayot-v.github.io/HistoryGamesAdVideo/Game2/009.mp4
-    videoClips: []
   - modelID: EndGame
     adsType: 6
     paths:
-    - https://tanayot-v.github.io/HistoryGamesAdVideo/Game2/0010.mp4
-    videoClips: []
+    - https://tanayot-v.github.io/HistoryGamesAdVideo/Game2/010.mp4

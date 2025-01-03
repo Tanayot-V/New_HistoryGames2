@@ -10,18 +10,22 @@ public class LobbyGameManager : Singletons<LobbyGameManager>
     public DiaryManager diaryManager;
     public LeaderboardManager leaderboardManager;
 
+    public SelectLevelManager selectLevelManager;
+
     public void Start()
     {
         SoundManager.Instance.Init(audioModelSO);
         SoundManager.Instance.PlayAudioSource("BGM"); 
-        SoundManager.Instance.SetVolumeBGM(0.25f);
-        SoundManager.Instance.SetVolumeSFX(1);
-        
+        if (PlayerPrefs.HasKey("VolumeBGM")) SoundManager.Instance.SetVolumeBGM(PlayerPrefs.GetFloat("VolumeBGM"));
+        else SoundManager.Instance.SetVolumeBGM(0.25f);
+        if(PlayerPrefs.HasKey("VolumeSFX"))SoundManager.Instance.SetVolumeSFX(PlayerPrefs.GetFloat("VolumeSFX"));
+        else SoundManager.Instance.SetVolumeSFX(0.5f);
+
         settingManager.ClosePage();
         diaryManager.DiaryClose();
         leaderboardManager.ClosePage();
-        //AdsManager.Instance.OpenDOAdsPage();
-        //Debug.Log(CalculateScoreLeaderbaord(900, 768, 31,  29, 350, 200, 5));
+
+        selectLevelManager.InitSelectLevel();
     }
 
     #region Setting

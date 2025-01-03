@@ -21,7 +21,6 @@ public class AdsModel
     public string modelID;
     public AdsType adsType;
     public string[] paths;
-    public VideoClip[] videoClips;
 }
 
 public class AdsManager : Singletons<AdsManager>
@@ -89,7 +88,7 @@ public class AdsManager : Singletons<AdsManager>
         {
                 if(_AdsType == AdsType.AdsItem)
                 {
-                    int randomIndex = Random.Range(0, adsModel.videoClips.Length);
+                    int randomIndex = Random.Range(0, adsModel.paths.Length);
                     vidPlayer.PlayVideoURL(adsModel.paths[randomIndex]);
                 }
                 else

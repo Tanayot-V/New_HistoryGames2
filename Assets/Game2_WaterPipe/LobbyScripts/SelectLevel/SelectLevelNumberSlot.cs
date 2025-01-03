@@ -59,24 +59,17 @@ public class SelectLevelNumberSlot : MonoBehaviour
 
     public void OnMouseOver()
     {
-        Debug.Log("OnMouseOver:" + name);
         numberOBJ.GetComponent<SpriteRenderer>().color = Color.gray;
     }
 
     public void OnMouseExit()
     {
-        Debug.Log("OnMouseExit:" + name);
         numberOBJ.GetComponent<SpriteRenderer>().color = Color.white;
-    }
-
-    public void OnMouseUp()
-    {
-        Debug.Log("OnMouseUp:" + name);
     }
 
     public void OnMouseDown()
     {
-        Debug.Log("OnMouseDown:" + name);
+        if(!state.isFinished && state.level != LevelDataManager.Instance.GetCurrentLevel()) return;
         if(UiController.IsPointerOverUIObject()) return;
         if(state == null) return;
         UILobbyGameManager.Instance.StartLoading(() =>
