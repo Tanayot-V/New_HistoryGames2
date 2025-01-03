@@ -34,22 +34,21 @@ public class SelectLevelState
 
 public class SelectLevelManager : MonoBehaviour
 {
-    public List<SelectLevelState> selectLevelStates = new List<SelectLevelState>();
-    public SelectLevelDatabaseSO selectLevelDatabaseSO;
-    public Camera mainCam;
-    public int currentLevel;
+    [SerializeField] private List<SelectLevelState> selectLevelStates = new List<SelectLevelState>();
+    [SerializeField] private SelectLevelDatabaseSO selectLevelDatabaseSO;
+    [SerializeField] private Camera mainCam;
+    private int currentLevel;
     
-    public void Start()
-    {
-        InitSelectLevel();
-    }
+    public void Start(){}
     
     public void InitSelectLevel()
     {
-       SetupLevel(currentLevel);
+        currentLevel = LevelDataManager.Instance.GetCurrentLevel();
+        SetupLevel(currentLevel);
         int index = 0;
         selectLevelStates.ForEach(o => {
             o.model = selectLevelDatabaseSO.selectLevelModels[index];
+            o.star = LevelDataManager.Instance.GetLevelData(o.level).star;
 
             if(o.level < currentLevel) o.isFinished = true;
             else o.isFinished = false;

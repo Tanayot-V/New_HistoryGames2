@@ -28,7 +28,7 @@ public class SettingManager : MonoBehaviour
     public void InitSetting()
     {
         volumeSlider_BGM.value = SoundManager.Instance.volumeBGM;
-        volumeSlider_SFX.value = SoundManager.Instance.volumeBGM;
+        volumeSlider_SFX.value = SoundManager.Instance.volumeSFX;
     }
 
     public void SetVolumeBGM()

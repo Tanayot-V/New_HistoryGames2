@@ -21,7 +21,6 @@ public class AdsModel
     public string modelID;
     public AdsType adsType;
     public string[] paths;
-    public VideoClip[] videoClips;
 }
 
 public class AdsManager : Singletons<AdsManager>
@@ -95,15 +94,15 @@ public class AdsManager : Singletons<AdsManager>
         AdsModel adsModel = adsDatabaseSO.GetAdsModel(_AdsType);
         if (adsModel != null)
         {
-            if(_AdsType == AdsType.AdsItem)
-            {
-                int randomIndex = Random.Range(0, adsModel.videoClips.Length);
-                vidPlayer.PlayVideoURL(adsModel.paths[randomIndex]);
-            }
-            else
-            {
-                vidPlayer.PlayVideoURL(adsModel.paths[0]);
-            }
+                if(_AdsType == AdsType.AdsItem)
+                {
+                    int randomIndex = Random.Range(0, adsModel.paths.Length);
+                    vidPlayer.PlayVideoURL(adsModel.paths[randomIndex]);
+                }
+                else
+                {
+                    vidPlayer.PlayVideoURL(adsModel.paths[0]);
+                }
         }
     }
     public void OpenAdsVideo(AdsType _AdsType, System.Action _callback)
