@@ -52,9 +52,12 @@ public class WheelRewardManager : MonoBehaviour
         quizPanel.SetActive(true);
     }
 
-    public void HideQuiz()
+    public void HideQuiz(bool isCorrect)
     {
         quizPanel.SetActive(false);
-        fortuneSpinWheel.StartSpin();
+        if(isCorrect)
+            fortuneSpinWheel.StartSpin();
+        else
+            gameObject.SetActive(false);
     }
 }
