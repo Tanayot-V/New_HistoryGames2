@@ -23,7 +23,7 @@ public class LevelDataManager : Singletons<LevelDataManager>
    [SerializeField] private int currentLevel;
    [SerializeField] private List<LevelData> levelDatas = new List<LevelData>();
    [SerializeField] private bool isAllReadDiary;
-
+    public int scoreLeaderborad = 0;           
     public void Start()
     {
         if (levelDatas.Count == 0)
@@ -85,6 +85,7 @@ public class LevelDataManager : Singletons<LevelDataManager>
         LevelData levelData = GetLevelData(_level);
         levelData.star = _star;
         levelData.score = _score;
+        scoreLeaderborad = _score;
     }
 
     //พี่เอิร์ธ ขอดาวหน่อย

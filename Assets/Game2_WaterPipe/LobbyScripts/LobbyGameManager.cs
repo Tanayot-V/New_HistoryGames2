@@ -26,7 +26,6 @@ public class LobbyGameManager : Singletons<LobbyGameManager>
         leaderboardManager.ClosePage();
         
         selectLevelManager.InitSelectLevel();
-        
         leaderboardManager.StartLeader();
     }
 

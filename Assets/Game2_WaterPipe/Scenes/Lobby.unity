@@ -2240,7 +2240,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: V.2.4
+  m_text: V.2.5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 005fd04bfa8064591bb2d365f02a5491, type: 2}
   m_sharedMaterial: {fileID: -3571025858034264899, guid: 005fd04bfa8064591bb2d365f02a5491, type: 2}
@@ -3521,7 +3521,7 @@ MonoBehaviour:
     userID: 
     displayName: 
     picture: {fileID: 0}
-    score: 0
+    score: 3000
   currentPlayerSlot: {fileID: 2067756132}
   scoreMainTX: {fileID: 593462321}
   scoreDiaryTX: {fileID: 2129721221}
@@ -6821,6 +6821,7 @@ MonoBehaviour:
     star: 1
     score: 0
   isAllReadDiary: 0
+  scoreLeaderborad: 0
 --- !u!1 &645980661
 GameObject:
   m_ObjectHideFlags: 0

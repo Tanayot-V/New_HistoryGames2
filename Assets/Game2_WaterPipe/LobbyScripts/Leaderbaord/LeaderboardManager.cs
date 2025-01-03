@@ -43,11 +43,11 @@ public class LeaderboardManager : MonoBehaviour
 
     public void StartLeader()
     {
-        if(LevelDataManager.Instance.GetCurrentLevel() == 1) return;
-        int score = LevelDataManager.Instance.GetLevelData(LevelDataManager.Instance.GetCurrentLevel()-1).score;
-        if(scoreMainTX != null) scoreMainTX.text = score.ToString();
-        if(scoreDiaryTX != null) scoreDiaryTX.text = score.ToString();
-        if(leaderboradTX != null) leaderboradTX.text = score.ToString();
+        int score = LevelDataManager.Instance.scoreLeaderborad;
+            if(scoreMainTX != null) scoreMainTX.text = score.ToString();
+            if(scoreDiaryTX != null) scoreDiaryTX.text = score.ToString();
+            if(leaderboradTX != null) leaderboradTX.text = score.ToString();
+        Debug.Log("StartLeader");
     }
 
     public void InitLeaderboard()
@@ -83,8 +83,7 @@ public class LeaderboardManager : MonoBehaviour
         currentPlayer = leaderboardDatabaseSO.leaderboardState;
         currentPlayerSlot.SetupSlot(currentPlayer);
 
-        int score = LevelDataManager.Instance.GetLevelData(LevelDataManager.Instance.GetCurrentLevel()).score;
-        leaderboradTX.text = score.ToString();
+        leaderboradTX.text =  LevelDataManager.Instance.scoreLeaderborad.ToString();
     }
 
     public void OpenPage()
