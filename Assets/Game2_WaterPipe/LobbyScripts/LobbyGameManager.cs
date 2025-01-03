@@ -43,6 +43,11 @@ public class LobbyGameManager : Singletons<LobbyGameManager>
 
     #region Diary
 
+    public bool DiaryIsCheckRead()
+    {   
+        return diaryManager.IsCheckRead();
+    }
+
     public void DiaryOpenPageButton()
     {
         diaryManager.InitDiary();

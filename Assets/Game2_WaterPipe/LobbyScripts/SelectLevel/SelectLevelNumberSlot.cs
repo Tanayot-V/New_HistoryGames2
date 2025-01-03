@@ -72,6 +72,8 @@ public class SelectLevelNumberSlot : MonoBehaviour
         if(!state.isFinished && state.level != LevelDataManager.Instance.GetCurrentLevel()) return;
         if(UiController.IsPointerOverUIObject()) return;
         if(state == null) return;
+
+        
         UILobbyGameManager.Instance.StartLoading(() =>
         {
             DataCenterManager.Instance.LoadSceneByName(state.model.sceneName);

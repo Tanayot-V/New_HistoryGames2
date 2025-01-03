@@ -22,7 +22,8 @@ public class LevelDataManager : Singletons<LevelDataManager>
 {
    [SerializeField] private int currentLevel;
    [SerializeField] private List<LevelData> levelDatas = new List<LevelData>();
-    
+   [SerializeField] private bool isAllReadDiary;
+
     public void Start()
     {
         if (levelDatas.Count == 0)
@@ -34,6 +35,16 @@ public class LevelDataManager : Singletons<LevelDataManager>
     public void Update()
     {
 
+    }
+    
+    public bool IsAllReadDiary()
+    {
+        return isAllReadDiary;
+    }
+
+    public void SetAllReadDiary(bool _isAllReadDiary)
+    {
+        isAllReadDiary = _isAllReadDiary;
     }
     
     public void SetupDefault()
