@@ -56,6 +56,7 @@ public class LevelDataManager : Singletons<LevelDataManager>
     public int GetCurrentLevel()
     {
         if(currentLevel <= 0) currentLevel = 1;
+        if(currentLevel >= 10) currentLevel = 9;
         return currentLevel;
     }
 
