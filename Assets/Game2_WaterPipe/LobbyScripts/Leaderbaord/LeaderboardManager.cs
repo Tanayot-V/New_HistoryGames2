@@ -36,6 +36,11 @@ public class LeaderboardManager : MonoBehaviour
     public LeaderboardState currentPlayer;
     public LeaderboardSlot currentPlayerSlot;
 
+    [Header("Update Score")]
+    public TMPro.TextMeshProUGUI scoreMainTX;
+    public TMPro.TextMeshProUGUI scoreDiaryTX;    
+    public TMPro.TextMeshProUGUI leaderboradTX;
+
     public void InitLeaderboard()
     {
         UiController.Instance.DestorySlot(parent);
