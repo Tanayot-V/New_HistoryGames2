@@ -131,13 +131,13 @@ public class GameManager : Singletons<GameManager>
                 return;
             }
             // win game
-            if(level == 2)
-            {
-                AdsManager.Instance.OpenAdsVideo(AdsType.EndStage2, ()=>{
-                    StartCoroutine(EndGame(true, LoseCondition.PipeNonComplete));
-                });
-                return;
-            }
+            // if(level == 2)
+            // {
+            //     AdsManager.Instance.OpenAdsVideo(AdsType.EndStage2, ()=>{
+            //         StartCoroutine(EndGame(true, LoseCondition.PipeNonComplete));
+            //     });
+            //     return;
+            // }
             else if(level == 4)
             {
                 AdsManager.Instance.OpenAdsVideo(AdsType.WastWaterGood, ()=>{
