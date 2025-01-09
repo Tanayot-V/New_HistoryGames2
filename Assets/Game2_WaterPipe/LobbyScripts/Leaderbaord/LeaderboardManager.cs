@@ -41,12 +41,13 @@ public class LeaderboardManager : MonoBehaviour
     public TMPro.TextMeshProUGUI scoreDiaryTX;    
     public TMPro.TextMeshProUGUI leaderboradTX;
 
-    public void Start()
+    public void StartLeader()
     {
-        int score = LevelDataManager.Instance.GetLevelData(LevelDataManager.Instance.GetCurrentLevel()).score;
-        scoreMainTX.text = score.ToString();
-        scoreDiaryTX.text = score.ToString();
-        leaderboradTX.text = score.ToString();
+        int score = LevelDataManager.Instance.scoreLeaderborad;
+            if(scoreMainTX != null) scoreMainTX.text = score.ToString();
+            if(scoreDiaryTX != null) scoreDiaryTX.text = score.ToString();
+            if(leaderboradTX != null) leaderboradTX.text = score.ToString();
+        Debug.Log("StartLeader");
     }
 
     public void InitLeaderboard()
@@ -82,9 +83,7 @@ public class LeaderboardManager : MonoBehaviour
         currentPlayer = leaderboardDatabaseSO.leaderboardState;
         currentPlayerSlot.SetupSlot(currentPlayer);
 
-        int score = LevelDataManager.Instance.GetLevelData(LevelDataManager.Instance.GetCurrentLevel()).score;
-        leaderboradTX.text = score.ToString();
-
+        leaderboradTX.text =  LevelDataManager.Instance.scoreLeaderborad.ToString();
     }
 
     public void OpenPage()

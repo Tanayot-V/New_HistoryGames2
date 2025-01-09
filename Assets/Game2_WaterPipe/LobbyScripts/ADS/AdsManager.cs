@@ -31,7 +31,7 @@ public class AdsManager : Singletons<AdsManager>
     public GameObject adsPageOBJ;
     public GameObject contentOBJ;
     private System.Action adsCallback;   
-
+    
     public void OpenDOAdsPage(Image _itemIMG = null)
     {
         adsPageOBJ.SetActive(true);
