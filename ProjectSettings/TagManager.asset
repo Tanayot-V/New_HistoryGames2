@@ -8,6 +8,7 @@ TagManager:
   - UI
   - Empty
   - GamePlay
+  - Menu
   layers:
   - Default
   - TransparentFX

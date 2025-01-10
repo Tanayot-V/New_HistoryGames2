@@ -34,6 +34,25 @@ public class UiController : MonoBehaviour
         return false;
     }
 
+     public bool IsPointerOverGameObjectWithTag(string _tag)
+        {
+            PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
+            eventDataCurrentPosition.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+            List<RaycastResult> results = new List<RaycastResult>();
+            EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
+            foreach (RaycastResult result in results)
+            {
+                if (result.gameObject.GetComponent<RectTransform>() != null)
+                {
+                    if(result.gameObject.tag == _tag)
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
     public void DestorySlot(GameObject tf)
     {
         if (tf == null)
