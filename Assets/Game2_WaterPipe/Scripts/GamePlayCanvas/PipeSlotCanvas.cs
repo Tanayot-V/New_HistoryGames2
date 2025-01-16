@@ -19,9 +19,11 @@ public class PipeSlotCanvas : MonoBehaviour, IDropHandler, IPointerEnterHandler,
     [Header("Road")]
     public bool isDefaultRoad = false;
     public GameObject roadObject;
+    private Image slotImg;
 
     void Start()
     {
+        
         childImage = transform.GetChild(0).GetComponent<Image>();
         defaultColor = childImage.color;
         heightLightItemObject = transform.GetChild(1).gameObject;
@@ -29,6 +31,11 @@ public class PipeSlotCanvas : MonoBehaviour, IDropHandler, IPointerEnterHandler,
         {
             item = transform.GetChild(2).gameObject;
             isDefault = true;
+        }
+        slotImg = GetComponent<Image>();
+        if(isDefaultRoad)
+        {
+            slotImg.color = new Color(0,0.5f,1,0.75f);
         }
     }
 

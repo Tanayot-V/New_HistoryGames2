@@ -47,6 +47,7 @@ public class PipeStart : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        if(GameManager.Instance.isGameEnd || !GameManager.Instance.isStartGame || GameManager.Instance.isRunWater) return;
         GameManager.Instance.StartRunWater();
     }
 
